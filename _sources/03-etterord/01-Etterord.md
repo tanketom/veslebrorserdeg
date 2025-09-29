@@ -55,4 +55,4 @@ Det finst eit omgrep for denne dysfunksjonen – det blir kalla ein autoimmun sj
 
 Sanninga er at vi ikkje kan stole på at nokon andre skal få oss til å føle oss frie, og M1k3y kjem ikkje og reddar oss den dagen fridomane våre går tapt til paranoia. Det er fordi M1k3y er i deg og i meg – *Little Brother* er ei påminning om at uansett kor uføreseieleg framtida kan vere, vinn vi ikkje fridom gjennom tryggleikssystem, kryptografi, avhøyr og stikkprøvekontrollar. Vi vinn fridom ved å ha motet og overtydinga til å leve kvar dag fritt og handle som eit fritt samfunn, uansett kor store truslane er i horisonten.
 
-Ver som M1k3y: gå ut døra og våg å vere fri.
+**Ver som M1k3y: gå ut døra og våg å vere fri.**

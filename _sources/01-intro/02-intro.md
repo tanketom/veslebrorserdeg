@@ -82,5 +82,7 @@ Eg anar ikkje om dette vil ende opp med hundrevis, dusinvis eller berre nokre fÃ
 
 Til Alice, som gjer meg heil
 
+---
+
 Omsetjars endringar: 
 * 29.09.2025 Eg har oppdatert nokre URL-ar som hadde blitt utdatert sidan 2008. 

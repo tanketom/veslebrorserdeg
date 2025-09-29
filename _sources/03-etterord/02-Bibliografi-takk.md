@@ -64,5 +64,7 @@ Denne boka står i enorm gjeld til mange forfattarar, vener, mentorar og heltar 
 
 Takk alle saman for å ha gjeve meg verktøya til å tenkje og skrive om desse ideane.
 
+---
+
 Omsetjars endringar: 
 * 29.09.2025 Eg har oppdatert nokre URL-ar som hadde blitt utdatert sidan 2008. 
