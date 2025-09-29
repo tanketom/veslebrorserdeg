@@ -355,7 +355,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -371,6 +373,14 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#but-andreas-how">But, Andreas, how?</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -393,6 +403,21 @@ document.write(`
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>&quot;This book is meant to be something you do, not just something you read.&quot;
 </pre></div>
 </div>
+<section id="but-andreas-how">
+<h2>But, Andreas, how?<a class="headerlink" href="#but-andreas-how" title="Link to this heading">#</a></h2>
+<p>This page is built from a long line of markdown files which I am trying</p>
+<p>Denne sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet <a class="reference external" href="https://jupyterbook.org/en/stable/start/build.html">JupyterBook</a> har eg så laga søkbare HTML-sider av filene, og publisert dei på <a class="reference external" href="https://github.com/tanketom/veslebrorserdeg">Github</a> med <a class="reference external" href="https://github.com/c-w/ghp-import">ghp-import</a>.</p>
+<p>Now, when I update one of my markdown files, I open Terminal, navigate to the parent folder, and type:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">veslebrorserdeg</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Then:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">veslebrorserdeg</span>
+<span class="n">ghp</span><span class="o">-</span><span class="kn">import</span><span class="w"> </span><span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">f</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span>
+</pre></div>
+</div>
+<p>Then Github hopefully handles the rest!</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -431,6 +456,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#but-andreas-how">But, Andreas, how?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

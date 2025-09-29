@@ -17,3 +17,22 @@ Så [[02-intro|dette er mi omsetjing]], dels støtta av maskinlæring med meg so
 Som Doctorow sjølv skriv i [introduksjonen](/01-intro/02-intro.md): 
 
 > **"Denne boka er meint å vere noko du *gjer*, ikkje berre noko du les."**
+
+## Men, Andreas, korleis?
+
+Denne sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet [JupyterBook](https://jupyterbook.org/en/stable/start/build.html) har eg så laga søkbare HTML-sider av filene, og publisert dei på [Github](https://github.com/tanketom/veslebrorserdeg).
+
+Når eg no oppdaterer ei markdown-file, så går eg til Terminal, opnar foreldremappa til prosjektet, og taster:
+
+```
+jupyter-book build veslebrorserdeg/
+```
+
+Så 
+
+```
+cd veslebrorserdeg
+ghp-import -n -p -f _build/html
+```
+
+Så tek Github seg av resten!

@@ -17,3 +17,23 @@ So, [this is my translation](/02-boka/01-Kapittel1.md), partly supported by mach
 As Doctorow himself writes in the [introduction](/01-intro/02-intro.md):
 
     "This book is meant to be something you do, not just something you read."
+
+## But, Andreas, how?
+This page is built from a long line of markdown files which I am trying 
+
+Denne sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet [JupyterBook](https://jupyterbook.org/en/stable/start/build.html) har eg så laga søkbare HTML-sider av filene, og publisert dei på [Github](https://github.com/tanketom/veslebrorserdeg) med [ghp-import](https://github.com/c-w/ghp-import).
+
+Now, when I update one of my markdown files, I open Terminal, navigate to the parent folder, and type:
+
+```
+jupyter-book build veslebrorserdeg/
+```
+
+Then:
+
+```
+cd veslebrorserdeg
+ghp-import -n -p -f _build/html
+```
+
+Then Github hopefully handles the rest!
