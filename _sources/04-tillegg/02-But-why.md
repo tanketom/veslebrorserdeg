@@ -19,6 +19,8 @@ As Doctorow himself writes in the [introduction](/01-intro/02-intro.md):
     "This book is meant to be something you do, not just something you read."
 
 ## But, Andreas, how?
+This business is strictly noncommercial. If you want to pay someone for something, buy a Doctorow book, and [check if you can donate copies of the book to a teacher](https://craphound.com/littlebrother/donate/). Kvefsebol (Hornet's Nest) Press is a name I had picked out in case I wanted to publish RPG adventures online, but this book got there first.
+
 This page is built from a long line of markdown files which I am trying 
 
 Denne sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet [JupyterBook](https://jupyterbook.org/en/stable/start/build.html) har eg så laga søkbare HTML-sider av filene, og publisert dei på [Github](https://github.com/tanketom/veslebrorserdeg) med [ghp-import](https://github.com/c-w/ghp-import).
