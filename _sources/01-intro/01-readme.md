@@ -6,7 +6,7 @@ Boka **"Little Brother"** av Cory Doctorow kom ut i 2008. **"Veslebror"** er ei 
 
 ```{image} ../images/veslebror-omslag-thumbnail.png
 :alt: Veslebror bokomslag
-:width: 200px
+:width: 250px
 :align: right
 ```
 
