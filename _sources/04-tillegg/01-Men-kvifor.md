@@ -14,6 +14,6 @@ Så [[02-intro|dette er mi omsetjing]], dels støtta av maskinlæring med meg so
 
 "Little Brother" er ein heilt greit underhaldande pageturner med nørdete forteikn. Men det eg synest den gjer best, er å – allereie før overvåkingskapitalismen tok heilt av – vere ei snøgginnføring i arbeid mot undertrykking i ei stadig meir digitalisert verd, og den er stadig lynande aktuell, truleg endå meir no enn då den kom ut.
 
-Som Doctorow sjølv skriv i [[02-intro|introduksjonen]]: 
+Som Doctorow sjølv skriv i [introduksjonen](/01-intro/02-intro.md): 
 
 > **"Denne boka er meint å vere noko du *gjer*, ikkje berre noko du les."**

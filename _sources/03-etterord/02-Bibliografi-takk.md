@@ -12,13 +12,13 @@ Det finst fleire flotte magasin dedikert til dette emnet, men dei to beste er *2
 
 Den digitale verda fløymer over med materiale om dette emnet, sjølvsagt. Ed Felten og Alex J. Halderman sin *Freedom to Tinker* (www.freedom-to-tinker.com) er ein blogg vedlikehalden av to fantastiske ingeniørprofessorar ved Princeton som skriv klårt om tryggleik, avlytting, anti-kopieringsteknologi og krypto.
 
-Gå ikkje glipp av Natalie Jeremijenko sine «Feral Robotics» ved UC San Diego (xdesign.ucsd.edu/feralrobots/). Natalie og studentane hennar koplar om leikerobothundar frå Toys R Us og gjer dei om til beinharde giftavfallsdetektorar. Dei slepp dei laus i offentlege parkar der store selskap har dumpa avfallet sitt og demonstrerer på ein medievennleg måte kor giftig bakken er.
+Gå ikkje glipp av Natalie Jeremijenko sine «Feral Robotics» ved UC San Diego (Wayback Machine: https://web.archive.org/web/20060901105346/https://xdesign.ucsd.edu/feralrobots/ ). Natalie og studentane hennar koplar om leikerobothundar frå Toys R Us og gjer dei om til beinharde giftavfallsdetektorar. Dei slepp dei laus i offentlege parkar der store selskap har dumpa avfallet sitt og demonstrerer på ein medievennleg måte kor giftig bakken er.
 
-Som mange av hacka i denne boka, er tunnelering-over-DNS-greiene ekte. Dan Kaminsky, ein tunnelekspert av første rang, publiserte detaljar i 2004 (www.doxpara.com/bo2004.ppt).
+Som mange av hacka i denne boka, er tunnelering-over-DNS-greiene ekte. Dan Kaminsky, ein tunnelekspert av første rang, publiserte detaljar i 2004 (https://www.blackhat.com/presentations/bh-usa-04/bh-us-04-kaminsky/bh-us-04-kaminsky.ppt).
 
 Guruen for «borgarjournalistikk» er Dan Gillmor, som for tida driv Center for Citizen Media ved Harvard og UC Berkeley – han skreiv òg ei knakande god bok om emnet, *We, the Media* (O'Reilly, 2004).
 
-Viss du vil lære meir om å hacke arphids, start med Annalee Newitz sin artikkel i Wired Magazine, «The RFID Hacking Underground» (www.wirednews.com/wired/archive/14.05/rfid.html). Adam Greenfield si *Everyware* (New Riders Press, 2006) er eit isnande blikk på farane ved ei verd av arphids.
+Viss du vil lære meir om å hacke arphids, start med Annalee Newitz sin artikkel i Wired Magazine, «The RFID Hacking Underground» (https://www.wired.com/2006/05/rfid-2/). Adam Greenfield si *Everyware* (New Riders Press, 2006) er eit isnande blikk på farane ved ei verd av arphids.
 
 Neal Gershenfeld sitt Fab Lab ved MIT (fab.cba.mit.edu) hackar fram verdas første verkelege, billege «3D-printarar» som kan pumpe ut kva som helst objekt du kan drøyme om. Dette er dokumentert i Gershenfeld si framifrå bok om emnet, *Fab* (Basic Books, 2005). Bruce Sterling si *Shaping Things* (MIT Press, 2005) viser korleis arphids og fab labs kan brukast til å tvinge selskap til å byggje produkt som ikkje forgiftar verda.
 
@@ -38,7 +38,7 @@ Den beste skjønnlitterære skildringa av historia til krypto er, utan tvil, Nea
 
 Piratpartiet som er nemnt i *Little Brother* er ekte og i vekst i Sverige (www.piratpartiet.se), Danmark, USA og Frankrike i skrivande stund (juli 2006). Dei er litt ute på viddene, men ei rørsle treng alle slags folk.
 
-Apropos ute på viddene, Abbie Hoffman og yippiane prøvde faktisk å levitere Pentagon, kaste pengar på børsen, og jobba med ei gruppe kalla Up Against the Wall Motherf_____ers. Abbie Hoffman si klassiske bok om å lure systemet, *Steal This Book*, er tilbake i trykk (Four Walls Eight Windows, 2002) og den finst òg på nettet som ein samarbeids-wiki for folk som vil prøve å oppdatere den (stealthiswiki.nine9pages.com). Hoffman sin sjølvbiografi, *Soon to Be a Major Motion Picture* (òg i trykk frå Four Walls Eight Windows) er ein av mine favoritt-memoarar nokon sinne, sjølv om den er svært fiksjonalisert. Hoffman var ein utruleg historieforteljar og hadde flotte aktivist-instinkt. Om du vil vite korleis han verkeleg levde livet sitt, prøv derimot Larry Sloman si *Steal This Dream* (Doubleday, 1998).
+Apropos ute på viddene, Abbie Hoffman og yippiane prøvde faktisk å levitere Pentagon, kaste pengar på børsen, og jobba med ei gruppe kalla Up Against the Wall Motherf_____ers. Abbie Hoffman si klassiske bok om å lure systemet, *Steal This Book*, er tilbake i trykk (Four Walls Eight Windows, 2002) og den finst òg på nettet som ein samarbeids-wiki for folk som vil prøve å oppdatere den (https://stealthiswiki.com/special/index). Hoffman sin sjølvbiografi, *Soon to Be a Major Motion Picture* (òg i trykk frå Four Walls Eight Windows) er ein av mine favoritt-memoarar nokon sinne, sjølv om den er svært fiksjonalisert. Hoffman var ein utruleg historieforteljar og hadde flotte aktivist-instinkt. Om du vil vite korleis han verkeleg levde livet sitt, prøv derimot Larry Sloman si *Steal This Dream* (Doubleday, 1998).
 
 Meir motkultur-moro: Jack Kerouac si *On the Road* kan ein få tak i på nesten kva som helst bruktbokhandel for ein dollar eller to. Allan Ginsberg sin «HOWL» finst på nettet mange stader, og du kan høyre han lese den om du søkjer etter MP3-en på archive.org. For bonuspoeng, finn fram til albumet *Tenderness Junction* av The Fugs, som inkluderer lyden av Allan Ginsberg og Abbie Hoffman sin levitasjonsseremoni ved Pentagon.
 
@@ -63,3 +63,6 @@ Denne boka står i enorm gjeld til mange forfattarar, vener, mentorar og heltar 
 **For mentorane:** Judy Merril, Roz og Gord Doctorow, Harriet Wolff, Jim Kelly, Damon Knight, Scott Edelman
 
 Takk alle saman for å ha gjeve meg verktøya til å tenkje og skrive om desse ideane.
+
+Omsetjars endringar: 
+* 29.09.2025 Eg har oppdatert nokre URL-ar som hadde blitt utdatert sidan 2008. 

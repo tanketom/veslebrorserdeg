@@ -1,8 +1,12 @@
 # Kapittel 1
 
+_Dette kapittelet er dedisert til BakkaPhoenix Books i Toronto, Canada. Bakka er den eldste science fiction-bokhandelen i verda, og den gjorde meg til den mutanten eg er i dag. Eg vandra inn for første gong då eg var rundt 10 år gamal og spurde om nokre tilrådingar. Tanya Huff (ja, den Tanya Huff, men ho var ikkje ein kjend forfattar den gongen!) tok meg med bak i bruktavdelinga og trykte eit eksemplar av H. Beam Piper si «Little Fuzzy» i hendene mine, og endra livet mitt for alltid. Innan eg var 18, jobba eg på Bakka – eg tok over etter Tanya då ho pensjonerte seg for å skrive på heiltid – og eg lærte livslange lekser om korleis og kvifor folk kjøper bøker. Eg meiner kvar einaste forfattar burde jobbe i ein bokhandel (og mange forfattarar har jobba på Bakka opp gjennom åra! Til 30-årsjubileet til butikken sette dei saman ein antologi med historier av Bakka-forfattarar som inkluderte verk av Michelle Sagara (alias Michelle West), Tanya Huff, Nalo Hopkinson, Tara Tallan – og meg!).
+
+BakkaPhoenix Books: 697 Queen Street West, Toronto ON Canada M6J1E6, +1 416 963 9993_
+
 Eg er avgangselev ved Cesar Chavez vidaregåande i solfylte Mission District i San Francisco, og det gjer meg til ein av dei mest overvaka personane i verda. Namnet mitt er Marcus Yallow, men då denne historia starta, gjekk eg under namnet w1n5t0n. Uttalt «Winston». Ikkje uttalt «Dobbelt-v-éin-enn-fem-ti-null-enn», med mindre du er ein kunnskapslaus ordensansvarleg som er så akterutsegld at du framleis kallar internett for «informasjons-supermotorvegen.» Eg kjenner nettopp ein slik kunnskapslaus person, og namnet hans er Fred Benson, ein av tre assisterande rektorar ved Cesar Chavez.
 
-Som menneske er han som eit sugande holi brystkassa. Men skal ein først ha ein fangevoktar, er det betre med ein som er kunnskapslaus enn ein som verkeleg er på pletten.
+Som menneske er han som eit sugande hol i brystkassa. Men skal ein først ha ein fangevoktar, er det betre med ein som er kunnskapslaus enn ein som verkeleg er på pletten.
 
 «Marcus Yallow,» sa han over høgtalaranlegget ein fredagsmorgon. Høgtalaranlegget er ikkje særleg bra i utgangspunktet, og når du kombinerer det med den vanlege mumlinga til Benson, får du noko som høyrest meir ut som nokon som slit med å fordøye ein dårleg burrito enn ei kunngjering frå skulen. Men menneske er gode til å plukke ut namna sine frå lyd-kaos – det er eit overlevingstrekk. Eg greip veska mi og la datamaskina tre fjerdedels saman – eg ville ikkje øydeleggje nedlastingane mine – og gjorde meg klar for det uunngåelege: «Meld deg på administrasjonskontoret med ein gong.»
 

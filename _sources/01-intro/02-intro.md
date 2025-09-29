@@ -22,9 +22,9 @@ Denne boka er meint å vere ein del av samtalen om kva eit informasjonssamfunn b
 
 Denne boka er meint å vere noko du *gjer*, ikkje berre noko du les. Teknologien i denne boka er enten ekte eller nesten ekte. Du kan byggje mykje av han. Du kan dele og remikse han (sjå OPPHAVSRETT-SAKA, nedanfor). Du kan bruke ideane til å starte viktige diskusjonar med vener og familie. Du kan bruke desse ideane til å overvinne sensur og kome deg på det frie internettet, sjølv om regjeringa, arbeidsgjevaren eller skulen din ikkje vil at du skal det.
 
-**Lage ting:** Folka hos Instructables har lagt ut nokre knallgode rettleiingar for å byggje teknologien i denne boka. Det er enkelt og utruleg gøy. Det finst ikkje noko så givande i denne verda som å lage ting, spesielt ting som gjer deg friare: http://www.instructables.com/member/w1n5t0n/
+**Lage ting:** Folka hos Instructables har lagt ut nokre knallgode rettleiingar for å byggje teknologien i denne boka. Det er enkelt og utruleg gøy. Det finst ikkje noko så givande i denne verda som å lage ting, spesielt ting som gjer deg friare: https://www.instructables.com/member/m1k3y/
 
-**Diskusjonar:** Det finst ei lærerveggleding til denne boka som forleggjaren min, Tor, har sett saman, med massevis av idear for diskusjonar i klasserommet, lesegrupper og heime om ideane i ho: http://www.tor-forge.com/static/Little_Brother_Readers_Guide.pdf
+**Diskusjonar:** Det finst ei lærerveggleding til denne boka som forleggjaren min, Tor, har sett saman, med massevis av idear for diskusjonar i klasserommet, lesegrupper og heime om ideane i ho: https://images.macmillan.com/folio-assets/teachers-guides/9780765323118TG.pdf
 
 **Overvinn sensur:** Etterordet i denne boka har mange ressursar for å auke fridomen din på nettet, blokkere snokarar og unngå sensurprogram-blokkeringar. Jo fleire som veit om dette, jo betre.
 
@@ -77,3 +77,10 @@ Viss du er lærar eller bibliotekar og vil ha ein gratis kopi av *Little Brother
 Viss du likte den elektroniske utgåva av *Little Brother* og vil donere noko for å seie takk, gå til http://craphound.com/littlebrother/donate/ og finn ein lærar eller bibliotekar du vil støtte. Gå så til Amazon, BN.com, eller din favoritt-nettbokhandel og bestill ein kopi til klasserommet, og send så ein kopi av kvitteringa (fjern gjerne adressa di og anna personleg informasjon først!) til freelittlebrother@gmail.com slik at Olga kan markere den kopien som sendt. Viss du ikkje vil bli offentleg anerkjend for sjenerøsiteten din, sei ifrå, så held vi deg anonym, elles vil vi takke deg på donasjonssida.
 
 Eg anar ikkje om dette vil ende opp med hundrevis, dusinvis eller berre nokre få kopiar som blir sende ut – men eg har store forhåpningar!
+
+## Dedikasjon
+
+Til Alice, som gjer meg heil
+
+Omsetjars endringar: 
+* 29.09.2025 Eg har oppdatert nokre URL-ar som hadde blitt utdatert sidan 2008. 
