@@ -28,3 +28,7 @@ Men i ein krig mot ein fiende som ser alt, kor lenge kan ein veslebror halde seg
 
 ## Omslagsbilete
 Bearbeida versjon av [Richard Grandmorin](https://www.flickr.com/photos/r_grandmorin/) sitt bilete [demonstration](https://www.flickr.com/photos/r_grandmorin/11153529315), gitt ut under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/deed.en).
+
+## Versjon
+
+* **29.09.2025**: Versjon 0.9 på nettsida, tester å lage PDF og Epub
