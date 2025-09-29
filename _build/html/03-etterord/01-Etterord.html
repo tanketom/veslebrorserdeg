@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Etterord &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '03-etterord/01-Etterord';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Bibliografi og takk" href="02-Bibliografi-takk.html" />
+    <link rel="prev" title="Epilog" href="../02-boka/22-Epilog.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../01-intro/01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../01-intro/01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/02-intro.html">Forord</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/09-Kapittel9.html">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/13-Kapittel13.html">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/18-Kapittel18.html">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/20-Kapittel20.html">Kapittel 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/21-Kapittel21.html">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/03-etterord/01-Etterord.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Etterord</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etterord-av-bruce-schneier">Etterord av Bruce Schneier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etterord-av-andrew-bunnie-huang-xbox-hackar">Etterord av Andrew «bunnie» Huang, Xbox-hackar</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="etterord">
+<h1>Etterord<a class="headerlink" href="#etterord" title="Link to this heading">#</a></h1>
+<section id="etterord-av-bruce-schneier">
+<h2>Etterord av Bruce Schneier<a class="headerlink" href="#etterord-av-bruce-schneier" title="Link to this heading">#</a></h2>
+<p>Eg er ein tryggleiksteknolog. Jobben min er å gjere folk trygge. Eg tenkjer på tryggleikssystem og korleis ein kan knekke dei. Så, korleis ein kan gjere dei sikrare. Datatryggleikssystem. Overvakingssystem. Flyplasstryggleikssystem og stemmemaskiner og RFID-brikker og alt mogleg anna.</p>
+<p>Cory inviterte meg inn på dei siste sidene av boka si fordi han ville at eg skulle fortelje dykk at tryggleik er gøy. Det er utruleg gøy. Det er katt og mus, kven som kan overliste kven, jeger mot bytte-gøy. Eg trur det er den gøyaste jobben ein kan ha. Om du synest det var gøy å lese om korleis Marcus overlista kameraa for gangelagsattkjenning med steinar i skoa, tenk på kor mykje gøyare det ville vore om du var den første personen i verda som tenkte på det.</p>
+<p>Å jobbe med tryggleik betyr å kunne mykje om teknologi. Det kan bety å kunne om datamaskiner og nettverk, eller kamera og korleis dei fungerer, eller kjemien bak bomberegistrering. Men eigentleg er tryggleik ein mentalitet. Det er ein måte å tenkje på. Marcus er eit flott døme på den måten å tenkje på. Han leitar alltid etter måtar eit tryggleikssystem kan svikte på. Eg veddar på at han ikkje kunne gått inn i ein butikk utan å finne ut ein måte å stele på. Ikkje at han ville gjort det – det er skilnad på å vite korleis ein skal omgå eit tryggleikssystem og å faktisk gjere det – men han ville visst at han kunne.</p>
+<p>Det er slik tryggleiksfolk tenkjer. Vi ser konstant på tryggleikssystem og korleis vi kan kome oss rundt dei; vi kan ikkje la vere.</p>
+<p>Denne måten å tenkje på er viktig uansett kva side av tryggleiken du er på. Viss du har vorte hyra til å byggje ein tjuverisikker butikk, bør du vite korleis du steler. Viss du designar eit kamerasystem som registrerer individuelle gangelag, bør du planleggje for at folk puttar steinar i skoa sine. For viss du ikkje gjer det, kjem du ikkje til å designe noko bra.</p>
+<p>Så når du vandrar gjennom dagen din, ta deg eit augneblink til å sjå på tryggleikssystema rundt deg. Sjå på kameraa i butikkane du handlar i. (Hindrar dei kriminalitet, eller flyttar dei den berre til nabobutikken?) Sjå korleis ein restaurant opererer. (Om du betaler etter at du har ete, kvifor stikk ikkje fleire folk av utan å betale?) Følg med i tryggleikskontrollen på flyplassen. (Korleis kunne du fått eit våpen om bord i eit fly?) Sjå kva kasseraren gjer i ein bank. (Banktryggleik er designa for å hindre tilsette i å stele like mykje som den er for å hindre deg i å stele.) Stir på ein maurtue. (Insekt handlar berre om tryggleik.) Les grunnlova, og legg merke til alle måtane den gir folk tryggleik mot staten. Sjå på trafikklys og dørlåsar og alle tryggleikssystema på fjernsyn og i filmar. Finn ut korleis dei fungerer, kva truslar dei vernar mot og kva truslar dei ikkje vernar mot, korleis dei sviktar, og korleis dei kan utnyttast.</p>
+<p>Bruk nok tid på dette, og du vil oppdage at du tenkjer annleis om verda. Du vil byrje å leggje merke til at mange av tryggleikssystema der ute faktisk ikkje gjer det dei hevdar, og at mykje av den nasjonale tryggleiken vår er bortkasta pengar. Du vil forstå personvern som essensielt for tryggleik, ikkje i motsetning til det. Du vil slutte å bekymre deg for ting andre folk bekymrar seg for, og byrje å bekymre deg for ting andre folk ikkje eingong tenkjer på. Nokre gonger vil du leggje merke til noko om tryggleik som ingen nokon gong har tenkt på før. Og kanskje du vil finne ut ein ny måte å knekke eit tryggleikssystem på.</p>
+<p>Det var berre for nokre få år sidan at nokon fann opp <em>phishing</em>.</p>
+<p>Eg blir ofte forbløffa over kor enkelt det er å knekke nokre ganske kjende tryggleikssystem. Det er mange grunnar til dette, men den største er at det er umogleg å bevise at noko er sikkert. Alt du kan gjere er å prøve å knekke det – viss du mislukkast, veit du at det er sikkert nok til å halde deg ute, men kva med nokon som er smartare enn deg? Kven som helst kan designe eit tryggleikssystem så sterkt at han sjølv ikkje kan knekke det.</p>
+<p>Tenk på det eit sekund, for det er ikkje openbert. Ingen er kvalifisert til å analysere sine eigne tryggleiksdesign, fordi designaren og analytikaren vil vere same person, med dei same avgrensingane. Nokre andre må analysere tryggleiken, fordi den må vere sikker mot ting designarane ikkje tenkte på.</p>
+<p>Dette betyr at vi alle må analysere tryggleiken som andre folk designar. Og overraskande ofte, knekkjer ein av oss den.</p>
+<p>Bedriftene til Marcus er ikkje usannsynlege; slikt skjer heile tida. Gå på nettet og slå opp «bump key» eller «Bic pen Kryptonite lock»; du vil finne eit par verkeleg interessante historier om tilsynelatande sterk tryggleik som vart overvunnen av ganske enkel teknologi.</p>
+<p>Og når det skjer, sørg for å publisere det på internett ein stad. Hemmeleghald og tryggleik er ikkje det same, sjølv om det kan verke slik. Berre dårleg tryggleik baserer seg på hemmeleghald; god tryggleik fungerer sjølv om alle detaljane om den er offentlege.</p>
+<p>Og å publisere sårbarheiter tvingar tryggleiksdesignarar til å designe betre tryggleik, og gjer oss alle til betre forbrukarar av tryggleik. Viss du kjøper ei Kryptonite-sykkellås og den kan overvinnast med ein Bic-penn, får du ikkje særleg god tryggleik for pengane dine. Og likeins, viss ein gjeng smarte ungar kan overvinne DHS sine antiterror-teknologiar, då kjem dei ikkje til å gjere ein særleg god jobb mot ekte terroristar.</p>
+<p>Å byte personvern mot tryggleik er dumt nok; å ikkje eingong få noko reell tryggleik på kjøpet er endå dummare.</p>
+<p>Så lukk boka og gå. Verda er full av tryggleikssystem. Hack eit av dei.</p>
+<p><em>Bruce Schneier</em>
+<em><a class="reference external" href="http://www.schneier.com">http://www.schneier.com</a></em></p>
+</section>
+<section id="etterord-av-andrew-bunnie-huang-xbox-hackar">
+<h2>Etterord av Andrew «bunnie» Huang, Xbox-hackar<a class="headerlink" href="#etterord-av-andrew-bunnie-huang-xbox-hackar" title="Link to this heading">#</a></h2>
+<p>Hackerar er utforskarar, digitale pionerar. Det ligg i ein hackar sin natur å stille spørsmål ved konvensjonar og bli freista av innfløkte problem. Eit kvart komplekst system er ein leikeplass for ein hackar; ein bieffekt av dette er hackaren sin naturlege affinitet for problem som involverer tryggleik. Samfunnet er eit stort og komplekst system, og er absolutt ikkje unntatt frå litt hacking. Som eit resultat blir hackarar ofte stereotypiserte som ikonoklastar og sosiale avvikarar, folk som trassar sosiale normer for trassens skuld.</p>
+<p>Då eg hacka Xbox i 2002 medan eg var på MIT, gjorde eg det ikkje for å gjere opprør eller for å skade; eg følgde berre ein naturleg impuls, den same impulsen som fører til å fikse ein øydelagd iPod eller utforske taka og tunnelane på MIT. Diverre fører kombinasjonen av å ikkje følgje sosiale normer og å vite «truande» ting som korleis ein les arphid-brikka på kredittkortet ditt eller korleis ein dirkar låsar, til at nokre folk fryktar hackarar. Men motiva til ein hackar er typisk like enkle som «eg er ein ingeniør fordi eg likar å designe ting.»</p>
+<p>Folk spør meg ofte: «Kvifor hacka du tryggleikssystemet til Xbox?» Og svaret mitt er enkelt: For det første eig eg dei tinga eg kjøper. Viss nokon kan fortelje meg kva eg kan og ikkje kan køyre på maskinvara mi, så eig eg den ikkje. For det andre, fordi den er der. Det er eit system med tilstrekkeleg kompleksitet til å vere ein god sport. Det var ei flott avveksling frå dei seine kveldane med doktorgradsarbeidet.</p>
+<p>Eg var heldig. Det faktum at eg var doktorgradsstudent på MIT då eg hacka Xbox-en, legitimerte aktiviteten i auga til dei rette folka. Men retten til å hacke bør ikkje berre gjelde for akademikarar. Eg starta med hacking då eg berre var ein gut på barneskulen, og tok frå kvarandre kvart einaste elektroniske apparat eg kunne få tak i, til stor fortviling for foreldra mine. Lesestoffet mitt inkluderte bøker om modellrakettar, artilleri, kjernevåpen og produksjon av eksplosivar – bøker eg lånte frå skulebiblioteket mitt (eg trur den kalde krigen påverka utvalet i offentlege skular). Eg leika òg med min del av improvisert fyrverkeri og vandra rundt på opne byggjeplassar for hus som vart reiste i mitt nabolag i Midtvesten. Sjølv om det ikkje var det klokaste å gjere, var dette viktige erfaringar i mi modning, og eg voks opp til å bli ein fritenkjar på grunn av den sosiale toleransen og tilliten i samfunnet mitt.</p>
+<p>Noverande hendingar har ikkje vore like nådige mot aspirerande hackarar. <em>Little Brother</em> viser korleis vi kan kome frå der vi er i dag til ei verd der sosial toleranse for nye og annleis tankar døyr heilt ut. Ei nyleg hending understrekar nøyaktig kor nære vi er ved å krysse grensa inn i verda til <em>Little Brother</em>. Eg var heldig og fekk lese eit tidleg utkast av <em>Little Brother</em> tilbake i november 2006. Spol fram to månader til slutten av januar 2007, då politiet i Boston fann mistenkte eksplosive einingar og stengde ned byen for ein dag. Desse einingane viste seg å vere ingenting meir enn kretskort med blinkande LED-lys, som reklamerte for eit program for Cartoon Network. Kunstnarane som plasserte denne urbane graffitien vart tekne inn som mistenkte terroristar og til slutt sikta for grovt brotsverk; nettverksprodusentane måtte ut med eit forlik på 2 millionar dollar, og sjefen for Cartoon Network gjekk av som følgje av etterdønningane.</p>
+<p>Har terroristane allereie vunne? Har vi gjeve etter for frykt, slik at kunstnarar, hobbyfolk, hackarar, ikonoklastar, eller kanskje ei uanseleg gruppe born som speler Harajuku Fun Madness, så lett kan bli impliserte som terroristar?</p>
+<p>Det finst eit omgrep for denne dysfunksjonen – det blir kalla ein autoimmun sjukdom, der forsvarsystemet til ein organisme går i så høggir at det ikkje kjenner att seg sjølv og angrip sine eigne celler. Til slutt øydelegg organismen seg sjølv. Akkurat no er Amerika på randen av å gå i anafylaktisk sjokk over sine eigne fridomar, og vi må inokulere oss sjølve mot dette. Teknologi er ingen kur for denne paranoiaen; faktisk kan den forsterke paranoiaen: den gjer oss til fangar av våre eigne einingar. Å tvinge millionar av menneske til å kle av seg ytterkleda og gå berrføtt gjennom metalldetektorar kvar dag er heller ingen løysing. Det tener berre til å minne befolkninga kvar dag på at dei har ein grunn til å vere redde, medan det i praksis berre utgjer ein spinkel barriere for ein bestemt motstandar.</p>
+<p>Sanninga er at vi ikkje kan stole på at nokon andre skal få oss til å føle oss frie, og M1k3y kjem ikkje og reddar oss den dagen fridomane våre går tapt til paranoia. Det er fordi M1k3y er i deg og i meg – <em>Little Brother</em> er ei påminning om at uansett kor uføreseieleg framtida kan vere, vinn vi ikkje fridom gjennom tryggleikssystem, kryptografi, avhøyr og stikkprøvekontrollar. Vi vinn fridom ved å ha motet og overtydinga til å leve kvar dag fritt og handle som eit fritt samfunn, uansett kor store truslane er i horisonten.</p>
+<p>Ver som M1k3y: gå ut døra og våg å vere fri.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./03-etterord"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../02-boka/22-Epilog.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Epilog</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="02-Bibliografi-takk.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Bibliografi og takk</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etterord-av-bruce-schneier">Etterord av Bruce Schneier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#etterord-av-andrew-bunnie-huang-xbox-hackar">Etterord av Andrew «bunnie» Huang, Xbox-hackar</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

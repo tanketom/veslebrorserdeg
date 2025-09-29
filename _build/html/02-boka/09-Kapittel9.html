@@ -1,0 +1,741 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kapittel 9 &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02-boka/09-Kapittel9';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Kapittel 10" href="10-Kapittel10.html" />
+    <link rel="prev" title="Kapittel 8" href="08-Kapittel8.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../01-intro/01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../01-intro/01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/02-intro.html">Forord</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13-Kapittel13.html">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18-Kapittel18.html">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20-Kapittel20.html">Kapittel 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="21-Kapittel21.html">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/01-Etterord.html">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/02-boka/09-Kapittel9.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Kapittel 9</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="kapittel-9">
+<h1>Kapittel 9<a class="headerlink" href="#kapittel-9" title="Link to this heading">#</a></h1>
+<p><em>Dette kapittelet er dedikert til Compass Books/Books Inc, den eldste uavhengige bokhandelen i vestlege USA. Dei har butikkar opp og ned langs California, i San Francisco, Burlingame, Mountain View og Palo Alto, men det kulaste av alt er at dei driv ein knallbra bokhandel midt i Disneyland’s Downtown Disney i Anaheim. Eg er ein ihuga Disney-park-fan (sjå min første roman, Down and Out in the Magic Kingdom, om du ikkje trur meg), og kvar gong eg har budd i California, har eg kjøpt meg eit årskort til Disneyland, og på praktisk talt kvart besøk stikk eg innom Compass Books i Downtown Disney. Dei har eit strålande utval av uautoriserte (og til og med kritiske) bøker om Disney, i tillegg til eit stort mangfald av barnebøker og science fiction, og kafeen ved sida av lagar ein fantastisk cappuccino.</em></p>
+<p>Han var så sint at eg trudde han kom til å sprekke. Hugsar du eg sa eg berre sjeldan hadde sett han miste fatninga? Den kvelden mista han ho meir enn han nokon gong hadde gjort.</p>
+<p>«Du vil ikkje tru det. Denne politimannen, han var kanskje atten år gammal, og han heldt fram med å seie: ‘Men sir, kvifor var De i Berkeley i går viss klienten Dykkar er i Mountain View?’ Eg heldt fram med å forklare han at eg underviser i Berkeley, og så sa han: ‘Eg trudde De var konsulent,’ og så byrja vi på nytt. Det var som ein slags situasjonskomedie der politiet hadde vorte treft av ein dumheitsstråle.»</p>
+<p>«Det som er verre, var at han heldt fram med å insistere på at eg hadde vore i Berkeley i dag òg, og eg heldt fram med å seie nei, det hadde eg ikkje, og han sa at det hadde eg. Så viste han meg FasTrak-rekninga mi, og der stod det at eg hadde køyrt over San Mateo-brua tre gonger den dagen!</p>
+<p>«Det er ikkje alt,» sa han, og trekte pusten på ein måte som lét meg vite at han var skikkeleg forbanna. «Dei hadde informasjon om kvar eg hadde vore, stader som ikkje hadde bomstasjon. Dei hadde sjekka passet mitt rett på gata, tilfeldig. Og det var feil! Herregud, eg meiner, dei spionerer på oss alle, og dei er ikkje eingong kompetente!»</p>
+<p>Eg hadde drive ned på kjøkkenet medan han rasa der, og no såg eg på han frå dørkarmen. Mamma møtte blikket mitt, og vi heva begge augebryna som for å seie: <em>Kven skal seie ‘k-v-a-v-a-r-d-e-t-e-g-s-a’ til han?</em> Eg nikka til ho. Ho kunne bruke sine ekteskaplege krefter til å nøytralisere raseriet hans på ein måte som var utanfor rekkevidda til ein son.</p>
+<p>«Drew,» sa ho, og greip han i armen for å få han til å slutte å gå fram og tilbake på kjøkkenet, viftande med armane som ein gatepredikant.</p>
+<p>«Kva?» snerra han.</p>
+<p>«Eg trur du skuldar Marcus ei unnskyldning.» Ho heldt stemma jamn og roleg. Pappa og eg er hissigproppane i heimen – mamma er ei klippe.</p>
+<p>Pappa såg på meg. Auga hans smalna medan han tenkte eit minutt. «Greitt,» sa han til slutt. «Du har rett. Eg snakka om kompetent overvaking. Desse karane var totale amatørar. Eg er lei for det, son,» sa han. «Du hadde rett. Det der var latterleg.» Han strekte ut handa og handhelste på meg, og gav meg så ein fast, uventa klem.</p>
+<p>«Herregud, kva gjer vi med dette landet, Marcus? Din generasjon fortener å arve betre enn dette.» Då han slapp meg, kunne eg sjå dei djupe rynkene i andletet hans, linjer eg aldri hadde lagt merke til før.</p>
+<p>Eg gjekk opp på rommet mitt igjen og spelte nokre Xnet-spel. Det var eit bra fleirspel-spel, eit mekanisk piratspel der du måtte på oppdrag kvar eller annan dag for å trekkje opp fjør-mekanismen til heile mannskapet ditt før du kunne dra på plyndring og herjing igjen. Det var den typen spel eg hata, men ikkje klarte å slutte å spele: mange repeterande oppdrag som ikkje var særleg tilfredsstillande å fullføre, litt spelar-mot-spelar-kamp (slåsting om kven som skulle vere kaptein på skipet) og få kule gåter du måtte finne ut av. For det meste skapte slike spel lengsel etter Harajuku Fun Madness, som balanserte det å springe rundt i den verkelege verda, finne ut av gåter på nettet og leggje strategiar med laget ditt.</p>
+<p>Men i dag var det akkurat det eg trengde. Tanketom underhaldning. Stakkars pappa. Eg hadde gjort det mot han. Før hadde han vore glad, trygg på at skattepengane hans vart brukte på hans tryggleik. Eg hadde øydelagt den tryggleiken. Den var falsk i utgangspunktet, sjølvsagt, men den hadde halde han gåande. Når eg såg han no, elendig og nedbroten, lurte eg på om det var betre å vere klarsynt og håplaus eller å leve i eit narreparadis. Den skamma – skamma eg hadde følt sidan eg gav opp passorda mine, sidan dei hadde knekt meg – kom tilbake, og etterlét meg slapp og med eit ønske om å berre kome meg vekk frå meg sjølv.</p>
+<p>Karakteren min var ein dekksgut på piratskipet <em>Zombie Charger</em>, og han hadde gått tom for energi medan eg hadde vore fråkopla. Eg måtte sende lynmeldingar til alle dei andre spelarane på skipet mitt til eg fann ein som var villig til å trekkje meg opp. Det heldt meg oppteken. Eg likte det, faktisk. Det var noko magisk med at ein heilt framand gjorde deg ein teneste. Og sidan det var Xnet, visste eg at alle dei framande var vener, på ein måte.</p>
+<blockquote>
+<div><p>Kvar er du?</p>
+</div></blockquote>
+<p>Karakteren som trekte meg opp heitte Lizanator, og den var kvinneleg, sjølv om det ikkje betydde at det var ei jente. Gutar hadde ein rar dragning mot å spele kvinnelege karakterar.</p>
+<blockquote>
+<div><p>San Francisco</p>
+</div></blockquote>
+<p>sa eg.</p>
+<blockquote>
+<div><p>Nei, din tosk, kvar i San Fran er du?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Kvifor, er du ein pervo?</p>
+</div></blockquote>
+<p>Det stoppa vanlegvis den samtalelinja. Sjølvsagt var kvart spelrom fullt av pedofile og pervoar, og politi som lata som dei var pedo- og pervo-agn (sjølv om eg verkeleg håpte det ikkje var noko politi på Xnet!). Ei slik skulding var nok til å skifte tema ni av ti gonger.</p>
+<blockquote>
+<div><p>Mission? Potrero Hill? Noe? East Bay?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Berre trekk meg opp, ok takk?</p>
+</div></blockquote>
+<p>Ho slutta å trekkje.</p>
+<blockquote>
+<div><p>Er du redd?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Kva så, kvifor bryr du deg?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Berre nysgjerrig</p>
+</div></blockquote>
+<p>Eg fekk ein dårleg vibb av ho. Ho var tydelegvis meir enn berre nysgjerrig. Kall det paranoia. Eg logga av og slo av Xbox-en min.</p>
+<p>⁂</p>
+<p>Pappa såg på meg over bordet neste morgon og sa: «Det ser ut til at det i alle fall kjem til å bli betre.» Han gav meg ei utgåve av Chronicle, opna på side tre.</p>
+<blockquote>
+<div><p>Ein talsmann for Sikkerheitsdepartementet har stadfesta at kontoret i San Francisco har bedt om 300 prosent auke i budsjett og personell frå Washington DC.</p>
+</div></blockquote>
+<p>Kva?</p>
+<blockquote>
+<div><p>Generalmajor Graeme Sutherland, kommanderande offiser for DHS-operasjonar i Nord-California, stadfesta førespurnaden på ein pressekonferanse i går, og merka seg at ein auke i mistenkjeleg aktivitet i Bay Area var årsaka til førespurnaden. «Vi sporer ein auke i undergrunnsprat og -aktivitet, og trur at sabotørar med vilje produserer falske tryggingsvarslar for å undergrave innsatsen vår.»</p>
+</div></blockquote>
+<p>Auga mine gjekk i kryss. Aldri i livet.</p>
+<blockquote>
+<div><p>«Dei falske alarmane er potensielt ‘radar-agn’ meint for å skjule reelle angrep. Den einaste effektive måten å kjempe mot dei på er å auke bemanninga og analytikarmengda slik at vi kan etterforske kvar einaste ledetråd fullt ut.»</p>
+</div></blockquote>
+<blockquote>
+<div><p>Sutherland merka seg at forseinkingane som vart opplevde over heile byen var «uheldige» og forplikta seg til å eliminere dei.</p>
+</div></blockquote>
+<p>Eg fekk ein visjon av byen med fire eller fem gonger så mange DHS-handhevarar, henta inn for å kompensere for mine eigne dumme idear. Van hadde rett. Jo meir eg kjempa mot dei, jo verre kom det til å bli.</p>
+<p>Pappa peika på avisa. «Desse karane er kanskje toskar, men dei er metodiske toskar. Dei vil berre halde fram med å kaste ressursar på dette problemet til dei løyser det. Det er handterleg, veit du. Å grave i all data i byen, følgje opp kvar einaste leiing. Dei kjem til å fange terroristane.»</p>
+<p>Eg mista fatninga. «Pappa! Høyrer du på deg sjølv? Dei snakkar om å etterforske praktisk talt kvar einaste person i byen San Francisco!»</p>
+<p>«Ja,» sa han, «det er rett. Dei vil fange kvar einaste velferdssnik, kvar einaste dopseljar, kvar einaste drittsekk og kvar einaste terrorist. Berre vent. Dette kan vere det beste som nokon gong har hendt dette landet.»</p>
+<p>«Sei at du tullar,» sa eg. «Eg ber deg. Trur du det var det dei meinte då dei skreiv grunnlova? Kva med Bill of Rights?»</p>
+<p>«Bill of Rights vart skriven før datainnsamling,» sa han. Han var utruleg roleg, overtydd om si eiga rett. «Retten til organisasjonsfridom er fin, men kvifor skulle ikkje politiet få lov til å grave i det sosiale nettverket ditt for å finne ut om du heng med gjengmedlemer og terroristar?»</p>
+<p>«Fordi det er ein invasjon av personvernet mitt!» sa eg.</p>
+<p>«Kva er problemet? Vil du heller ha personvern eller terroristar?»</p>
+<p>Argh. Eg hata å krangle med pappa slik. Eg trengde ein kaffi. «Pappa, kom igjen. Å ta frå oss personvernet fangar ikkje terroristar: det er berre til ulempe for vanlege folk.»</p>
+<p>«Korleis veit du at det ikkje fangar terroristar?»</p>
+<p>«Kvar er terroristane dei har fanga?»</p>
+<p>«Eg er sikker på at vi vil sjå arrestasjonar snart. Berre vent.»</p>
+<p>«Pappa, kva i helvete har skjedd med deg sidan i går kveld? Du var klar til å gå amok på politiet for å ha stoppa deg–»</p>
+<p>«Ikkje bruk den tonen med meg, Marcus. Det som har skjedd sidan i går kveld, er at eg har hatt sjansen til å tenkje over det og lese dette.» Han rasla med avisa. «Grunnen til at dei fanga meg, er at skurkane aktivt jammar dei. Dei må justere teknikkane for å overvinne jamminga. Men dei vil klare det. I mellomtida er ein og annan vegstopp ein liten pris å betale. Dette er ikkje tida for å leike advokat om Bill of Rights. Dette er tida for å gjere nokre offer for å halde byen vår trygg.»</p>
+<p>Eg klarte ikkje å ete opp toasten min. Eg sette tallerkenen i oppvaskmaskina og drog til skulen. Eg måtte kome meg ut derifrå.</p>
+<p>⁂</p>
+<p>Xnet-folka var ikkje glade for den auka politiovervakinga, men dei kom ikkje til å ta det liggjande. Nokre ringde eit innringingsprogram på KQED og fortalde dei at politiet kasta bort tida si, at vi kunne sabotere systemet raskare enn dei kunne løyse det opp. Opptaket var det mest nedlasta på Xnet den kvelden.</p>
+<p>«Dette er California Live, og vi snakkar med ein anonym innringar frå ein telefonkiosk i San Francisco. Han har si eiga informasjon om forseinkingane vi har møtt rundt i byen denne veka. Innringar, du er på lufta.»</p>
+<p>«Ja, yo, dette er berre byrjinga, skjønar du? Eg meiner, liksom, vi er berre så vidt i gang. La dei hyre ein milliard snutar og setje ein kontrollpost på kvart hjørne. Vi skal jamme alle! Og liksom, alt dette tullet om terroristar? Vi er ikkje terroristar! Slapp av, eg meiner, verkeleg! Vi jammar systemet fordi vi hatar DHS, og fordi vi elskar byen vår. Terroristar? Eg kan ikkje eingong stave jihad. Peace out.»</p>
+<p>Han høyrdest ut som ein idiot. Ikkje berre dei usamanhengande orda, men også den skadefro tonen hans. Han høyrdest ut som ein gutunge som var usømeleg stolt av seg sjølv. Han <em>var</em> ein gutunge som var usømeleg stolt av seg sjølv.</p>
+<p>Xnet gjekk amok over dette. Mange meinte han var ein idiot for å ringje inn, medan andre meinte han var ein helt. Eg bekymra meg for at det truleg var eit kamera retta mot telefonkiosken han hadde brukt. Eller ein arphid-lesar som kunne ha snappa opp Fast Pass-kortet hans. Eg håpte han hadde vore smart nok til å tørke fingeravtrykka sine av mynten, halde hetta oppe og late alle arphid-brikkene sine vere heime. Men eg tvilte. Eg lurte på om han kom til å få eit bank på døra snart.</p>
+<p>Måten eg visste at noko stort hadde skjedd på Xnet, var at eg plutseleg fekk ein million e-postar frå folk som ville at M1k3y skulle vite om dei siste hendingane. Akkurat då eg las om Herr Kan-Ikkje-Stave-Jihad, gjekk innboksen min amok. Alle hadde ei melding til meg – ein link til ein livejournal på Xnet – ein av dei mange anonyme bloggane som var baserte på Freenet-dokumentpubliseringssystemet som òg vart brukt av kinesiske demokratiforkjemparar.</p>
+<blockquote>
+<div><p>Nære på</p>
+</div></blockquote>
+<blockquote>
+<div><p>Vi jamma på Embarcadero i kveld og tulla rundt med å gje alle ein ny bilnøkkel eller dørnøkkel eller Fast Pass eller FasTrak, og kasta rundt litt falskt krut. Det var politi overalt, men vi var smartare enn dei; vi er der nesten kvar kveld og blir aldri tekne.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Så vi vart tekne i kveld. Det var ein dum feil, vi vart slurvete, vi vart tekne. Det var ein sivil politimann som fanga kompisen min og så tok resten av oss. Dei hadde følgt med på folkemengda lenge, og dei hadde ein av dei lastebilane i nærleiken, og dei tok fire av oss inn, men gjekk glipp av resten.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Lastebilen var STAPPFULL som ei sardinboks med alle slags folk, gamle, unge, svarte, kvite, rike, fattige, alle mistenkte, og det var to politimenn som prøvde å stille oss spørsmål, og sivilpolitiet heldt fram med å bringe inn fleire av oss. Dei fleste prøvde å kome seg fremst i køen for å kome gjennom avhøyret, så vi heldt fram med å flytte oss bakover, og det var som timar der inne, og veldig varmt, og det vart meir folksamt, ikkje mindre.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Klokka 8 om kvelden bytte dei skift, og to nye politimenn kom inn og skjelte ut dei to politimennene som var der, slik som, kva i helvete? gjer de ingenting her. Dei hadde ein skikkeleg krangel, og så gjekk dei to gamle politimennene, og dei nye politimennene sette seg ned ved pultane sine og kviskra til kvarandre ei stund.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Så reiste den eine politimannen seg og byrja å rope: ALLE SAMAN, BERRE GÅ HEIM, HERREGUD, VI HAR BETRE TING Å GJERE ENN Å PLAGE DYKK MED FLEIRE SPØRSMÅL, VISS DE HAR GJORT NOKO GALE, SÅ IKKJE GJER DET IGJEN, OG LA DETTE VERE EI ÅTVARING TIL DYKK ALLE.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Ein haug med dresskledde vart skikkeleg forbanna, noko som var SJUKT MOROSAMT, for eg meiner, ti minutt før klaga dei over å bli haldne der, og no var dei dritforbanna for å bli sleppte fri, liksom, bestem dykk!</p>
+</div></blockquote>
+<blockquote>
+<div><p>Vi stakk fort, då, og kom oss ut og heim for å skrive dette. Det er sivilpoliti overalt, tru meg. Viss du jammar, ver årvaken og klar til å springe når problema oppstår. Viss du blir teken, prøv å vente det ut – dei er så travle at dei kanskje berre let deg gå.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Vi gjorde dei så travle! Alle dei folka i den lastebilen var der fordi vi hadde jamma dei. Så jam vidare!</p>
+</div></blockquote>
+<p>Eg følte det som om eg skulle kaste opp. Dei fire personane – born eg aldri hadde møtt – dei var nær ved å forsvinne for alltid på grunn av noko eg hadde starta. På grunn av noko eg hadde bede dei om å gjere.</p>
+<p>Eg var ikkje betre enn ein terrorist.</p>
+<p>DHS fekk godkjent budsjettkravet sitt. Presidenten gjekk på TV med guvernøren for å fortelje oss at ingen pris var høgare enn tryggleik. Vi måtte sjå det neste dag på skulesamlinga. Far min jubla. Han hadde hata presidenten sidan den dagen han vart vald, og sa at han ikkje var noko betre enn den førre fyren, og den førre fyren hadde vore ein komplett katastrofe, men no var alt han kunne gjere å snakke om kor bestemt og dynamisk den nye fyren var.</p>
+<p>«Du må roe ned stemninga med far din,» sa mor mi til meg ein kveld etter at eg kom heim frå skulen. Ho hadde jobba heimanfrå så mykje som mogleg. Mor mi er ein frilans flyttespesialist som hjelper britar med å etablere seg i San Francisco. Den britiske høgkommisjonen betaler ho for å svare på e-postar frå forvirra britar over heile landet som er heilt forvirra over kor rare vi amerikanarar er. Ho tener til salt i grauten ved å forklare amerikanarar, og ho sa at no for tida var det betre å gjere det heimanfrå, der ho slapp å faktisk sjå eller snakke med amerikanarar.</p>
+<p>Eg har ingen illusjonar om Storbritannia. Amerika er kanskje villig til å kaste grunnlova si i søpla kvar gong ein jihadist ser skeivt på oss, men som eg lærte i samfunnsfagsprosjektet mitt i niande klasse, britane har ikkje eingong ei grunnlov. Dei har lover der som ville fått håret på tærne dine til å krølle seg: dei kan setje deg i fengsel i eit heilt år om dei er heilt sikre på at du er ein terrorist, men ikkje har nok bevis til å prove det. Vel, kor sikre kan dei vere om dei ikkje har nok bevis til å prove det? Korleis vart dei så sikre? Såg dei deg utføre terrorhandlingar i ein veldig livaktig draum?</p>
+<p>Og overvakinga i Storbritannia får Amerika til å sjå ut som ein amatørtime. Den gjennomsnittlege londonar blir fotografert 500 gonger om dagen, berre ved å gå rundt i gatene. Kvart einaste bilskilt blir fotografert på kvart hjørne i landet. Alle, frå bankar til kollektivtransportselskap, sporer og sladrar entusiastisk på deg om dei synest du er det minste mistenkjeleg.</p>
+<p>Men mor mi såg det ikkje på den måten. Ho hadde forlate Storbritannia på vidaregåande og hadde aldri følt seg heime her, uansett om ho hadde gifta seg med ein gut frå Petaluma og oppdregen ein son i USA. For ho var dette alltid barbaranes land, og Storbritannia ville alltid vere heime.</p>
+<p>«Mamma, han tek feil. Du av alle burde vite det. Alt som gjer dette landet stort, blir skylt ned i dass, og han er med på det. Har du lagt merke til at dei ikkje har fanga nokre terroristar? Pappa seier berre: ‘Vi må vere trygge,’ men han må vite at dei fleste av oss ikkje føler oss trygge. Vi føler oss truga heile tida.»</p>
+<p>«Eg veit alt dette, Marcus. Tru meg, eg er ingen fan av det som har skjedd med landet. Men faren din er–» Ho avbraut. «Då du ikkje kom heim etter angrepa, trudde han–» Ho reiste seg og laga seg ein kopp te, noko ho gjorde kvar gong ho var ukomfortabel eller forvirra.</p>
+<p>«Marcus,» sa ho. «Marcus, vi trudde du var død. Forstår du det? Vi sørgde over deg i dagevis. Vi førestilte oss deg sprengt i bitar, på botnen av havet. Død fordi ein eller annan jævel bestemte seg for å drepe hundrevis av framande for å markere eit poeng.»</p>
+<p>Det sokk langsamt inn. Eg meiner, eg forstod at dei hadde vore bekymra. Mange menneske døydde i bombingane – fire tusen var anslaget no – og praktisk talt alle kjende nokon som ikkje kom heim den dagen. Berre frå skulen min var to personar sakna.</p>
+<p>«Faren din var klar til å drepe nokon. Kven som helst. Han var ute av seg. Du har aldri sett han slik. Eg har aldri sett han slik, eg heller. Han var ute av seg. Han sat berre ved dette bordet og banna og banna og banna. Stygge ord, ord eg aldri hadde høyrt han seie. Ein dag – den tredje dagen – ringde nokon, og han var sikker på at det var deg, men det var feil nummer, og han kasta telefonen så hardt at den gjekk i tusen bitar.»</p>
+<p>Eg hadde lurt på den nye kjøkentelefonen.</p>
+<p>«Noko brast i faren din. Han elskar deg. Vi elskar deg begge. Du er det viktigaste i liva våre. Eg trur ikkje du forstår det. Hugsar du då du var ti, då eg reiste heim til London i all den tida? Hugsar du?»</p>
+<p>Eg nikka stille.</p>
+<p>«Vi var klare for å skilje oss, Marcus. Åh, det… spelar inga rolle kvifor lenger. Det var berre ein dårleg periode, den typen ting som skjer når folk som elskar kvarandre sluttar å vere merksame i nokre år. Han kom og henta meg og overtydde meg om å kome tilbake for di skuld. Vi klarte ikkje tanken på å gjere det mot deg. Vi vart forelska igjen for di skuld. Vi er saman i dag på grunn av deg.»</p>
+<p>Eg hadde ein klump i halsen. Eg hadde aldri visst dette. Ingen hadde nokon gong fortalt meg.</p>
+<p>«Så faren din har det vanskeleg akkurat no. Han er ikkje ved sine fulle fem. Det kjem til å ta litt tid før han kjem tilbake til oss, før han er den mannen eg elskar igjen. Vi må forstå han fram til då.»</p>
+<p>Ho gav meg ein lang klem, og eg la merke til kor tynne armane hennar hadde vorte, kor slapp huda på halsen hennar var. Eg tenkte alltid på mor mi som ung, bleik, med roser i kinna og munter, der ho kikka skarpt gjennom metallbrillene sine. No såg ho litt ut som ei gamal kvinne. Eg hadde gjort det mot ho. Terroristane hadde gjort det mot ho. Department of Homeland Security hadde gjort det mot ho. På ein rar måte var vi alle på same side, og mamma og pappa og alle dei folka vi hadde lurt, var på den andre sida.</p>
+<p>⁂</p>
+<p>Eg klarte ikkje sove den natta. Orda til mor mi surra rundt i hovudet. Pappa hadde vore anspent og stille til middags, og vi hadde knapt snakka saman – fordi eg ikkje stolte på at eg ikkje ville seie feil ting, og fordi han var heilt oppkava over dei siste nyheitene, at al-Qaida definitivt var ansvarleg for bombinga. Seks ulike terrorgrupper hadde teke på seg ansvaret for angrepet, men berre al-Qaida sin internettvideo avslørte informasjon som DHS sa dei ikkje hadde offentleggjort.</p>
+<p>Eg låg i senga og høyrde på eit innringingsprogram på radio seint på kvelden. Temaet var sexproblem, med ein homofil fyr som eg normalt elska å høyre på, han gav folk så råe, men gode råd, og var veldig morosam og campy. I kveld klarte eg ikkje å le. Dei fleste innringarane ville spørje kva dei skulle gjere med at dei hadde vanskar med å ha sex med partnarane sine heilt sidan angrepet. Sjølv på sexprat-radio kunne eg ikkje kome meg unna temaet.</p>
+<p>Eg slo av radioen og høyrde ein malande motor på gata nedanfor.</p>
+<p>Soverommet mitt er i øvste etasje av huset vårt, ein av dei såkalla «painted ladies». Eg har eit skrånande loftstak og vindauge på begge sider – det eine ser ut over heile Mission, det andre ser ut mot gata framfor huset vårt. Det var ofte bilar som cruisa til alle døgnets tider, men det var noko annleis med denne motorlyden.</p>
+<p>Eg gjekk til gatevindauget og trekte opp persiennene. Nede på gata under meg var ein kvit, umerkt varebil med taket fullt av radioantenner, fleire antenner enn eg nokon gong hadde sett på ein bil. Den cruisa veldig sakte nedover gata, ein liten tallerken på toppen roterte rundt og rundt.</p>
+<p>Medan eg såg på, stoppa varebilen, og ei av bakdørene spratt opp. Ein fyr i DHS-uniform – eg kunne kjenne att ein på hundre meters avstand no – steig ut i gata. Han hadde ein slags handhalden eining, og det blå lyset lyste opp andletet hans. Han gjekk fram og tilbake, speida først på naboane mine, noterte på eininga si, og gjekk så i mi retning. Det var noko kjent med måten han gjekk på, der han såg ned –</p>
+<p>Han brukte ein wifinder! DHS speida etter Xnet-nodar. Eg sleppte persiennene og stupte over rommet mot Xbox-en min. Eg hadde latt den stå på medan eg lasta ned nokre kule animasjonar ein av Xnet-folka hadde laga av presidentens «ingen-pris-er-for-høg»-tale. Eg reiv ut kontakten frå veggen, skunda meg så tilbake til vindauget og opna persiennen på gløtt.</p>
+<p>Fyren såg ned i wifindaren sin igjen, og gjekk fram og tilbake framfor huset vårt. Eit augneblink seinare steig han inn i varebilen sin og køyrde vekk.</p>
+<p>Eg fann fram kameraet mitt og tok så mange bilete eg kunne av varebilen og antennene. Så opna eg dei i eit gratis biletredigeringsprogram kalla The GIMP og redigerte vekk alt frå biletet bortsett frå varebilen, og sletta gata mi og alt som kunne identifisere meg. Eg posta dei på Xnet og skreiv ned alt eg kunne om varebilane. Desse karane leita definitivt etter Xnet, det kunne eg sjå.</p>
+<p>No kunne eg verkeleg ikkje sove.</p>
+<p>Ingenting anna å gjere enn å spele opptrekk-piratar. Det ville vere mange spelarar sjølv på denne tida. Det verkelege namnet for opptrekk-piratar var <em>Clockwork Plunder</em>, og det var eit hobbyprosjekt som hadde vorte skapt av death-metal-tenåringsfrikar frå Finland. Det var gratis å spele, og tilbydde like mykje moro som kva som helst av 15-dollar-i-månaden-tenestene som Ender’s Universe og Middle Earth Quest og Discworld Dungeons.</p>
+<p>Eg logga på igjen, og der var eg, framleis på dekk av <em>Zombie Charger</em>, ventande på at nokon skulle trekkje meg opp. Eg hata denne delen av spelet.</p>
+<blockquote>
+<div><p>Hei du</p>
+</div></blockquote>
+<p>tasta eg til ein forbipasserande pirat.</p>
+<blockquote>
+<div><p>Trekkje meg opp?</p>
+</div></blockquote>
+<p>Han stoppa og såg på meg.</p>
+<blockquote>
+<div><p>kvifor skulle eg?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Vi er på same lag. Pluss at du får erfaringspoeng.</p>
+</div></blockquote>
+<p>For ein dust.</p>
+<blockquote>
+<div><p>Kvar er du?</p>
+</div></blockquote>
+<blockquote>
+<div><p>San Francisco</p>
+</div></blockquote>
+<p>Dette byrja å kjennest kjent.</p>
+<blockquote>
+<div><p>Kvar i San Francisco?</p>
+</div></blockquote>
+<p>Eg logga ut. Det var noko rart som skjedde i spelet. Eg hoppa over på livejournalane og byrja å kravle frå blogg til blogg. Eg kom meg gjennom eit halvt dusin før eg fann noko som fekk blodet mitt til å fryse.</p>
+<p>Livejournal-brukarar elskar quiz. Kva slags hobbit er du? Er du ein stor elskar? Kva planet liknar du mest på? Kva karakter frå ein film er du? Kva er din emosjonelle type? Dei fyller dei ut, og venene deira fyller dei ut, og alle samanliknar resultata. Uskuldig moro.</p>
+<p>Men quizen som hadde teke over bloggane på Xnet den kvelden, var det som skremde meg, for den var alt anna enn uskuldg:</p>
+<ul class="simple">
+<li><p>Kva kjønn er du?</p></li>
+<li><p>Kva klasse går du i?</p></li>
+<li><p>Kva skule går du på?</p></li>
+<li><p>Kvar i byen bur du?</p></li>
+</ul>
+<p>Quizane plotta resultata på eit kart med farga teiknestiftar for skular og nabolag, og kom med teite tilrådingar om stader å kjøpe pizza og slikt. Men sjå på dei spørsmåla. Tenk på svara mine:</p>
+<ul class="simple">
+<li><p>Mann</p></li>
+<li><ol class="arabic simple" start="12">
+<li><p>klasse</p></li>
+</ol>
+</li>
+<li><p>Chavez High</p></li>
+<li><p>Potrero Hill</p></li>
+</ul>
+<p>Det var berre to personar på heile skulen min som passa den profilen. På dei fleste skular ville det vore det same. Om du ville finne ut kven Xnet-folka var, kunne du bruke desse quizane til å finne dei alle.</p>
+<p>Det var ille nok, men det som var verre var kva det impliserte: nokon frå DHS brukte Xnet for å kome til oss. Xnet var kompromittert av DHS. Vi hadde spionar blant oss.</p>
+<p>⁂</p>
+<p>Eg hadde gjeve Xnet-plater til hundrevis av folk, og dei hadde gjort det same. Eg kjende folka eg gav platene til ganske godt. Nokre av dei kjende eg veldig godt. Eg har budd i det same huset heile livet, og eg har fått hundrevis på hundrevis av vener gjennom åra, frå folk som gjekk i barnehage med meg til folk eg spelte fotball med, folk eg hadde laiva med, folk eg møtte på klubb, folk eg kjende frå skulen. ARG-laget mitt var mine næraste vener, men det var mange folk eg kjende og stolte nok på til å gje ei Xnet-plate til.</p>
+<p>Eg trengde dei no.</p>
+<p>Eg vekte Jolu ved å ringje mobiltelefonen hans og leggje på etter første ring, tre gonger på rad. Eit minutt seinare var han på Xnet, og vi kunne ha ein sikker chat. Eg peika han til blogginnlegget mitt om radiobilane, og han kom tilbake eit minutt seinare, heilt stressa.</p>
+<blockquote>
+<div><p>Er du sikker på at dei leitar etter oss?</p>
+</div></blockquote>
+<p>Som svar sende eg han til quizen.</p>
+<blockquote>
+<div><p>OMG vi er fortapte</p>
+</div></blockquote>
+<blockquote>
+<div><p>Nei, det er ikkje så ille, men vi må finne ut kven vi kan stole på</p>
+</div></blockquote>
+<blockquote>
+<div><p>Korleis?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Det var det eg ville spørje deg om – kor mange folk kan du gå heilt god for, liksom stole på dei til verdas ende?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Øh 20 eller 30 eller så</p>
+</div></blockquote>
+<blockquote>
+<div><p>Eg vil samle ein gjeng verkeleg pålitelege folk og gjere ei nøkkelutveksling, ei tillitsvev-greie</p>
+</div></blockquote>
+<p>Tillitsvev er ein av dei kule krypto-tinga eg hadde lese om, men aldri prøvd. Det var ein nesten idiotsikker måte å sikre at du kunne snakke med dei du stolte på, men at ingen andre kunne lytte. Problemet er at det krev at du fysisk møter folka i veven minst éin gong, berre for å kome i gang.</p>
+<blockquote>
+<div><p>Eg skjønar, jada. Det er ikkje dårleg. Men korleis skal du få alle saman til nøkkelsigneringa?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Det var det eg ville spørje deg om – korleis kan vi gjere det utan å bli tekne?</p>
+</div></blockquote>
+<p>Jolu tasta nokre ord og sletta dei, tasta fleire og sletta dei.</p>
+<blockquote>
+<div><p>Darryl ville visst det</p>
+</div></blockquote>
+<p>tasta eg.</p>
+<blockquote>
+<div><p>Gud, dette var det han var god på.</p>
+</div></blockquote>
+<p>Jolu tasta ingenting. Så,</p>
+<blockquote>
+<div><p>Kva med ein fest?</p>
+</div></blockquote>
+<p>tasta han.</p>
+<blockquote>
+<div><p>Kva om vi alle samlast ein stad som om vi er tenåringar som har fest, og på den måten har vi ei ferdig unnskyldning om nokon dukkar opp og spør kva vi gjer der?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Det ville fungert heilt supert! Du er eit geni, Jolu.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Eg veit det. Og du kjem til å elske dette: eg veit akkurat kvar vi kan gjere det òg</p>
+</div></blockquote>
+<blockquote>
+<div><p>Kvar?</p>
+</div></blockquote>
+<blockquote>
+<div><p>Sutro Baths!</p>
+</div></blockquote>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02-boka"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="08-Kapittel8.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kapittel 8</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="10-Kapittel10.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kapittel 10</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+format: jb-book
+root: 01-intro/01-readme.md
+parts:
+- file: 01-intro/index
+  chapters:
+  - file: 01-intro/02-intro.md
+- file: 02-boka/index
+  chapters:
+  - file: 02-boka/01-Kapittel1.md
+  - file: 02-boka/02-Kapittel2.md
+  - file: 02-boka/03-Kapittel3.md
+  - file: 02-boka/04-Kapittel4.md
+  - file: 02-boka/05-Kapittel5.md
+  - file: 02-boka/06-Kapittel6.md
+  - file: 02-boka/07-Kapittel7.md
+  - file: 02-boka/08-Kapittel8.md
+  - file: 02-boka/09-Kapittel9.md
+  - file: 02-boka/10-Kapittel10.md
+  - file: 02-boka/11-Kapittel11.md
+  - file: 02-boka/12-Kapittel12.md
+  - file: 02-boka/13-Kapittel13.md
+  - file: 02-boka/14-Kapittel14.md
+  - file: 02-boka/15-Kapittel15.md
+  - file: 02-boka/16-Kapittel16.md
+  - file: 02-boka/17-Kapittel17.md
+  - file: 02-boka/18-Kapittel18.md
+  - file: 02-boka/19-Kapittel19.md
+  - file: 02-boka/20-Kapittel20.md
+  - file: 02-boka/21-Kapittel21.md
+  - file: 02-boka/22-Epilog.md
+- file: 03-etterord/index
+  chapters:
+  - file: 03-etterord/01-Etterord.md
+  - file: 03-etterord/02-Bibliografi-takk.md
+- file: 04-tillegg/index
+  chapters:
+  - file: 04-tillegg/01-Men-kvifor.md
+  - file: 04-tillegg/02-lenker-info.md
+  - file: LICENSE.md

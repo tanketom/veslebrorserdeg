@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kapittel 21 &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02-boka/21-Kapittel21';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Epilog" href="22-Epilog.html" />
+    <link rel="prev" title="Kapittel 20" href="20-Kapittel20.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../01-intro/01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../01-intro/01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/02-intro.html">Forord</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Kapittel9.html">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13-Kapittel13.html">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18-Kapittel18.html">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20-Kapittel20.html">Kapittel 20</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/01-Etterord.html">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/02-boka/21-Kapittel21.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Kapittel 21</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="kapittel-21">
+<h1>Kapittel 21<a class="headerlink" href="#kapittel-21" title="Link to this heading">#</a></h1>
+<p><em>Dette kapittelet er dedikert til Pages Books i Toronto, Canada. Pages, som lenge har vore ein fast del av den supertrendy Queen Street West-stripa, ligg tvers over vegen for CityTV og berre nokre få dører nedanfor den gamle Bakka-butikken der eg jobba. Vi på Bakka elska å ha Pages i gata vår: det vi var for science fiction, var dei for alt anna: handplukka materiale som representerte ting du aldri ville finne andre stader, ting du ikkje visste du leita etter før du såg det der. Pages har òg ein av dei beste aviskioskane eg nokon gong har sett, rekkje på rekkje med utrulege magasin og fanziner frå heile verda.</em></p>
+<p>[[Pages Books <a class="reference external" href="http://pagesbooks.ca/">http://pagesbooks.ca/</a> 256 Queen St W, Toronto, ON M5V 1Z8 Canada +1 416 598 1447]]</p>
+<p>Dei lét meg og Barbara vere åleine i rommet då, og eg brukte det fungerande dusjhovudet til å skylje meg – eg vart plutseleg flau over å vere dekt av piss og spy. Då eg var ferdig, stod Barbara i tårer.</p>
+<p>«Foreldra dine–» byrja ho.</p>
+<p>Eg følte det som om eg kunne kaste opp igjen. Gud, stakkars foreldra mine. Kva dei må ha gått gjennom.</p>
+<p>«Er dei her?»</p>
+<p>«Nei,» sa ho. «Det er komplisert,» sa ho.</p>
+<p>«Kva?»</p>
+<p>«Du er framleis arrestert, Marcus. Alle her er det. Dei kan ikkje berre storme inn og slå opp dørene. Alle her må gjennom det strafferettslege systemet. Det kan ta, vel, det kan ta månader.»</p>
+<p>«Må eg vere her i <em>månadsvis</em>?»</p>
+<p>Ho greip hendene mine. «Nei, eg trur vi kjem til å få deg stilt for retten og lauslaten mot kausjon ganske raskt. Men ganske raskt er eit relativt omgrep. Eg ville ikkje forventa at noko skjer i dag. Og det kjem ikkje til å bli som dei folka hadde det. Det vil vere humant. Det vil vere ekte mat. Ingen avhøyr. Besøk frå familien din.»</p>
+<p>«Berre fordi DHS er ute, betyr det ikkje at du berre kan spasere ut herifrå. Det som har skjedd her, er at vi kvittar oss med den bizarro-versjonen av rettssystemet dei hadde innført, og erstattar den med det gamle systemet. Systemet med dommarar, opne rettssaker og advokatar.</p>
+<p>«Så vi kan prøve å få deg overført til ein ungdomsanstalt på fastlandet, men Marcus, dei stadene kan vere veldig tøffe. Verkeleg, verkeleg tøffe. Dette kan vere den beste staden for deg til vi får deg lauslaten mot kausjon.»</p>
+<p>Lauslaten mot kausjon. Sjølvsagt. Eg var ein kriminell – eg hadde ikkje vorte sikta enno, men det var garantert mange siktingar dei kunne tenkje seg. Det var praktisk talt ulovleg berre å tenkje ureine tankar om regjeringa.</p>
+<p>Ho klemte hendene mine igjen. «Det er kjedeleg, men slik må det vere. Poenget er at det er <em>over</em>. Guvernøren har kasta DHS ut av delstaten, demontert kvar einaste kontrollpost. Statsadvokaten har utstedt arrestordrar for alle politibetjentar som var involverte i ‘stressavhøyr’ og hemmelege fengslingar. Dei kjem til å hamne i fengsel, Marcus, og det er på grunn av det du gjorde.»</p>
+<p>Eg var nummen. Eg høyrde orda, men dei gav knapt meining. På ein eller annan måte var det over, men det var ikkje over.</p>
+<p>«Høyr her,» sa ho. «Vi har sannsynlegvis ein time eller to før alt dette roar seg, før dei kjem tilbake og puttar deg vekk igjen. Kva vil du gjere? Gå på stranda? Få deg eit måltid? Desse folka hadde eit utruleg personalrom – vi raida det på veg inn. Gourmet frå ende til anna.»</p>
+<p>Endeleg eit spørsmål eg kunne svare på. «Eg vil finne Ange. Eg vil finne Darryl.»</p>
+<p>⁂</p>
+<p>Eg prøvde å bruke ei datamaskin eg fann for å slå opp cellenummera deira, men den kravde eit passord, så vi måtte gå i korridorane og rope namna deira. Bak celledørene skreik fangar tilbake til oss, eller gret, eller bad oss om å sleppe dei fri. Dei forstod ikkje kva som nettopp hadde skjedd, kunne ikkje sjå vaktene som nett hadde passa på dei bli gjeta ned på kaia i plasthandjern, tekne vekk av California sine SWAT-team.</p>
+<p>«Ange!» ropte eg over larmen, «Ange Carvelli! Darryl Glover! Det er Marcus!»</p>
+<p>Vi hadde gått heile lengda av celleblokka, og dei hadde ikkje svara. Eg hadde lyst til å gråte. Dei hadde vorte sende utanlands – dei var i Syria eller verre. Eg kom aldri til å sjå dei igjen.</p>
+<p>Eg sette meg ned og lente meg mot korridorveggen og la andletet i hendene. Eg såg andletet til Streng Frisyre, såg hånet hennar då ho bad meg om innlogginga mi. Ho hadde gjort dette. Ho kom til å hamne i fengsel for det, men det var ikkje nok. Eg tenkte at når eg såg ho igjen, kunne eg kome til å drepe ho. Ho fortente det.</p>
+<p>«Kom igjen,» sa Barbara, «kom igjen, Marcus. Ikkje gje opp. Det er meir her, kom igjen.»</p>
+<p>Ho hadde rett. Alle dørene vi hadde passert i celleblokka var gamle, rustne ting som stamma frå då basen først vart bygd. Men heilt i enden av korridoren, hengande open, var ei ny høgtryggleiksdør, like tjukk som ei ordbok. Vi trekte den opp og våga oss inn i den mørke korridoren innanfor.</p>
+<p>Det var fire celledører til her, dører utan strekkodar. Kvar hadde eit lite elektronisk tastatur montert på seg.</p>
+<p>«Darryl?» sa eg. «Ange?»</p>
+<p>«Marcus?»</p>
+<p>Det var Ange, som ropte ut bak den ytste døra. Ange, mi Ange, min engel.</p>
+<p>«Ange!» ropte eg. «Det er meg, det er meg!»</p>
+<p>«Å Gud, Marcus,» kvelva ho, og så var det berre hulk.</p>
+<p>Eg banka på dei andre dørene. «Darryl! Darryl, er du her?»</p>
+<p>«Eg er her.» Stemma var veldig lita, og veldig hes. «Eg er her. Eg er veldig, veldig lei meg. Ver så snill. Eg er veldig lei meg.» Han høyrdest … knekt ut. Knust.</p>
+<p>«Det er meg, D,» sa eg, og lente meg mot døra hans. «Det er Marcus. Det er over – dei arresterte vaktene. Dei kasta ut Department of Homeland Security. Vi får rettssaker, opne rettssaker. Og vi får vitne mot <em>dei</em>.»</p>
+<p>«Eg er lei meg,» sa han. «Ver så snill, eg er så lei meg.»</p>
+<p>California-patruljefolka kom til døra. Dei filma framleis. «Ms. Stratford?» sa ein. Han hadde visiret oppe, og han såg ut som ein kva som helst annan politimann, ikkje som min frelsar. Som nokon som var komen for å låse meg inne.</p>
+<p>«Kaptein Sanchez,» sa ho. «Vi har lokalisert to av fangane av interesse her. Eg vil gjerne sjå dei lauslatne og inspisere dei sjølv.»</p>
+<p>«Frue, vi har ikkje tilgangskodar til dei dørene enno,» sa han.</p>
+<p>Ho heldt opp handa si. «Det var ikkje avtalen. Eg skulle ha full tilgang til denne anlegget. Det kom direkte frå guvernøren, sir. Vi rikkar oss ikkje før de opnar desse cellene.» Andletet hennar var heilt glatt, utan eit einaste hint av å gje etter eller bøye av. Ho meinte det.</p>
+<p>Kapteinen såg ut som han trengde søvn. Han skar ei grimasje. «Eg skal sjå kva eg kan gjere,» sa han.</p>
+<p>⁂</p>
+<p>Omtrent ein halvtime seinare klarte dei å opne dørene. Det tok tre forsøk, men dei fekk til slutt tasta inn dei rette kodane, og matcha dei med arphid-brikkene på ID-korta dei hadde teke frå vaktene dei hadde arrestert.</p>
+<p>Dei kom seg inn i cella til Ange først. Ho var kledd i ein sjukehuskjole, open bak, og cella hennar var endå meir naken enn mi hadde vore – berre polstring, ingen vask eller seng, ikkje noko lys. Ho kom blunkande ut i korridoren, og politikameraet var på ho, dei skarpe lysa i andletet hennar. Barbara steig vernande mellom oss og det. Ange steig forsiktig ut av cella si, subbande litt. Det var noko gale med auga hennar, med andletet hennar. Ho gret, men det var ikkje det.</p>
+<p>«Dei dopa meg,» sa ho. «Fordi eg ikkje slutta å skrike etter advokat.»</p>
+<p>Det var då eg klemte ho. Ho seig saman mot meg, men ho klemte tilbake, ho òg. Ho lukta gamal sveitte, og eg lukta ikkje noko betre. Eg ville aldri sleppe taket.</p>
+<p>Det var då dei opna cella til Darryl.</p>
+<p>Han hadde rive sund papir-sjukehuskjolen sin. Han låg krølla saman, naken, bakerst i cella, og skjerma seg mot kameraet og blikka våre. Eg sprang til han.</p>
+<p>«D,» kviskra eg i øyret hans. «D, det er meg. Det er Marcus. Det er over. Vaktene har vorte arresterte. Vi skal bli lauslatne mot kausjon, vi skal heim.»</p>
+<p>Han skalv og klemte auga att. «Eg er lei meg,» kviskra han, og snudde andletet vekk.</p>
+<p>Dei tok meg vekk då, ein politimann i full mundur og Barbara, tok meg tilbake til cella mi og låste døra, og det var der eg tilbrakte natta.</p>
+<p>⁂</p>
+<p>Eg hugsar ikkje mykje frå turen til tinghuset. Dei hadde meg lenka til fem andre fangar, som alle hadde vore inne mykje lenger enn meg. Ein snakka berre arabisk – han var ein gamal mann, og han skalv. Dei andre var alle unge. Eg var den einaste kvite. Då vi hadde samla oss på dekket på ferja, såg eg at nesten alle på Treasure Island hadde hatt ein eller annan brunfarge.</p>
+<p>Eg hadde berre vore inne éi natt, men det var for lenge. Det kom eit lett yr, normalt den typen ting som ville fått meg til å krumme skuldrene og sjå ned, men i dag slutta eg meg til alle dei andre med å strekkje hovudet bakover mot den uendelege grå himmelen, og naut den stikkande væta medan vi fór over bukta til ferjekaiane.</p>
+<p>Dei tok oss vekk i bussar. Lenkene gjorde det klønete å klatre inn i bussane, og det tok lang tid for alle å kome seg om bord. Ingen brydde seg. Når vi ikkje strevde med å løyse geometrien i seks personar, éi lenke, smale bussgangar, såg vi berre rundt på byen rundt oss, opp bakken mot bygningane.</p>
+<p>Alt eg kunne tenkje på var å finne Darryl og Ange, men ingen av dei var å sjå. Det var eit stort publikum, og vi fekk ikkje lov til å bevege oss fritt gjennom det. Delstatspolitiet som handterte oss var milde nok, men dei var framleis store, pansra og væpna. Eg trudde heile tida eg såg Darryl i folkemengda, men det var alltid nokon andre med det same slåtte, samankrøkte uttrykket som han hadde hatt i cella si. Han var ikkje den einaste som var knust.</p>
+<p>På tinghuset marsjerte dei oss inn i intervjurom i lenkegruppa vår. Ein ACLU-advokat tok informasjonen vår og stilte oss nokre spørsmål – då ho kom til meg, smilte ho og helsa meg med namn – og førte oss så inn i rettssalen framfor dommaren. Han hadde på seg ei ekte kappe, og verka å vere i godt humør.</p>
+<p>Avtalen såg ut til å vere at alle som hadde eit familiemedlem til å stille kausjon kunne gå fri, og alle andre vart sende i fengsel. ACLU-advokaten snakka mykje med dommaren, og bad om nokre timar til medan familiane til fangane vart samla og bringa til tinghuset. Dommaren var ganske grei med det, men då eg innsåg at nokre av desse folka hadde vore innelåste sidan brua vart sprengd, tekne for døde av familiane sine, utan rettssak, utsette for avhøyr, isolasjon, tortur – fekk eg berre lyst til å bryte lenkene sjølv og setje alle fri.</p>
+<p>Då eg vart ført fram for dommaren, såg han ned på meg og tok av seg brillene. Han såg sliten ut. ACLU-advokaten såg sliten ut. Vaktane såg slitne ut. Bak meg kunne eg høyre ein brå summing av samtale då namnet mitt vart ropt opp av vaktmannen. Dommaren slo klubba si ein gong, utan å sjå vekk frå meg. Han gnei seg i auga.</p>
+<p>«Herr Yallow,» sa han, «påtalemakta har identifisert deg som ein fluktrisiko. Eg trur dei har eit poeng. Du har visselig meir, skal vi seie, <em>historikk</em>, enn dei andre her. Eg er freista til å halde deg varetektsfengsla fram til rettssaka, uansett kor mykje kausjon foreldra dine er villige til å stille.»</p>
+<p>Advokaten min byrja å seie noko, men dommaren hysja på ho med eit blikk. Han gnei seg i auga.</p>
+<p>«Har du noko å seie?»</p>
+<p>«Eg hadde sjansen til å stikke,» sa eg. «Førre veke. Nokre tilbydde å ta meg vekk, få meg ut av byen, hjelpe meg med å byggje ein ny identitet. I staden stal eg telefonen hennar, rømde frå lastebilen vår, og stakk av. Eg overleverte telefonen hennar – som hadde bevis om vennen min, Darryl Glover, på seg – til ein journalist og gøymde meg her, i byen.»</p>
+<p>«Du stal ein telefon?»</p>
+<p>«Eg bestemte meg for at eg ikkje kunne stikke. At eg måtte møte rettferda – at fridomen min ikkje var verdt noko om eg var ein ettersøkt mann, eller om byen framleis var under DHS. Om venene mine framleis var innelåste. At fridom for meg ikkje var like viktig som eit fritt land.»</p>
+<p>«Men du stal ein telefon.»</p>
+<p>Eg nikka. «Det gjorde eg. Eg planlegg å gje den tilbake, om eg nokon gong finn den unge kvinna det gjeld.»</p>
+<p>«Vel, takk for den talen, herr Yallow. De er ein svært veltalande ung mann.» Han glodde på aktor. «Nokre vil seie ein veldig modig mann, òg. Det var ein viss video på nyheitene i morges. Den antyda at De hadde ein legitim grunn til å unngå styresmaktene. I lys av det, og av den vesle talen Dykkar her, vil eg innvilge kausjon, men eg vil òg be aktor om å leggje til ei sikting for simpelt tjuveri i saka, når det gjeld telefonen. For dette forventar eg ytterlegare 50 000 dollar i kausjon.»</p>
+<p>Han slo klubba si igjen, og advokaten min gav handa mi eit klem.</p>
+<p>Han såg ned på meg igjen og retta på brillene. Han hadde flass, der på skuldrene av kappa si. Litt meir dryssa ned då brillene rørte ved det krusete, krøllete håret hans.</p>
+<p>«De kan gå no, unge mann. Hald dykk unna trøbbel.»</p>
+<p>⁂</p>
+<p>Eg snudde meg for å gå, og nokon takla meg. Det var pappa. Han løfta meg bokstaveleg talt av føtene, og klemte meg så hardt at ribbeina mine knaka. Han klemte meg slik eg hugsa han klemte meg då eg var ein liten gut, då han snurra meg rundt og rundt i morosame, kvalmande flygeleikar som enda med at han kasta meg opp i lufta og fanga meg og klemte meg slik, så hardt at det nesten gjorde vondt.</p>
+<p>Eit par mjukare hender lirka meg forsiktig ut av armane hans. Mamma. Ho heldt meg på armlengds avstand eit augneblink, og søkte i andletet mitt etter noko, utan å seie noko, medan tårene rann nedover andletet hennar. Ho smilte, og det vart til ein hulk, og så heldt ho meg òg, og armen til pappa omslutta oss begge.</p>
+<p>Då dei sleppte, klarte eg endeleg å seie noko. «Darryl?»</p>
+<p>«Faren hans møtte meg ein annan stad. Han er på sjukehuset.»</p>
+<p>«Når kan eg sjå han?»</p>
+<p>«Det er neste stopp,» sa pappa. Han var alvorleg. «Han er ikkje–» Han stoppa. «Dei seier han vil bli bra,» sa han. Stemma hans var kvelt.</p>
+<p>«Kva med Ange?»</p>
+<p>«Mora hennar tok ho med heim. Ho ville vente her på deg, men…»</p>
+<p>Eg forstod. Eg var full av forståing no, for korleis alle familiane til alle dei som hadde vore innelåste måtte føle det. Rettssalen var full av tårer og klemmar, og sjølv ikkje vaktane kunne stoppe det.</p>
+<p>«La oss dra og sjå Darryl,» sa eg. «Og kan eg få låne telefonen din?»</p>
+<p>Eg kalla på Ange på veg til sjukehuset der dei heldt Darryl – San Francisco General, ned frå gata frå oss – og avtalte å møte ho etter middag. Ho snakka i ein rask kviskring. Mora hennar var usikker på om ho skulle straffe ho eller ikkje, men Ange ville ikkje freiste lagnaden.</p>
+<p>Det var to delstatspoliti i korridoren der Darryl vart halden. Dei heldt unna ein legion av journalistar som stod på tå for å sjå rundt dei og ta bilete. Blitsane blinka i auga våre som strobelys, og eg rista på hovudet for å klarne det. Foreldra mine hadde teke med reine klede til meg, og eg hadde skifta i baksetet, men eg følte meg framleis ekkel, sjølv etter å ha skrubba meg i bada på tinghuset.</p>
+<p>Nokre av journalistane ropte namnet mitt. Å ja, stemmer det, eg var kjendis no. Delstatspolitiet gav meg eit blikk, dei òg – enten hadde dei kjent att andletet mitt eller namnet mitt då journalistane ropte det ut.</p>
+<p>Faren til Darryl møtte oss ved døra til sjukehusrommet hans, og snakka i ein kviskring for låg til at journalistane kunne høyre. Han var i sivile klede, dei jeansa og genseren eg vanlegvis tenkte på han i, men han hadde tenestebanda sine festa til brystet.</p>
+<p>«Han søv,» sa han. «Han vakna for ei lita stund sidan, og han byrja å gråte. Han klarte ikkje å stoppe. Dei gav han noko for å hjelpe han med å sove.»</p>
+<p>Han leia oss inn, og der var Darryl, håret hans reint og kjemt, sovande med open munn. Det var kvitt skum i munnvikene hans. Han hadde eit tomannsrom, og i den andre senga låg ein eldre mann med arabisk utsjånad, i 40-åra. Eg innsåg at det var fyren eg hadde vore lenka til på veg av Treasure Island. Vi utveksla flaue vink.</p>
+<p>Så snudde eg meg tilbake til Darryl. Eg tok handa hans. Neglene hans var bitne heilt ned. Han hadde vore ein neglebitar då han var liten, men han hadde slutta med den uvanen då vi kom på vidaregåande. Eg trur Van snakka han ut av det, og sa kor ekkelt det var at han hadde fingrane i munnen heile tida.</p>
+<p>Eg høyrde foreldra mine og faren til Darryl ta eit steg vekk, og trekkje forhenget rundt oss. Eg la andletet mitt ned ved sida av hans på puta. Han hadde eit pistrete, flekkete skjegg som minte meg om Zeb.</p>
+<p>«Hei, D,» sa eg. «Du klarte det. Du kjem til å bli bra igjen.»</p>
+<p>Han snorka litt. Eg sa nesten: «Eg elskar deg,» ein frase eg berre hadde sagt til éin ikkje-familiemedlem nokon gong, ein frase som var rar å seie til ein annan gut. Til slutt klemte eg berre handa hans igjen. Stakkars Darryl.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02-boka"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="20-Kapittel20.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kapittel 20</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="22-Epilog.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Epilog</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

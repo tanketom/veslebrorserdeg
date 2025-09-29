@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kapittel 13 &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02-boka/13-Kapittel13';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Kapittel 14" href="14-Kapittel14.html" />
+    <link rel="prev" title="Kapittel 12" href="12-Kapittel12.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../01-intro/01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../01-intro/01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/02-intro.html">Forord</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Kapittel9.html">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18-Kapittel18.html">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20-Kapittel20.html">Kapittel 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="21-Kapittel21.html">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/01-Etterord.html">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/02-boka/13-Kapittel13.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Kapittel 13</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="kapittel-13">
+<h1>Kapittel 13<a class="headerlink" href="#kapittel-13" title="Link to this heading">#</a></h1>
+<p><em>Dette kapittelet er dedikert til Books-A-Million, ei kjede av gigantiske bokhandlar spreidd over heile USA. Eg støytte første gong på Books-A-Million då eg budde på eit hotell i Terre Haute, Indiana (eg skulle halde eit føredrag ved Rose Hulman Institute of Technology seinare den dagen). Butikken låg ved sida av hotellet mitt, og eg trengde verkeleg noko å lese – eg hadde vore på reise i ein heil månad og hadde lese alt i kofferten min, og eg hadde fem byar til å besøkje før eg skulle heim. Medan eg stirde intenst på hyllene, spurde ein ekspeditør om eg trengde hjelp. No har eg jobba i bokhandlar før, og ein kunnskapsrik ekspeditør er verdt si vekt i gull, så eg sa ja, og byrja å skildre smaken min, og nemnde forfattarar eg likte. Ekspeditøren smilte og sa: «Eg har akkurat boka for deg,» og gjekk bort og tok ned eit eksemplar av min første roman, Down and Out in the Magic Kingdom. Eg braut ut i latter, presenterte meg sjølv, og hadde ein heilt nydeleg prat om science fiction som nesten gjorde meg for sein til føredraget mitt! Books-A-Million <a class="reference external" href="http://www.booksamillion.com/ncom/books">http://www.booksamillion.com/ncom/books</a>? &amp;isbn 0765319853</em></p>
+<p>«Jævla horer,» sa Ange, og spytta ut ordet. «Nei, det er ei fornærming mot hardtarbeidande horer verda over. Dei er, dei er… profitørar.»</p>
+<p>Vi såg på ein bunke med aviser vi hadde plukka opp og teke med til kafeen. Dei inneheldt alle «reportasjar» om festen i Dolores Park, og alle saman fekk det til å høyrast ut som ein full, dopa orgie av ungar som hadde angripe politiet. <em>USA Today</em> skildra kostnaden av «opprøret» og inkluderte kostnaden for å vaske vekk restar av pepperspray frå gassbombinga, utslettet av astmaåtak som tetta igjen akuttmottaka i byen, og kostnaden for å handsame dei åtte hundre arresterte «opprørarane». Ingen fortalde vår side av saka.</p>
+<p>«Vel, Xnet fekk det rett, i alle fall,» sa eg. Eg hadde lagra ein haug med bloggar og videoar og fotostraumar på telefonen min, og eg viste dei til ho. Førstehandsforteljingar frå folk som hadde vorte gassa og slått ned. Videoen viste oss alle som dansa, hadde det gøy, viste dei fredelege politiske talane og ropet «Ta det tilbake» og Trudy Doo som snakka om at vi var den einaste generasjonen som kunne tru på å kjempe for fridomane våre.</p>
+<p>«Vi må få folk til å vite om dette,» sa ho.</p>
+<p>«Ja,» sa eg, dystert. «Ein fin teori.»</p>
+<p>«Vel, kvifor trur du pressa aldri publiserer vår side?»</p>
+<p>«Du sa det sjølv, dei er horer.»</p>
+<p>«Ja, men horer gjer det for pengar. Dei kunne seld fleire aviser og reklamar om dei hadde ein kontrovers. Alt dei har no, er eit brotsverk – kontrovers er mykje større.»</p>
+<p>«OK, eg tek poenget. Så kvifor gjer dei det ikkje? Vel, reportarar klarer knapt å søkje i vanlege bloggar, for ikkje å snakke om å halde styr på Xnet. Det er ikkje akkurat ein vaksenvennleg stad å vere.»</p>
+<p>«Ja,» sa ho. «Vel, det kan vi fikse, ikkje sant?»</p>
+<p>«Hæ?»</p>
+<p>«Skriv alt saman. Samle det på éin stad, med alle lenkene. Éin enkelt stad der du kan gå, som er meint for at pressa skal finne det og få heile biletet. Lenk det til rettleiingane for Xnet. Internettbrukarar kan kome seg til Xnet, føresett at dei ikkje bryr seg om at DHS finn ut kva dei har surfa på.»</p>
+<p>«Trur du det vil fungere?»</p>
+<p>«Vel, sjølv om det ikkje gjer det, er det noko positivt å gjere.»</p>
+<p>«Kvifor skulle dei høyre på oss, uansett?»</p>
+<p>«Kven ville ikkje høyrt på M1k3y?»</p>
+<p>Eg sette ned kaffien min. Eg tok opp telefonen og stakk han i lomma. Eg reiste meg, snudde på hælen og gjekk ut av kafeen. Eg valde ei tilfeldig retning og heldt fram med å gå. Andletet mitt kjendest stramt, blodet hadde forsvunne ned i magen, som kverna. <em>Dei veit kven du er</em>, tenkte eg. <em>Dei veit kven M1k3y er</em>. Det var det. Viss Ange hadde funne det ut, hadde DHS det òg. Eg var fortapt. Eg hadde visst det sidan dei lét meg gå frå DHS-lastebilen, at ein dag ville dei kome og arrestere meg og putte meg vekk for alltid, sende meg dit Darryl hadde drege. Det var over.</p>
+<p>Ho tok meg nesten igjen då eg nådde Market Street. Ho var andpusten og såg rasande ut.</p>
+<p>«Kva i helvete er problemet ditt, mister?»</p>
+<p>Eg rista ho av meg og heldt fram med å gå. Det var over.</p>
+<p>Ho greip meg igjen. «Stopp, Marcus, du skremmer meg. Kom igjen, snakk med meg.»</p>
+<p>Eg stoppa og såg på ho. Ho vart uskarp framfor auga mine. Eg klarte ikkje å fokusere på noko. Eg fekk eit vanvitig ønske om å hoppe ut framfor Muni-trikken, midt i vegen. Betre å døy enn å dra tilbake.</p>
+<p>«Marcus!» Ho gjorde noko eg berre hadde sett folk gjere på film. Ho slo meg, eit hardt klask over andletet. «Snakk med meg, for faen!»</p>
+<p>Eg såg på ho og la handa på andletet, som svei kraftig.</p>
+<p>«Ingen skal vite kven eg er,» sa eg. «Eg kan ikkje seie det enklare. Viss du veit det, er alt over. Så snart andre folk veit det, er alt over.»</p>
+<p>«Å, herregud, unnskyld. Høyr, eg veit det berre fordi, vel, fordi eg pressa Jolu. Etter festen forfølgde eg deg litt, for å prøve å finne ut om du var den hyggelege fyren du verka som, eller ein hemmeleg øksemordar. Eg har kjent Jolu lenge, og då eg spurde han om deg, rosa han deg som om du var den andre Messias eller noko, men eg kunne høyre at det var noko han ikkje fortalde meg. Eg har kjent Jolu lenge. Han var med storesystera mi på dataleir då han var liten. Eg har noko skikkeleg snusk på han. Eg sa til han at eg ville offentleggjere det viss han ikkje fortalde meg.»</p>
+<p>«Så han fortalde deg.»</p>
+<p>«Nei,» sa ho. «Han bad meg dra til helvete. Då fortalde eg han noko om meg. Noko eg aldri hadde fortalt nokon andre.»</p>
+<p>«Kva?»</p>
+<p>Ho såg på meg. Såg seg rundt. Såg tilbake på meg. «OK. Eg skal ikkje få deg til å sverje på å halde det hemmeleg, for kva er poenget? Enten kan eg stole på deg, eller så kan eg det ikkje.</p>
+<p>«I fjor, eg–» ho stoppa. «I fjor stal eg dei standardiserte prøvene og publiserte dei på nettet. Det var berre for moro skuld. Eg gjekk tilfeldigvis forbi rektors kontor og såg dei i safen hans, og døra stod open. Eg smatt inn på kontoret hans – det var seks sett med kopiar, og eg putta berre eitt i veska mi og stakk igjen. Då eg kom heim, skanna eg alle saman og la dei ut på ein server hos Piratpartiet i Danmark.»</p>
+<p>«Det var deg?» sa eg.</p>
+<p>Ho raudna. «Øh. Ja.»</p>
+<p>«Helsike!» sa eg. Det hadde vore ei stor nyheit. Utdanningsetaten sa at No Child Left Behind-prøvene deira hadde kosta titals millionar dollar å produsere, og at dei måtte bruke alt om igjen no som dei hadde hatt lekkasjen. Dei kalla det «utdanningsterrorisme». Nyheitene hadde spekulert endelaust om dei politiske motivasjonane til lekkaren, og lurt på om det var ein lærarprotest, eller ein elev, eller ein tjuv, eller ein misnøgd statleg entreprenør.</p>
+<p>«Det var DEG?»</p>
+<p>«Det var meg,» sa ho.</p>
+<p>«Og du fortalde Jolu dette–»</p>
+<p>«Fordi eg ville at han skulle vere sikker på at eg ville halde på hemmelegheita. Viss han visste hemmelegheita mi, då hadde han noko han kunne bruke for å setje meg i fengsel viss eg opna kjeften. Gje litt, få litt. Quid pro quo, som i <em>Silence of the Lambs</em>.»</p>
+<p>«Og han fortalde deg.»</p>
+<p>«Nei,» sa ho. «Det gjorde han ikkje.»</p>
+<p>«Men–»</p>
+<p>«Då fortalde eg han kor interessert eg var i deg. Korleis eg planla å gjere meg heilt til latter og kaste meg over deg. Då fortalde han meg.»</p>
+<p>Eg kom ikkje på noko å seie då. Eg såg ned på tærne mine.</p>
+<p>Ho greip hendene mine og klemte dei. «Eg er lei for at eg pressa det ut av han. Det var din avgjerd å fortelje meg det, viss du i det heile tatt skulle fortelje meg. Eg hadde inga rett –»</p>
+<p>«Nei,» sa eg. No som eg visste korleis ho hadde funne det ut, byrja eg å roe meg. «Nei, det er bra du veit det. <em>Du</em>.»</p>
+<p>«Eg,» sa ho. «Vesle meg.»</p>
+<p>«OK, eg kan leve med dette. Men det er éin ting til.»</p>
+<p>«Kva?»</p>
+<p>«Det er ingen måte å seie dette på utan å høyrast ut som ein dust, så eg seier det berre. Folk som er saman eller kva det no er vi gjer no – dei slår opp. Når dei slår opp, blir dei sinte på kvarandre. Nokre gonger hatar dei kvarandre. Det er verkeleg kaldt å tenkje på at det skal skje mellom oss, men du veit, vi må tenkje på det.»</p>
+<p>«Eg lovar høgtideleg at det er ingenting du nokon gong kunne gjort mot meg som ville fått meg til å forråde hemmelegheita di. Ingenting. Ligge med eit dusin cheerleaders i senga mi medan mor mi ser på. Få meg til å høyre på Britney Spears. Stele laptopen min, knuse han med hammarar og dynke han i sjøvatn. Eg lovar. Ingenting. Nokon gong.»</p>
+<p>Eg pusta ut.</p>
+<p>«Øh,» sa eg.</p>
+<p>«No ville vore ein god tid å kysse meg på,» sa ho, og snudde andletet opp.</p>
+<p>⁂</p>
+<p>M1k3y sitt neste store prosjekt på Xnet var å setje saman den ultimate oversikta over rapportar frå festen i Dolores Park. Eg sette saman den største, kulaste sida eg kunne, med seksjonar som viste hendingane etter stad, etter tid, etter kategori – politivald, dansing, etterspel, synging. Eg lasta opp heile konserten. Det var så å seie alt eg jobba med resten av kvelden. Og neste kveld. Og neste.</p>
+<p>Innboksen min fløymde over med forslag frå folk. Dei sende meg dumpar frå telefonane og lommekameraa sine. Då fekk eg ein e-post frå eit namn eg kjende att – Dr. Eeevil (tre «e»-ar), ein av hovudvedlikehaldarane av ParanoidLinux.</p>
+<blockquote>
+<div><p>M1k3y</p>
+</div></blockquote>
+<blockquote>
+<div><p>Eg har følgt med på Xnet-eksperimentet ditt med stor interesse. Her i Tyskland har vi mykje erfaring med kva som skjer med ei regjering som kjem ut av kontroll.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Ein ting du bør vite, er at kvart kamera har ein unik «støysignatur» som seinare kan brukast til å kople eit bilete med eit kamera. Det betyr at bileta du publiserer på sida di potensielt kan brukast til å identifisere fotografane, skulle dei seinare bli tekne for noko anna.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Heldigvis er det ikkje vanskeleg å fjerne signaturane, om du vil. Det finst eit verktøy på ParanoidLinux-distribusjonen du bruker som gjer dette – det heiter <code class="docutils literal notranslate"><span class="pre">photonomous</span></code>, og du finn det i <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>. Berre les man-sidene for dokumentasjon. Det er enkelt, altså.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Lykke til med det du gjer. Ikkje bli teken. Ver fri. Ver paranoid.</p>
+</div></blockquote>
+<blockquote>
+<div><p>Dr. Eeevil</p>
+</div></blockquote>
+<p>Eg av-fingeravtrykk-ifiserte alle bileta eg hadde lagt ut og la dei opp igjen, saman med ei melding som forklarte kva Dr. Eeevil hadde fortalt meg, og åtvara alle andre om å gjere det same. Vi hadde alle den same grunnleggjande ParanoidXbox-installasjonen, så vi kunne alle anonymisere bileta våre. Det var ingenting eg kunne gjere med bileta som allereie hadde vorte lasta ned og mellomlagra, men frå no av skulle vi vere smartare.</p>
+<p>Det var alt eg tenkte på den kvelden, til eg kom ned til frukost neste morgon og mamma hadde på radioen, som spelte morgonnyheitene frå NPR.</p>
+<p>«Den arabiske nyheitskanalen Al-Jazeera køyrer bilete, video og førstehandsforteljingar frå helgas ungdomsopprør i Mission Dolores Park,» sa annonsøren medan eg drakk eit glas appelsinjus. Eg klarte å ikkje sprute det over heile rommet, men eg hosta litt.</p>
+<p>«Al-Jazeera-reportarar hevdar at desse forteljingane vart publiserte på det såkalla ‘Xnet’, eit hemmeleg nettverk brukt av studentar og al-Qaida-sympatisørar i Bay Area. Eksistensen av dette nettverket har lenge vore berykta, men i dag markerer den første omtalen i hovudstraumsmedia.»</p>
+<p>Mamma rista på hovudet. «Akkurat det vi treng,» sa ho. «Som om politiet ikkje var ille nok. Ungar som spring rundt, latar som dei er geriljakrigarar og gjev dei unnskyldninga til å verkeleg slå hardt ned.»</p>
+<p>«Xnet-bloggane har bore fram hundrevis av rapportar og multimediafiler frå unge menneske som deltok i opprøret og hevdar at dei var samla fredeleg til politiet angreip dei. Her er ei av desse forteljingane.»</p>
+<p>«‘Alt vi gjorde var å danse. Eg tok med meg veslebroren min. Band spelte, og vi snakka om fridom, om korleis vi mista den til desse dustane som seier dei hatar terroristar, men som angrip oss, sjølv om vi ikkje er terroristar, vi er amerikanarar. Eg trur dei hatar fridom, ikkje oss.’»</p>
+<p>«‘Vi dansa og banda spelte, og alt var moro og bra, og så byrja politiet å rope til oss at vi skulle spreie oss. Vi ropte alle saman: Ta det tilbake! Som i ta Amerika tilbake. Politiet gassa oss med pepperspray. Veslebroren min er tolv år. Han gjekk glipp av tre skuledagar. Dei dumme foreldra mine seier det var mi skuld. Kva med politiet? Vi betaler dei, og dei skal liksom verne oss, men dei gassa oss utan god grunn, gassa oss som dei gassar fiendesoldatar.’»</p>
+<p>«Liknande forteljingar, inkludert lyd og video, kan finnast på al-Jazeera si nettside og på Xnet. Du kan finne instruksjonar for å få tilgang til dette Xnet på NPR si heimeside.»</p>
+<p>Pappa kom ned.</p>
+<p>«Bruker du Xnet?» sa han. Han såg intenst på andletet mitt. Eg kjende eg vrei meg.</p>
+<p>«Det er for videospel,» sa eg. «Det er det dei fleste bruker det til. Det er berre eit trådlaust nettverk. Det er det alle gjorde med dei gratis Xbox-ane dei gav bort i fjor.»</p>
+<p>Han glodde på meg. «Spel? Marcus, du forstår det ikkje, men du gir dekning for folk som planlegg å angripe og øydeleggje dette landet. Eg vil ikkje sjå deg bruke dette Xnet. Ikkje meir. Forstår du meg?»</p>
+<p>Eg ville argumentere. Helvete, eg ville riste han i skuldrene. Men eg gjorde det ikkje. Eg såg vekk. Eg sa: «Jada, pappa.» Eg gjekk til skulen.</p>
+<p>⁂</p>
+<p>Først vart eg letta då eg oppdaga at dei ikkje kom til å la Mr. Benson ha ansvaret for samfunnsfagtimen min. Men kvinna dei fann for å erstatte han var mitt verste mareritt. Ho var ung, berre rundt 28 eller 29, og pen, på ein sunn måte. Ho var blond og snakka med ein mjuk sørstatsaksent då ho presenterte seg for oss som fru Andersen. Det sette i gang alarmbjellene med ein gong. Eg kjende ingen kvinner under seksti som kalla seg «fru». Men eg var villig til å oversjå det. Ho var ung, pen, ho høyrdest hyggeleg ut. Ho kom til å vere OK.</p>
+<p>Ho var ikkje OK.</p>
+<p>«Under kva omstende bør den føderale regjeringa vere førebudd på å suspendere Bill of Rights?» sa ho, og snudde seg mot tavla og skreiv ned ei rekkje tal, ein til ti.</p>
+<p>«Aldri,» sa eg, utan å vente på å få ordet. Dette var enkelt. «Grunnlovsfesta rettar er absolutte.»</p>
+<p>«Det er ikkje eit særleg sofistikert syn.» Ho såg på sitjeplanen sin. «Marcus. Til dømes, sei at ein politimann utfører ei ulovleg ransaking – han går utover det som er spesifisert i ransakingsordren. Han oppdagar overtydande bevis for at ein skurk drap far din. Det er det einaste beviset som finst. Skal skurken gå fri?»</p>
+<p>Eg visste svaret på dette, men eg klarte ikkje heilt å forklare det. «Ja,» sa eg til slutt. «Men politiet skal ikkje utføre ulovlege ransakingar –»</p>
+<p>«Feil,» sa ho. «Den rette reaksjonen på politifeil er disiplinærtiltak mot politiet, ikkje å straffe heile samfunnet for feilen til éin politimann.» Ho skreiv «Kriminell skuld» under punkt ein på tavla. «Andre måtar Bill of Rights kan overstyrast på?»</p>
+<p>Charles rekte opp handa. «Å rope brann i eit fullsett teater?»</p>
+<p>«Veldig bra–» ho konsulterte sitjeplanen – «Charles. Det er mange tilfelle der det første grunnlovstillegget ikkje er absolutt. La oss liste opp nokre fleire av dei.»</p>
+<p>Charles rekte opp handa igjen. «Å setje ein politibetjent i fare.»</p>
+<p>«Ja, å avsløre identiteten til ein sivil politimann eller etterretningsoffiser. Veldig bra.» Ho skreiv det ned. «Andre?»</p>
+<p>«Nasjonal tryggleik,» sa Charles, utan å vente på at ho skulle gje han ordet igjen. «Ærekrenking. Uanstendigheit. Korrupsjon av mindreårige. Barneporno. Oppskrifter på å lage bomber.» Fru Andersen skreiv desse ned raskt, men stoppa ved barneporno. «Barneporno er berre ei form for uanstendigheit.»</p>
+<p>Eg kjende meg kvalm. Dette var ikkje det eg hadde lært eller trudd om landet mitt. Eg rekte opp handa.</p>
+<p>«Ja, Marcus?»</p>
+<p>«Eg forstår ikkje. De får det til å høyrast ut som om Bill of Rights er valfritt. Det er grunnlova. Vi skal følgje den absolutt.»</p>
+<p>«Det er ei vanleg overforenkling,» sa ho, og gav meg eit falskt smil. «Men faktum er at dei som skreiv grunnlova meinte den skulle vere eit levande dokument som vart revidert over tid. Dei forstod at republikken ikkje ville kunne vare evig viss regjeringa på den tida ikkje kunne styre i samsvar med behova på den tida. Dei meinte aldri at grunnlova skulle sjåast på som religiøs doktrine. Tross alt flykta dei hit frå religiøs doktrine.»</p>
+<p>Eg rista på hovudet. «Kva? Nei. Dei var handelsmenn og handverkarar som var lojale mot kongen til han innførte politikk som var imot interessene deira og handheva dei brutalt. Dei religiøse flyktningane kom mykje tidlegare.»</p>
+<p>«Nokre av grunnlovsfedrane stamma frå religiøse flyktningar,» sa ho. «Og Bill of Rights skal ikkje vere noko du plukkar og vel frå. Det grunnlovsfedrane hata, var tyranni. Det er det Bill of Rights skal forhindre. Dei var ein revolusjonær hær, og dei ville ha eit sett med prinsipp som alle kunne vere samde om. Liv, fridom og jakta på lukke. Folket si rett til å kaste av seg undertrykkjarane sine.»</p>
+<p>«Ja, ja,» sa ho, og vinka mot meg. «Dei trudde på folket si rett til å kvitte seg med kongane sine, men–» Charles gliste, og då ho sa det, smilte han endå breiare. «Dei fastsette Bill of Rights fordi dei meinte at det å ha absolutte rettar var betre enn risikoen for at nokon ville ta dei vekk. Som det første grunnlovstillegget: det skal verne oss ved å hindre regjeringa i å skape to typar tale, tillaten tale og kriminell tale. Dei ville ikkje stå overfor risikoen for at ein eller annan dust skulle bestemme at dei tinga han fann ubehagelege, var ulovlege.»</p>
+<p>Ho snudde seg og skreiv: «Liv, fridom og jakta på lukke» på tavla. «Vi er litt føre skjema i leksjonen, men de verkar som ei avansert gruppe.» Dei andre lo nervøst av dette. «Regjeringa si rolle er å sikre borgarane rettane til liv, fridom og jakta på lukke. I den rekkjefølgja. Det er som eit filter. Viss regjeringa vil gjere noko som gjer oss litt ulykkelege, eller tek vekk noko av fridomen vår, er det greitt, føresett at dei gjer det for å redde liva våre. Det er difor politiet kan låse deg inne viss dei trur du er ein fare for deg sjølv eller andre. Du mistar fridomen og lukka di for å verne om livet. Viss du har livet, kan du kanskje få fridom og lukke seinare.»</p>
+<p>Nokre av dei andre hadde hendene i vêret. «Betyr ikkje det at dei kan gjere kva dei vil, om dei seier det er for å stoppe nokon frå å skade oss i framtida?»</p>
+<p>«Ja,» sa ein annan gut. «Dette høyrest ut som de seier at nasjonal tryggleik er viktigare enn grunnlova.»</p>
+<p>Eg var så stolt av medelevane mine då. Eg sa: «Korleis kan ein verne om fridomen ved å suspendere Bill of Rights?»</p>
+<p>Ho rista på hovudet mot oss som om vi var veldig dumme. «Dei ‘revolusjonære’ grunnlovsfedrane skaut forrædarar og spionar. Dei trudde ikkje på absolutt fridom, ikkje når det trua republikken. Ta no desse Xnet-folka–»</p>
+<p>Eg prøvde hardt å ikkje stivne.</p>
+<p>«–desse såkalla jammarane som var på nyheitene i morges. Etter at denne byen vart angripen av folk som har erklært krig mot dette landet, sette dei i gang med å sabotere tryggingstiltaka som var sett opp for å fange skurkane og hindre dei i å gjere det igjen. Dei gjorde dette ved å setje medborgarane sine i fare og skape ulemper for dei.»</p>
+<p>«Dei gjorde det for å vise at rettane våre vart tekne vekk i namnet til å verne dei!» sa eg. OK, eg ropte. Gud, ho gjorde meg så forbanna. «Dei gjorde det fordi regjeringa behandla alle som mistenkte terroristar.»</p>
+<p>«Så dei ville bevise at dei ikkje burde bli behandla som terroristar,» ropte Charles tilbake, «så dei oppførte seg som terroristar? Så dei utførte terrorisme?»</p>
+<p>Eg kokte.</p>
+<p>«Å, for Kristi skuld. Utførte terrorisme? Dei viste at universell overvaking var farlegare enn terrorisme. Sjå på kva som skjedde i parken førre helg. Dei folka dansa og høyrde på musikk. Korleis er det terrorisme?»</p>
+<p>Læraren kryssa rommet og stod framfor meg, og tårna over meg til eg heldt kjeft.</p>
+<p>«Marcus, du ser ut til å tru at ingenting har endra seg i dette landet. Du må forstå at bombinga av Bay Bridge endra alt. Tusenvis av venene og slektningane våre ligg døde på botnen av bukta. Dette er ei tid for nasjonal eining i møte med den valdsame fornærminga landet vårt har lidd –»</p>
+<p>Eg reiste meg. Eg hadde fått nok av dette «alt har endra seg»-tullet. «Nasjonal eining? Heile poenget med Amerika er at vi er landet der usemje er velkomen. Vi er eit land av dissidentar og forkjemparar og universitets-dropoutar og ytringsfridomsfolk.» Eg tenkte på den siste leksjonen til Ms. Galvez og dei tusenvis av Berkeley-studentane som hadde omringa politibilen då dei prøvde å arrestere ein fyr for å dele ut borgarrettslitteratur. Ingen prøvde å stoppe dei lastebilane då dei køyrde vekk med alle folka som hadde dansa i parken. Eg prøvde ikkje. Eg sprang vekk.</p>
+<p>Kanskje alt hadde endra seg.</p>
+<p>«Eg trur du veit kvar kontoret til Mr. Benson er,» sa ho til meg. «Du skal melde deg for han med ein gong. Eg vil ikkje bli forstyrra av respektlaus oppførsel. For nokon som hevdar å elske ytringsfridom, er du visselig villig til å rope ned alle som er usamde med deg.»</p>
+<p>Eg tok SkuleBoka mi og veska mi og storma ut. Døra hadde gassdempar, så ho var umogleg å smelle att, elles ville eg ha smelta ho.</p>
+<p>Eg gjekk raskt til kontoret til Mr. Benson. Kamera filma meg medan eg gjekk. Gangelaget mitt vart teke opp. Arphid-brikkene i student-ID-en min kringkasta identiteten min til sensorar i gangen. Det var som å vere i fengsel.</p>
+<p>«Lukk døra, Marcus,» sa Mr. Benson. Han snudde skjermen sin slik at eg kunne sjå videostraumen frå samfunnsfagsklasserommet. Han hadde følgt med.</p>
+<p>«Kva har du å seie til ditt forsvar?»</p>
+<p>«Det var ikkje undervisning, det var <em>propaganda</em>. Ho sa til oss at grunnlova ikkje betydde noko!»</p>
+<p>«Nei, ho sa at den ikkje var ein religiøs doktrine. Og du angreip ho som ein slags fundamentalist, og beviste poenget hennar. Marcus, du av alle burde forstå at alt endra seg då brua vart bomba. Vennen din Darryl–»</p>
+<p>«Ikkje sei eit fordømt ord om han,» sa eg, medan sinnet koka over. «Du er ikkje verdig til å snakke om han. Ja, eg forstår at alt er annleis no. Vi var ein gong eit fritt land. No er vi det ikkje.»</p>
+<p>«Marcus, veit du kva ‘nulltoleranse’ betyr?»</p>
+<p>Eg trekte meg. Han kunne utvise meg for «truande åtferd». Det var meint å bli brukt mot gjengungdom som prøvde å skremme lærarane sine. Men han ville sjølvsagt ikkje hatt nokre skruplar med å bruke den på meg.</p>
+<p>«Ja,» sa eg. «Eg veit kva det betyr.»</p>
+<p>«Eg synest du skuldar meg ei unnskyldning,» sa han.</p>
+<p>Eg såg på han. Han undertrykte så vidt det sadistiske smilet sitt. Ein del av meg ville krype. Den ville be om tilgjeving for all skamma mi. Eg kvelte den delen og bestemte meg for at eg heller ville bli kasta ut enn å be om unnskyldning.</p>
+<p>«Regjeringar er innstifta blant menneske, og får si rettferdige makt frå samtykket til dei som blir styrte, slik at når ei kva som helst regjeringsform blir øydeleggjande for desse føremåla, er det folket si rett å endre eller avskaffe ho, og å innstifte ei ny regjering, og leggje grunnlaget sitt på slike prinsipp, og organisere makta si i slik form, som for dei ser ut til å mest sannsynleg vil fremje deira tryggleik og lukke.» Eg hugsa det ord for ord.</p>
+<p>Han rista på hovudet. «Å hugse ting er ikkje det same som å forstå dei, guten min.» Han bøygde seg over datamaskina si og gjorde nokre klikk. Skrivaren hans surra. Han gav meg eit ark med varmt brevpapir frå skulestyret der det stod at eg hadde vorte suspendert i to veker.</p>
+<p>«Eg sender e-post til foreldra dine no. Om du framleis er på skuleområdet om tretti minutt, blir du arrestert for ulovleg inntrenging.»</p>
+<p>Eg såg på han.</p>
+<p>«Du vil ikkje erklære krig mot meg på min eigen skule,» sa han. «Den krigen kan du ikkje vinne. GÅ!»</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02-boka"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="12-Kapittel12.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kapittel 12</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="14-Kapittel14.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kapittel 14</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
