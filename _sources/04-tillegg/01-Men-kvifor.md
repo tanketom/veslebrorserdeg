@@ -21,7 +21,7 @@ Som Doctorow sjølv skriv i [introduksjonen](/01-intro/02-intro.md):
 > **"Denne boka er meint å vere noko du *gjer*, ikkje berre noko du les."**
 
 ## Men, Andreas, korleis?
-Dette er fullstendig ukommersiell business. Om du vil gi nokon pengar, kjøp ei av Doctorow sine bøker i staden, eller [sjekk om du kan donere eksemplar av boka til lærarar eller andre trengande](https://craphound.com/littlebrother/donate/). Forlaget Kvefsebol er noko eg har tenkt skulle vere eit namn til om eg publiserte noko rollespelinnhald på nett, men sidan det aldri materialiserte seg, så blei det her i staden.
+Forlaget Kvefsebol er noko eg har tenkt skulle vere eit namn til om eg publiserte noko rollespelinnhald på nett, men sidan det aldri materialiserte seg, så blei det her i staden. Dette er fullstendig ukommersiell business. Om du vil gi nokon pengar, kjøp ei av Doctorow sine bøker i staden, eller [sjekk om du kan donere eksemplar av boka til lærarar eller andre trengande](https://craphound.com/littlebrother/donate/). 
 
 Sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet [JupyterBook](https://jupyterbook.org/en/stable/start/build.html) har eg så laga søkbare HTML-sider av filene, og publisert dei på [Github](https://github.com/tanketom/veslebrorserdeg).
 
@@ -39,3 +39,9 @@ ghp-import -n -p -f _build/html
 ```
 
 Så tek Github seg av resten!
+
+Enn så lenge blir PDF-en til ved å sende ei samla markdown-fil av heile boka til ei Word-fil med denne kommandoen frå foreldremappa til prosjektet.
+
+´´´
+find . -name '_build' -type d -prune -o -name "*.md" -print | sort | xargs pandoc -o combined-document.docx
+´´´

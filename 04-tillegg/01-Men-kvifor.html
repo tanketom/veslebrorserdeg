@@ -406,7 +406,7 @@ document.write(`
 </div></blockquote>
 <section id="men-andreas-korleis">
 <h2>Men, Andreas, korleis?<a class="headerlink" href="#men-andreas-korleis" title="Link to this heading">#</a></h2>
-<p>Dette er fullstendig ukommersiell business. Om du vil gi nokon pengar, kjøp ei av Doctorow sine bøker i staden, eller <a class="reference external" href="https://craphound.com/littlebrother/donate/">sjekk om du kan donere eksemplar av boka til lærarar eller andre trengande</a>. Forlaget Kvefsebol er noko eg har tenkt skulle vere eit namn til om eg publiserte noko rollespelinnhald på nett, men sidan det aldri materialiserte seg, så blei det her i staden.</p>
+<p>Forlaget Kvefsebol er noko eg har tenkt skulle vere eit namn til om eg publiserte noko rollespelinnhald på nett, men sidan det aldri materialiserte seg, så blei det her i staden. Dette er fullstendig ukommersiell business. Om du vil gi nokon pengar, kjøp ei av Doctorow sine bøker i staden, eller <a class="reference external" href="https://craphound.com/littlebrother/donate/">sjekk om du kan donere eksemplar av boka til lærarar eller andre trengande</a>.</p>
 <p>Sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet <a class="reference external" href="https://jupyterbook.org/en/stable/start/build.html">JupyterBook</a> har eg så laga søkbare HTML-sider av filene, og publisert dei på <a class="reference external" href="https://github.com/tanketom/veslebrorserdeg">Github</a>.</p>
 <p>Når eg no oppdaterer ei markdown-file, så går eg til Terminal, opnar foreldremappa til prosjektet, og taster:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">veslebrorserdeg</span><span class="o">/</span>
@@ -418,6 +418,10 @@ document.write(`
 </pre></div>
 </div>
 <p>Så tek Github seg av resten!</p>
+<p>Enn så lenge blir PDF-en til ved å sende ei samla markdown-fil av heile boka til ei Word-fil med denne kommandoen frå foreldremappa til prosjektet.</p>
+<p>´´´
+find . -name ‘_build’ -type d -prune -o -name “*.md” -print | sort | xargs pandoc -o combined-document.docx
+´´´</p>
 </section>
 </section>
 
