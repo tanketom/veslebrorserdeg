@@ -4,6 +4,12 @@ Boka **"Little Brother"** av Cory Doctorow kom ut i 2008. **"Veslebror"** er ei 
 
 * Litt om kvifor her: [Men, Andreas, kvifor?](/04-tillegg/01-Men-kvifor.md)
 
+```{image} ../images/veslebror-omslag-thumbnail.png
+:alt: Veslebror bokomslag
+:width: 200px
+:align: right
+```
+
 ## Boka
 
 * Du kan lese den på denne sida, frå [Forord](/01-intro/02-intro.md) eller [Kapittel 1](/02-boka/01-Kapittel1.md).
