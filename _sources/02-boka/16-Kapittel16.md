@@ -1,0 +1,279 @@
+# Kapittel 16
+
+_Dette kapittelet er dedikert til The Booksmith i San Francisco, som ligg i det historiske Haight-Ashbury-nabolaget, berre nokre få dører nedanfor Ben and Jerry's på sjølvaste hjørnet av Haight og Ashbury. Folka på The Booksmith veit verkeleg korleis dei skal arrangere eit forfattararrangement – då eg budde i San Francisco, pleidde eg å dra ned dit heile tida for å høyre utrulege forfattarar snakke (William Gibson var uforgløymeleg). Dei produserer òg små samlekort i baseball-kort-stil for kvar forfattar – eg har to frå mine eigne opptredenar der. The Booksmith http://thebooksmith.booksense.com 1644 Haight St. San Francisco CA 94117 USA +1 415 863 8688_
+
+Først såg mamma sjokkert ut, så rasande, og til slutt gav ho opp heilt og lét berre haka henge open medan eg tok ho gjennom avhøyret, pissinga i buksa, sekken over hovudet, Darryl. Eg viste ho lappen.
+
+«Kvifor–?»
+
+I den eine stavinga låg alle skuldingane eg hadde retta mot meg sjølv om natta, kvart augneblink eg hadde mangla mot til å fortelje verda kva det eigentleg handla om, kvifor eg eigentleg kjempa, kva som verkeleg hadde inspirert Xnet.
+
+Eg trekte pusten.
+
+«Dei sa eg ville kome i fengsel om eg snakka om det. Ikkje berre for nokre dagar. For alltid. Eg var – eg var redd.»
+
+Mamma sat med meg lenge, utan å seie noko. Så: «Kva med faren til Darryl?»
+
+Ho kunne like gjerne ha stukke ei strikkepinne i brystet mitt. Faren til Darryl. Han må ha trudd at Darryl var død, for lengst død. Og var han ikkje det? Etter at DHS har halde deg ulovleg i tre månader, ville dei nokon gong late deg gå? Men Zeb kom seg ut. Kanskje Darryl ville kome seg ut. Kanskje eg og Xnet kunne hjelpe til med å få Darryl ut.
+
+«Eg har ikkje fortalt han det,» sa eg.
+
+No gret mamma. Ho gret ikkje lett. Det var ein britisk ting. Det gjorde dei små, hikstande hulka hennar mykje verre å høyre.
+
+«Du skal fortelje han det,» klarte ho å seie. «Det skal du.»
+
+«Det skal eg.»
+
+«Men først må vi fortelje far din.»
+
+\⁂
+
+Pappa hadde ikkje lenger nokon fast tid han kom heim. Mellom konsulentklientane sine – som hadde mykje arbeid no som DHS handla datainnsamlings-oppstartsbedrifter på halvøya – og den lange pendlinga til Berkeley, kunne han kome heim kva tid som helst mellom klokka 18 og midnatt. I kveld ringde mamma han og sa at han skulle kome heim no med det same. Han sa noko, og ho berre gjentok det: no med det same.
+
+Då han kom, hadde vi plassert oss i stova med lappen mellom oss på kaffibordet. Det var lettare å fortelje andre gongen. Hemmelegheita vart lettare. Eg pynta ikkje på noko, eg gøymde ikkje noko. Eg la alle korta på bordet. Eg hadde høyrt om å legge korta på bordet før, men eg hadde aldri forstått kva det betydde før eg gjorde det. Å halde på hemmelegheita hadde gjort meg skitten, skitna til ånda mi. Det hadde gjort meg redd og skamfull. Det hadde gjort meg til alt det Ange sa eg var.
+
+Pappa sat stiv som ein stokk heile tida, andletet hans skore ut av stein. Då eg gav han lappen, las han den to gonger og la han så forsiktig ned. Han rista på hovudet, reiste seg og gjekk mot inngangsdøra.
+
+«Kvar skal du?» spurde mamma, alarmert.
+
+«Eg treng ein gåtur,» var alt han klarte å gispe, stemma hans brast.
+
+Vi stirde klossete på kvarandre, mamma og eg, og venta på at han skulle kome heim. Eg prøvde å førestille meg kva som gjekk føre seg i hovudet hans. Han hadde vore ein så annleis mann etter bombingane, og eg visste frå mamma at det som hadde endra han var dagane då han trudde eg var død. Han hadde kome til å tru at terroristane nesten hadde drepe sonen hans, og det hadde gjort han galen. Galen nok til å gjere kva som helst DHS bad om, å stille seg i rekkje som ein god, liten sau og la dei kontrollere han, drive han. No visste han at det var DHS som hadde fengsla meg, DHS som hadde teke borna i San Francisco som gislar på Gitmo-ved-bukta.
+
+Det gav perfekt meining, no som eg tenkte på det. Sjølvsagt hadde det vore Treasure Island eg hadde vorte halden på. Kvar elles var ein ti-minutts båttur frå San Francisco?
+
+Då pappa kom tilbake, såg han sintare ut enn han nokon gong hadde gjort i heile sitt liv. «Du burde ha fortalt meg det!» brølte han.
+
+Mamma stilte seg mellom han og meg. «Du skuldar på feil person,» sa ho. «Det var ikkje Marcus som kidnappa og trua.»
+
+Han rista på hovudet og stampa. «Eg skuldar ikkje på Marcus. Eg veit nøyaktig kven som har skulda. Meg. Eg og den dumme DHS. Ta på dykk skoa, grip jakkene dykkar.»
+
+«Kvar skal vi?»
+
+«Til far til Darryl. Så skal vi til Barbara Stratford.»
+
+⁂
+
+Eg kjende namnet Barbara Stratford frå ein stad, men eg kunne ikkje hugse kvar. Eg tenkte at ho kanskje var ein gamal ven av foreldra mine, men eg kunne ikkje heilt plassere ho. I mellomtida var eg på veg til faren til Darryl. Eg hadde aldri følt meg heilt komfortabel rundt den gamle mannen, som hadde vore radiooperatør i marinen og dreiv heimen sin som eit stramt skip. Han hadde lært Darryl morsekode då han var liten, noko eg alltid hadde synst var kult. Det var ein av måtane eg visste at eg kunne stole på brevet til Zeb. Men for kvar kul ting som morsekode, hadde faren til Darryl ein eller annan gal militær disiplin som verka å vere der for si eiga skuld, som å insistere på sjukehus-hjørne på sengene og barbering to gonger om dagen. Det dreiv Darryl til vanvit.
+
+Mora til Darryl hadde heller ikkje likt det særleg, og hadde reist tilbake til familien sin i Minnesota då Darryl var ti – Darryl tilbrakte somrane og julene sine der. Eg sat i baksetet på bilen, og eg kunne sjå bakhovudet til pappa medan han køyrde. Muskelane i nakken hans var spente og hoppa rundt medan han beit tennene saman. Mamma heldt handa si på armen hans, men ingen var der for å trøyste meg. Om eg berre kunne ringje Ange. Eller Jolu. Eller Van. Kanskje eg ville gjere det når dagen var over.
+
+«Han må mentalt ha gravlagd sonen sin,» sa pappa, medan vi suste opp gjennom dei krappe svingane som førte opp Twin Peaks til den vesle hytta som Darryl og faren hans delte. Tåka låg over Twin Peaks, slik den ofte gjorde om natta i San Francisco, og fekk frontlysa til å reflektere tilbake på oss. Kvar gong vi svinga rundt eit hjørne, såg eg dalane i byen breie seg ut under oss, skåler av blinkande lys som skifta i tåka.
+
+«Er dette den?»
+
+«Ja,» sa eg. «Dette er den.» Eg hadde ikkje vore hos Darryl på månadsvis, men eg hadde tilbrakt nok tid her opp gjennom åra til å kjenne det att med ein gong. Vi tre stod rundt bilen eit langt augneblink og venta på å sjå kven som ville gå og ringje på døra. Til mi overrasking var det meg.
+
+Eg ringde på, og vi venta alle i spent stille i eit minutt. Eg ringde på igjen. Bilen til faren til Darryl stod i oppkøyrselen, og vi hadde sett eit lys brenne i stova. Eg var i ferd med å ringje på ein tredje gong då døra opna seg.
+
+«Marcus?» Faren til Darryl var ikkje noko lik den eg hugsa. Ubarbert, i ein slåbrok og berrføtt, med lange tånegler og raude auge. Han hadde lagt på seg, og ei mjuk dobbelthake dissa under den faste militærkjeven. Det tynne håret hans var pistrete og i uorden.
+
+«Mr. Glover,» sa eg. Foreldra mine trengde seg inn i døra bak meg.
+
+«Hallo, Ron,» sa mor mi.
+
+«Ron,» sa far min.
+
+«De òg? Kva skjer?»
+
+«Kan vi kome inn?»
+
+⁂
+
+Stova hans såg ut som ein av dei nyheitsreportasjane dei viser om forlatne born som tilbringer ein månad innelåst før dei blir redda av naboane: øskjer med frosenmat, tomme ølboksar og jusflasker, mugne frokostblandingskåler og haugar med aviser. Det stinka av kattepiss, og kattesand knasa under føtene våre. Sjølv utan kattepissen var lukta utruleg, som eit toalett på ein busstasjon. Sofaen var redd opp med eit skite laken og eit par feittete puter, og putene hadde eit bulka, mykje sove-på-uttrykk.
+
+Vi stod alle der eit langt, stille augneblink, flauskapen overvelda alle andre kjensler. Faren til Darryl såg ut som om han ville døy. Sakte flytta han lakenet frå sofaen og rydda dei stabla, feittete matbretta frå eit par av stolane, bar dei inn på kjøkkenet, og, ut frå lyden, kasta dei på golvet. Vi sette oss forsiktig på dei rydda plassane, og så kom han tilbake og sette seg ned, han òg.
+
+«Unnskyld,» sa han vagt. «Eg har eigentleg ikkje noko kaffi å tilby dykk. Eg får fleire varer levert i morgon, så eg byrjar å gå tom –»
+
+«Ron,» sa far min. «Høyr på oss. Vi har noko vi må fortelje deg, og det kjem ikkje til å vere lett å høyre.»
+
+Han sat som ein statue medan eg snakka. Han kasta eit blikk ned på lappen, las den utan å verke å forstå han, så las han den igjen. Han gav den tilbake til meg.
+
+Han skalv.
+
+«Han er–»
+
+«Darryl er i live,» sa eg. «Darryl er i live og blir halden fanga på Treasure Island.»
+
+Han stappa neven i munnen og laga ein forferdeleg, stønnande lyd.
+
+«Vi har ein ven,» sa far min. «Ho skriv for Bay Guardian. Ein gravejournalist.»
+
+Det var derifrå eg kjende att namnet. Den gratis vekeavisa Guardian mista ofte reporterane sine til større dagsaviser og internett, men Barbara Stratford blitt der for alltid. Eg hadde eit svakt minne om å ha ete middag med ho då eg var liten.
+
+«Vi drar dit no,» sa mor mi. «Vil du kome med oss, Ron? Vil du fortelje ho historia til Darryl?»
+
+Han la andletet i hendene og pusta djupt. Pappa prøvde å leggje handa si på skuldrene hans, men Mr. Glover rista den valdsamt av seg.
+
+«Eg må rydde opp i meg sjølv,» sa han. «Gje meg eit minutt.»
+
+Mr. Glover kom ned trappa som ein forandra mann. Han hadde barbert seg og gela håret bakover, og hadde teke på seg ei prikkfri militær paradeuniform med ei rekkje medaljer på brystet. Han stoppa ved foten av trappa og gestikulerte på ein måte mot den. «Eg har ikkje så mykje reine klede som er presentable for augneblinken. Og dette verka passande. Du veit, om ho ville ta bilete.»
+
+Han og pappa sat framme, og eg sette meg bak, bak han. På nært hald lukta han litt øl, som om det kom gjennom porene hans.
+
+⁂
+
+Klokka var midnatt då vi rulla inn i oppkøyrselen til Barbara Stratford. Ho budde utanfor byen, nede i Mountain View, og medan vi fór nedover 101-vegen, sa ingen av oss eit ord. Dei høgteknologiske bygningane langs motorvegen fór forbi oss. Dette var eit anna Bay Area enn det eg budde i, meir som det forstads-Amerika eg av og til såg på TV. Mange motorvegar og bustadfelt med identiske hus, byar der det ikkje fanst heimlause som skubba handlevogner nedover fortauet – det fanst ikkje eingong fortau!
+
+Mamma hadde ringt Barbara Stratford medan vi venta på at Mr. Glover skulle kome ned. Journalisten hadde sove, men mamma hadde vore så oppkava at ho gløymde å vere heilt britisk og flau over å vekkje ho. I staden sa ho berre, anspent, at ho hadde noko å snakke om, og at vi måtte møtast personleg.
+
+Då vi køyrde opp til huset til Barbara Stratford, var min første tanke Brady Bunch – eit lågt rekkjehus med ein murvegg framfor og ein pen, heilt firkanta plen. Det var eit slags abstrakt flisemønster på veggen, og ei gamaldags UHF TV-antenne som steig opp bak den. Vi vandra rundt til inngangen og såg at det allereie var lys på inne.
+
+Forfattaren opna døra før vi fekk sjansen til å ringje på. Ho var på alder med foreldra mine, ei høg, tynn kvinne med ei haukeliknande nase og skarpe auge med mange latterlinjer. Ho hadde på seg eit par jeans som var hippe nok til å bli sett i ein av butikkane på Valencia Street, og ein laus indisk bomullsbluse som hang ned til låra. Ho hadde små, runde briller som blinka i ganglyset hennar. Ho smilte eit stramt, lite smil til oss.
+
+«De har teke med heile klanen, ser eg,» sa ho.
+
+Mamma nikka. «Du vil forstå kvifor om eit minutt,» sa ho. Mr. Glover steig fram bak pappa.
+
+«Og de har tilkalla marinen?»
+
+«Alt i si tid.»
+
+Vi vart presenterte for ho ein etter ein. Ho hadde eit fast handtrykk og lange fingrar. Heimen hennar var innreidd i japansk minimalistisk stil, berre nokre få presist proporsjonerte, låge møblar, store leirkrukker med bambus som strauk taket, og noko som såg ut som eit stort, rusta stykke av ein dieselmotor plassert på toppen av ein polert marmorsokkel. Eg bestemte meg for at eg likte det. Golva var av gamalt tre, pussa og beisa, men ikkje fylte, slik at ein kunne sjå sprekker og groper under lakken. Eg likte verkeleg det, spesielt då eg gjekk over det i sokkelesten.
+
+«Eg har kaffi på,» sa ho. «Kven vil ha?»
+
+Vi rekte alle opp hendene. Eg glodde trassig på foreldra mine.
+
+«Greitt,» sa ho.
+
+Ho forsvann inn i eit anna rom og kom tilbake eit augneblink seinare med eit røft bambusbrett med ei halv-gallons termoskanne og seks koppar av presis design, men med røffe, slurvete dekorasjonar. Eg likte dei òg.
+
+«No,» sa ho, etter at ho hadde skjenkt og servert. «Det er veldig godt å sjå dykk alle igjen. Marcus, eg trur sist gong eg såg deg, var du kanskje sju år gammal. Så vidt eg hugsar, var du veldig spent på dei nye videospela dine, som du viste meg.» Eg hugsa det ikkje i det heile, men det høyrdest ut som det eg var interessert i som sjuåring. Eg gjetta det var Sega Dreamcast-en min.
+
+Ho produserte ein bandopptakar og ei gul blokk og ein penn, og snurra på pennen. «Eg er her for å lytte til kva enn de fortel meg, og eg kan love dykk at eg vil behandle alt konfidensielt. Men eg kan ikkje love at eg vil gjere noko med det, eller at det kjem til å bli publisert.» Måten ho sa det på fekk meg til å innsjå at mor mi hadde bede om ein ganske stor teneste ved å få denne dama ut av senga, ven eller ikkje. Det må vere litt av eit styr å vere ein stor gravejournalist. Det var sikkert ein million menneske som gjerne ville at ho skulle ta opp saka deira.
+
+Mamma nikka til meg. Sjølv om eg hadde fortalt historia tre gonger den kvelden, fann eg meg sjølv målbunden. Dette var annleis enn å fortelje foreldra mine. Annleis enn å fortelje faren til Darryl. Dette – dette ville starte eit nytt trekk i spelet.
+
+Eg byrja langsamt, og såg Barbara ta notat. Eg drakk ein heil kopp kaffi berre for å forklare kva ARG-ing var og korleis eg kom meg ut av skulen for å spele. Mamma og pappa og Mr. Glover lytta alle intenst til denne delen. Eg skjenkte meg ein ny kopp og drakk den på veg til å forklare korleis vi vart tekne inn. Då eg var ferdig med heile historia, hadde eg tømt kanna, og eg måtte pisse som ein hest.
+
+Badet hennar var like nakent som stova, med ei brun, organisk såpe som lukta som rein gjørme. Eg kom tilbake inn og fann dei vaksne som såg stille på meg.
+
+Mr. Glover fortalde si historie deretter. Han hadde ingenting å seie om kva som hadde skjedd, men han forklarte at han var ein veteran og at sonen hans var ein god gut. Han snakka om korleis det var å tru at sonen hans hadde døydd, om korleis eks-kona hans hadde hatt eit samanbrot då ho fann det ut og enda opp på sjukehus. Han gret litt, utan skam, tårene rann nedover det fura andletet hans og mørkna kragen på paradeuniformen.
+
+Då alt var over, gjekk Barbara inn i eit anna rom og kom tilbake med ei flaske irsk whiskey. «Det er ein Bushmills 15 år gamal romfat-lagra blanding,» sa ho, og sette ned fire små koppar. Ingen til meg. «Den har ikkje vore seld på ti år. Eg trur dette er ein passande tid å opne den på.» Ho skjenkte dei kvar eit lite glas av likøren, heva så sitt og nippa til det, og tømte halve glaset. Resten av dei vaksne følgde etter. Dei drakk igjen, og tømte glasa. Ho skjenkte dei nye shotar.
+
+«Greitt,» sa ho. «Her er det eg kan fortelje dykk no med det same. Eg trur på dykk. Ikkje berre fordi eg kjenner deg, Lillian. Historia høyrest rett ut, og den knyter seg til andre rykte eg har høyrt. Men eg kjem ikkje til å kunne berre ta dykkar ord for det. Eg må etterforske kvart einaste aspekt av dette, og kvart element i liva og historiene dykkar. Eg må vite om det er noko de ikkje fortel meg, noko som kan brukast til å diskreditere dykk etter at dette kjem for ein dag. Eg treng alt. Det kan ta veker før eg er klar til å publisere.
+
+«De må òg tenkje på dykkar eigen tryggleik og denne Darryl sin tryggleik. Viss han verkeleg er ein ‘ikkje-person’, kan det å leggje press på DHS føre til at dei flyttar han ein stad mykje lenger vekk. Tenk Syria. Dei kan òg gjere noko mykje verre.» Ho lét det henge i lufta. Eg visste ho meinte at dei kunne drepe han.
+
+«Eg skal ta dette brevet og skanne det no. Eg vil ha bilete av dykk to, no og seinare – vi kan sende ut ein fotograf, men eg vil dokumentere dette så grundig eg kan i kveld, òg.»
+
+Eg gjekk med ho inn på kontoret hennar for å gjere skanninga. Eg hadde forventa ei stilig, låg-effekt datamaskin som passa inn med innreiinga hennar, men i staden var hennar ekstra soverom/kontor stappfullt med toppmoderne PC-ar, store flatskjermar, og ein skannar stor nok til å leggje ei heil avisside på. Ho var rask med alt, ho òg. Eg merka meg med ei viss anerkjenning at ho køyrde ParanoidLinux. Denne dama tok jobben sin alvorleg. Viftene på datamaskinene skapte eit effektivt kvitt støy-skjold, men likevel lukka eg døra og gjekk tett inntil ho.
+
+«Øh, Barbara?»
+
+«Ja?»
+
+«Om det du sa, om kva som kan bli brukt til å diskreditere meg?»
+
+«Ja?»
+
+«Det eg fortel deg, kan du ikkje bli tvinga til å fortelje nokon andre, sant?»
+
+«I teorien. La meg seie det slik. Eg har sete i fengsel to gonger heller enn å sladre på ein kjelde.»
+
+«OK, OK. Bra. Wow. Fengsel. Wow. OK.» Eg trekte pusten djupt. «Du har høyrt om Xnet? Om M1k3y?»
+
+«Ja?»
+
+«Eg er M1k3y.»
+
+«Å,» sa ho. Ho jobba med skannaren og snudde lappen for å få baksida. Ho skanna med ein utruleg oppløysing, 10 000 punkt per tomme eller høgare, og på skjermen var det som resultatet frå eit elektron-tunnel-mikroskop. «Vel, det set jo saka i eit anna lys.»
+
+«Ja,» sa eg. «Det gjer vel det.»
+
+«Foreldra dine veit det ikkje.»
+
+«Nei. Og eg veit ikkje om eg vil dei skal det.»
+
+«Det er noko du må finne ut av. Eg må tenkje på dette. Kan du kome innom kontoret mitt? Eg vil gjerne snakke med deg om kva dette betyr, nøyaktig.»
+
+«Har du ein Xbox Universal? Eg kunne teke med ein installasjons-CD.»
+
+«Ja, eg er sikker på at det kan ordnast. Når du kjem innom, sei til resepsjonisten at du er herr Brown, for å sjå meg. Dei veit kva det betyr. Ingen notat vil bli tekne av besøket ditt, og alle opptak frå tryggingskamera for dagen vil automatisk bli sletta og kameraa deaktiverte til du går.»
+
+«Wow,» sa eg. «Du tenkjer som meg.»
+
+Ho smilte og dulta meg i skuldra. «Guten min, eg har vore i dette spelet i ei heil æve. Så langt har eg klart å tilbringe meir tid fri enn bak murane. Paranoia er min ven.»
+
+⁂
+
+Eg var som ein zombie på skulen neste dag. Med berre tre timar søvn klarte sjølv ikkje tre koppar med koffein-gjørma til tyrkaren å starte hjernen min. Problemet med koffein er at det er for lett å venne seg til det, så ein må ta stadig høgare dosar berre for å kome seg over normalen.
+
+Eg hadde brukt natta på å tenkje over kva eg måtte gjere. Det var som å springe gjennom ein labyrint av snirklete små passasjar, alle like, kvar einaste ein førte til same blindveg. Når eg gjekk til Barbara, ville det vere over for meg. Det var utfallet, uansett korleis eg tenkte på det.
+
+Innan skuledagen var over, var alt eg ville å gå heim og krype til sengs. Men eg hadde ein avtale hos _Bay Guardian_, nede ved hamna. Eg heldt auga festa på føtene mine då eg vingla ut porten, og då eg svinga inn på 24th Street, kom eit anna par føter i takt med mine. Eg kjende att skoa og stoppa.
+
+«Ange?»
+
+Ho såg ut som eg følte meg. Søvnlaus og med mørke ringar under auga, med triste parentesar i munnvikene.
+
+«Hei du,» sa ho. «Overrasking. Eg stakk av frå skulen. Eg klarte ikkje å konsentrere meg uansett.»
+
+«Øh,» sa eg.
+
+«Hald kjeft og gje meg ein klem, din idiot.»
+
+Eg gjorde det. Det kjendest godt. Betre enn godt. Det kjendest som om ein amputert del av meg sjølv hadde blitt festa på igjen.
+
+«Eg elskar deg, Marcus Yallow.»
+
+«Eg elskar deg, Angela Carvelli.»
+
+«OK,» sa ho og braut av. «Eg likte innlegget ditt om kvifor du ikkje jammar. Eg kan respektere det. Kva har du gjort med å finne ein måte å jamme dei på utan å bli teken?»
+
+«Eg er på veg for å møte ein gravejournalist som skal publisere ei historie om korleis eg hamna i fengsel, korleis eg starta Xnet, og korleis Darryl blir halden ulovleg av DHS i eit hemmeleg fengsel på Treasure Island.»
+
+«Åh.» Ho såg seg rundt eit augneblink. «Kunne du ikkje tenkt på noko, du veit, ambisiøst?»
+
+«Vil du vere med?»
+
+«Eg blir med, ja. Og eg vil gjerne at du forklarer dette i detalj om du ikkje har noko imot det.»
+
+Etter alle gjenforteljingane var denne, fortalt medan vi gjekk til Potrero Avenue og ned til 15th Street, den enklaste. Ho heldt handa mi og klemte den ofte.
+
+Vi tok trappene opp til kontora til _Bay Guardian_ to om gongen. Hjartet mitt banka. Eg kom til resepsjonen og sa til den leie jenta bak disken: «Eg er her for å treffe Barbara Stratford. Namnet er herr Green.»
+
+«Eg trur du meiner herr Brown?»
+
+«Ja,» sa eg og raudna. «Herr Brown.»
+
+Ho gjorde noko på datamaskina si, og sa så: «Set dykk. Barbara kjem om eit minutt. Kan eg hente noko til dykk?»
+
+«Kaffi,» sa vi begge i kor. Endå ein grunn til å elske Ange: vi var avhengige av same dop.
+
+Resepsjonisten – ei pen latinamerikansk kvinne berre nokre få år eldre enn oss, kledd i Gap-stilar så gamle at de eigentleg var litt hipster-retro – nikka og gjekk ut og kom tilbake med eit par koppar med avisa sitt emblem.
+
+Vi nippa i stille, og såg på besøkjande og reportarar som kom og gjekk. Til slutt kom Barbara for å hente oss. Ho hadde på seg praktisk talt det same som kvelden før. Det kledde ho. Ho heva eit augebryn mot meg då ho såg at eg hadde teke med meg ein date.
+
+«Hallo,» sa eg. «Øh, dette er –»
+
+«Frøken Brown,» sa Ange, og strekte fram ei hand. Å, ja, stemmer, identitetane våre skulle vere hemmelege. «Eg jobbar med herr Green.» Ho dulta meg lett i sida.
+
+«La oss gå då,» sa Barbara, og førte oss tilbake til eit møterom med lange glasveggar med persiennene trekte for. Ho sette ned eit brett med økologiske Oreo-klonar frå Whole Foods, ein digital opptakar og endå ei gul blokk.
+
+«Vil de ta opp dette, de òg?» spurde ho.
+
+Det hadde eg faktisk ikkje tenkt på. Eg kunne sjå kvifor det ville vore nyttig om eg ville bestride det Barbara trykte, då. Men likevel, om eg ikkje kunne stole på at ho ville behandle meg rett, var eg fortapt uansett.
+
+«Nei, det går bra,» sa eg.
+
+«Greitt, la oss starte. Unge dame, namnet mitt er Barbara Stratford, og eg er ein gravejournalist. Eg forstår de veit kvifor eg er her, og eg er nysgjerrig på kvifor de er her.»
+
+«Eg jobbar med Marcus på Xnet,» sa ho. «Treng du å vite namnet mitt?»
+
+«Ikkje akkurat no, nei,» sa Barbara. «Du kan vere anonym om du ønskjer. Marcus, eg bad deg om å fortelje meg denne historia fordi eg må vite korleis den passar saman med historia du fortalde meg om vennen din Darryl og lappen du viste meg. Eg kan sjå korleis det ville vore eit godt supplement; eg kunne pitche dette som opphavet til Xnet. ‘Dei skapte seg ein fiende dei aldri vil gløyme,’ den typen ting. Men for å vere ærleg, vil eg helst sleppe å fortelje den historia om eg ikkje må.
+
+«Eg vil heller ha ei fin, rein forteljing om det hemmelege fengselet på dørstokken vår, utan å måtte krangle om fangane der er den typen folk som sannsynlegvis vil spasere ut dørene og etablere ei undergrunnsrørsle med mål om å destabilisere den føderale regjeringa. Eg er sikker på at du kan forstå det.»
+
+Det gjorde eg. Om Xnet var ein del av historia, ville nokre folk seie: _sjå, dei må putte slike karar i fengsel, elles startar dei eit opprør_.
+
+«Dette er ditt show,» sa eg. «Eg trur du må fortelje verda om Darryl. Når du gjer det, vil det fortelje DHS at eg har gått offentleg ut, og dei kjem til å kome etter meg. Kanskje dei finn ut då at eg er involvert i Xnet. Kanskje dei koplar meg til M1k3y. Eg antar at det eg seier er, så snart du publiserer om Darryl, er alt over for meg uansett. Eg har slått meg til ro med det.»
+
+«Om ein først skal bli hengt for å stele eit lam kan ein like godt stjele sauen òg,» sa ho. «Greitt. Vel, då er det avgjort. Eg vil at de to skal fortelje meg alt de kan om grunnlegginga og drifta av Xnet, og så vil eg ha ein demonstrasjon. Kva bruker de det til? Kven andre bruker det? Korleis spreidde det seg? Kven skreiv programvara? Alt.»
+
+«Dette kjem til å ta ei stund,» sa Ange.
+
+«Eg har ei stund,» sa Barbara. Ho drakk litt kaffi og åt ein falsk Oreo. «Dette kan vere den viktigaste historia i krigen mot terror. Dette kan vere historia som veltar regjeringa. Når du har ei slik historie, tek du den veldig varsamt.»

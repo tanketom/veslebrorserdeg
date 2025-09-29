@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kapittel 18 &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02-boka/18-Kapittel18';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Kapittel 19" href="19-Kapittel19.html" />
+    <link rel="prev" title="Kapittel 17" href="17-Kapittel17.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../01-intro/01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../01-intro/01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/02-intro.html">Forord</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Kapittel9.html">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13-Kapittel13.html">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="20-Kapittel20.html">Kapittel 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="21-Kapittel21.html">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/01-Etterord.html">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/02-boka/18-Kapittel18.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Kapittel 18</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="kapittel-18">
+<h1>Kapittel 18<a class="headerlink" href="#kapittel-18" title="Link to this heading">#</a></h1>
+<p><em>Dette kapittelet er dedikert til Vancouver sin fleirspråklege Sophia Books, ein mangfaldig og spennande butikk fylt med det beste frå dei merkelege og spennande popkulturverdene i mange land. Sophia låg rundt hjørnet frå hotellet mitt då eg drog til Van for å halde eit føredrag ved Simon Fraser University, og folka på Sophia sende meg ein e-post på førehand for å be meg stikke innom og signere bøkene deira medan eg var i nabolaget. Då eg kom dit, oppdaga eg ein skattekiste av tidlegare usette verk i eit svimlende utval av språk, frå grafiske romanar til tjukke akademiske avhandlingar, leia av godlynte (til og med slapstick-aktige) tilsette som så tydeleg naut jobbane sine at det smitta over på kvar einaste kunde som gjekk gjennom døra. Sophia Books <a class="reference external" href="http://www.sophiabooks.com/450">http://www.sophiabooks.com/450</a> West Hastings St., Vancouver, BC Canada V6BIL1+1 604 684 0484</em></p>
+<p>Det var ein gong då favoritt-tingen min i heile verda var å ikle seg ei kappe og henge på hotell, og late som om eg var ein usynleg vampyr som alle stirde på.</p>
+<p>Det er komplisert, og ikkje på langt nær så rart som det høyrest ut. Laiv-miljøet (levande rollespel) kombinerer dei beste sidene av D&amp;D med skuleteater og det å dra på sci-fi-kongressar.</p>
+<p>Eg forstår at dette kanskje ikkje får det til å høyrast like appellerande ut for deg som det var for meg då eg var 14.</p>
+<p>Dei beste spela var dei på speidarleirane utanfor byen: hundre tenåringar, gutar og jenter, som kjempa mot fredagskveldstrafikken, utveksla historier, spelte handhaldne spel, og viste seg fram i timevis. Så gjekk vi av for å stå i graset framfor ei gruppe eldre menn og kvinner i tøff, heimelaga rustning, bulka og arr-prega, slik rustning må ha vore i gamle dagar, ikkje slik den blir framstilt på film, men som uniforma til ein soldat etter ein månad i bushen.</p>
+<p>Desse folka fekk minimalt betalt for å drive spela, men du fekk ikkje jobben med mindre du var den typen person som ville gjort det gratis. Dei hadde allereie delt oss inn i lag basert på spørjeskjema vi hadde fylt ut på førehand, og vi fekk lagoppgåvene våre, som å bli ropt opp til lag i baseball.</p>
+<p>Så fekk du briefing-pakkane dine. Desse var som briefingane spionar får på film: her er identiteten din, her er oppdraget ditt, her er hemmelegheitene du veit om gruppa.</p>
+<p>Derifrå var det tid for middag: brølande bål, kjøt som sprakar på spidd, tofu som fresar på steikjepanner (det er Nord-California, å ha eit vegetaralternativ er ikkje valfritt), og ein stil for å ete og drikke som berre kan skildrast som å styrte.</p>
+<p>Allereie no ville dei ivrige ungane gå inn i karakter. I mitt første spel var eg ein trollmann. Eg hadde ein sekk med erteposar som representerte trolldommar – når eg kasta ein, ropte eg namnet på trolldommen eg kasta – <em>fireball</em>, <em>magic missile</em>, <em>cone of light</em> – og spelaren eller «monsteret» eg kasta den på, ville falle om viss eg trefte. Eller ikkje – nokre gonger måtte vi kalle inn ein dommar for å mekle, men for det meste var vi alle ganske flinke til å spele rettferdig. Ingen likte ein regelpirkar.</p>
+<p>Ved leggetid var vi alle i karakter. Som 14-åring var eg ikkje heilt sikker på korleis ein trollmann skulle høyrast ut, men eg kunne ta hint frå filmane og romanane. Eg snakka i sakte, målte tonar, heldt andletet mitt samla i eit passande mystisk uttrykk, og tenkte mystiske tankar.</p>
+<p>Oppdraget var komplisert, å hente tilbake ein heilag relikvie som hadde vorte stolen av eit troll innstilt på å undertrykkje folket i landet. Det spelte eigentleg ikkje så stor rolle. Det som betydde noko, var at eg hadde eit privat oppdrag, å fange ein spesiell type smådjevel til å tene som min følgjesvein, og at eg hadde ein hemmeleg nemesis, ein annan spelar på laget som hadde deltatt i eit raid som drap familien min då eg var gut, ein spelar som ikkje visste at eg hadde kome tilbake, innstilt på hemn. Ein stad, sjølvsagt, var det ein annan spelar med eit liknande agg mot meg, slik at sjølv medan eg naut kameratskapet i laget, måtte eg alltid halde eit auge ope for ein kniv i ryggen, gift i maten.</p>
+<p>Dei neste to dagane spelte vi det ut. Det var delar av helga som var som gøymsel, nokre som var som overlevingsøvingar i villmarka, nokre som var som å løyse kryssord. Spel-leiarane hadde gjort ein kjempejobb. Og ein vart verkeleg ven med dei andre folka på oppdraget. Darryl var målet for mitt første drap, og eg la sjela mi i det, sjølv om han var kompisen min. Hyggeleg fyr. Synd eg måtte drepe han.</p>
+<p>Eg kasta ein <em>fireball</em> på han medan han leita etter skattar etter at vi hadde utsletta ein bande med orkar, der vi spelte stein-saks-papir med kvar ork for å avgjere kven som ville sigre i kamp. Dette er mykje meir spennande enn det høyrest ut som.</p>
+<p>Det var som sumarleir for drama-nerdar. Vi snakka til seint på natt i telt, såg på stjernene, hoppa i elva når vi vart varme, slo vekk mygg. Vart bestevener, eller livslange fiendar.</p>
+<p>Eg veit ikkje kvifor foreldra til Charles sende han på laiv. Han var ikkje typen gut som kunne kose seg med slikt. Han var meir typen som reiv vengene av fluger. Å, kanskje ikkje. Men han var berre ikkje interessert i å vere i kostyme i skogen. Han brukte heile tida på å subbe rundt, håne alle og alt, og prøve å overtyde oss alle om at vi ikkje hadde det så gøy som vi alle følte vi hadde. Du har utan tvil møtt den typen person før, den typen som er nøydd til å sørgje for at alle andre har det like fælt som han.</p>
+<p>Den andre tingen med Charles var at han ikkje fekk taket på simulert kamp. Når ein byrjar å springe rundt i skogen og spele desse forseggjorte, semi-militære spela, er det lett å bli heilt adrenalinfylt til det punktet der ein er klar til å rive strupen ut på nokon. Dette er ikkje ein god tilstand å vere i når ein ber rundt på eit rekvisittsverd, klubbe, spyd eller anna reiskap. Det er difor ingen nokon gong får lov til å slå nokon, under nokon omstende, i desse spela. I staden, når ein kjem nær nok nokon til å slåst, speler ein eit par raske rundar med stein-saks-papir, med modifikasjonar basert på erfaring, våpen og tilstand. Dommarane meklar i tvistar. Det er ganske sivilisert, og litt rart. Ein spring etter nokon gjennom skogen, tek dei igjen, blottar tennene, og set seg ned for å spele litt roshambo. Men det fungerer – og det held alt trygt og gøy.</p>
+<p>Charles fekk aldri heilt taket på dette. Eg trur han var fullt i stand til å forstå at regelen var ingen kontakt, men han var samstundes i stand til å bestemme at regelen ikkje betydde noko, og at han ikkje kom til å følgje den. Dommarane tok han på det fleire gonger i løpet av helga, og han lova stadig å halde seg til det, og heldt fram med å bryte det. Han var allereie ein av dei større gutane der, og han likte å «tilfeldigvis» takle deg på slutten av ei jakt. Ikkje gøy når ein blir takla ned på den steinete skogbotnen.</p>
+<p>Eg hadde nettopp mektig slått ned Darryl i ei lita rydning der han hadde vore på skattejakt, og vi lo litt av den ekstreme snik-evna mi. Han skulle bli monster – drepne spelarar kunne byte til å spele monster, noko som betydde at jo lenger spelet varte, jo fleire monster kom etter deg, noko som igjen betydde at alle fekk halde fram med å spele, og kampane i spelet vart berre meir og meir episke.</p>
+<p>Det var då Charles kom ut av skogen bak meg og takla meg, og kasta meg i bakken så hardt at eg ikkje fekk puste på eit augneblink. «Tok deg!» ropte han. Eg kjende han berre så vidt frå før, og eg hadde aldri tenkt mykje på han, men no var eg klar for mord. Eg klatra sakte på beina og såg på han, brystet hans heva og senka seg, glisande. «Du er så daud,» sa han. «Eg tok deg skikkeleg.»</p>
+<p>Eg smilte, og noko kjendest feil og sårt i andletet mitt. Eg tok på overleppa mi. Den var blodig. Nasa mi blødde, og leppa mi var sprokken, kutta på ei rot eg hadde landa med andletet på då han takla meg.</p>
+<p>Eg tørka blodet på buksebeinet og smilte. Eg lata som om eg synest alt var moro. Eg lo litt. Eg gjekk mot han.</p>
+<p>Charles lét seg ikkje lure. Han rygga allereie, og prøvde å forsvinne inn i skogen. Darryl gjekk for å flankere han. Eg tok den andre flanken. Brått snudde han seg og sprang. Foten til Darryl hekta ankelen hans og sende han i bakken. Vi styrta mot han, akkurat i tide til å høyre ei dommarfløyte.</p>
+<p>Dommaren hadde ikkje sett Charles felle meg, men han hadde sett spelet til Charles den helga. Han sende Charles tilbake til leirinngangen og sa til han at han var ute av spelet. Charles klaga høglydt, men til vår tilfredsheit ville ikkje dommaren høyre på det. Då Charles hadde gått, gav han <em>oss</em> begge ein lekse òg, og sa at hemna vår ikkje var meir rettferdiggjort enn angrepet til Charles.</p>
+<p>Det gjekk greitt. Den kvelden, då spela var over, fekk vi alle varme dusjar i speidar-sovesalane. Darryl og eg stal kleda og handkledet til Charles. Vi knytte dei i knutar og slapp dei i urinalen. Mange av gutane var glade for å bidra til innsatsen med å dynke dei. Charles hadde vore veldig entusiastisk med taklingane sine.</p>
+<p>Eg skulle ønskje eg kunne ha sett han då han kom ut av dusjen og oppdaga kleda sine. Det er ei vanskeleg avgjerd: spring du naken over leiren, eller plukkar du frå kvarandre dei stramme, pissvåte knutane i kleda dine og tek dei så på?</p>
+<p>Han valde nakenheit. Eg ville sannsynlegvis ha valt det same. Vi stilte oss opp langs ruta frå dusjane til skuret der sekkane var lagra og applauderte han. Eg stod fremst i rekkja og leia applausen.</p>
+<p>⁂</p>
+<p>Desse leirhelgene var berre tre eller fire gonger i året, noko som etterlét Darryl og meg – og mange andre – med ein alvorleg laivmangel i liva våre.</p>
+<p>Heldigvis hadde vi Wretched Daylight-spel på byhotella. Wretched Daylight er ein annan laiv, med rivaliserande vampyrklanar og vampyrjegerar, og det har sine eigne særeigne reglar. Spelarar får kort for å hjelpe dei med å avgjere kampsituasjonar, så kvar trefning inneber å spele ei lita hand av eit strategisk kortspel. Vampyrar kan bli usynlege ved å kappe seg, krysse armane over brystet, og alle dei andre spelarane må late som dei ikkje ser dei, og halde fram med samtalane sine om planar og slikt. Den sanne testen på ein god spelar er om du er ærleg nok til å halde fram med å avsløre hemmelegheitene dine framfor ein «usynleg» rival utan å oppføre deg som om han var i rommet.</p>
+<p>Det var eit par store Wretched Daylight-spel kvar månad. Arrangørane av spela hadde eit godt forhold til byens hotell, og dei lét det bli kjent at dei ville ta ti ubooka rom på ein fredagskveld og fylle dei med spelarar som ville springe rundt på hotellet, spele lågmælt Wretched Daylight i korridorane, rundt bassenget, og så vidare, ete på hotellrestauranten og betale for hotellets WiFi. Dei stengde bookinga fredag ettermiddag, sende oss e-post, og vi drog rett frå skulen til det aktuelle hotellet, med ryggsekkane våre, og sov seks eller åtte på kvart rom i helga, levde på junkfood, og spelte til klokka tre om natta. Det var god, trygg moro som foreldra våre kunne støtte.</p>
+<p>Arrangørane var ein velkjend veldedig organisasjon for leseferdigheit som dreiv skriveverkstader for born, dramaverkstader og så vidare. Dei hadde drive spela i ti år utan hendingar. Alt var strengt alkohol- og narkotikafritt, for å hindre arrangørane i å bli tekne for ein eller annan form for korrumpering av mindreårige. Vi trekte mellom ti og hundre spelarar, avhengig av helga, og for prisen av eit par kinobesøk kunne ein ha to og ein halv dag med solid moro.</p>
+<p>Ein dag, derimot, hadde dei flaks og fekk ein blokk med rom på Monaco, eit hotell i Tenderloin som retta seg mot kunstnariske, eldre turistar, den typen hotell der kvart rom hadde gullfiskbolle, der lobbyen var full av vakre, gamle menneske i fine klede som viste fram resultata av plastisk kirurgi.</p>
+<p>Normalt ignorerte dei dødelege – vårt ord for ikkje-spelarar – oss berre, og tenkte at vi var tøysete ungar. Men den helga var det tilfeldigvis ein redaktør for eit italiensk reisemagasin der, og han fatta interesse for ting. Han trengde meg opp i eit hjørne medan eg sneik meg rundt i lobbyen, i håp om å få auge på klanleiaren til rivalane mine og stupe inn på han og tappe blodet hans. Eg stod mot veggen med armane kryssa over brystet, og var usynleg, då han kom bort til meg og spurde meg, på gebrokkent engelsk, kva eg og venene mine gjorde på hotellet den helga?</p>
+<p>Eg prøvde å avvise han, men han gav seg ikkje. Så eg tenkte eg berre skulle finne på noko, så ville han gå.</p>
+<p>Eg førestilte meg ikkje at han kom til å trykkje det. Eg førestilte meg verkeleg ikkje at det ville bli plukka opp av amerikansk presse.</p>
+<p>«Vi er her fordi prinsen vår har døydd, og difor har vi måtta kome på jakt etter ein ny herskar.»</p>
+<p>«Ein prins?»</p>
+<p>«Ja,» sa eg, og levde meg inn i det. «Vi er Det gamle folket. Vi kom til Amerika på 1500-talet og har hatt vår eiga kongefamilie i villmarka i Pennsylvania sidan den gong. Vi lever enkelt i skogen. Vi bruker ikkje moderne teknologi. Men prinsen var den siste i slekta, og han døydde førre veke. Ein forferdeleg tæringssjukdom tok han. Dei unge mennene i klanen min har drege ut for å finne etterkomarane til grandonkelen hans, som drog for å slutte seg til det moderne folket i mi bestefars tid. Det blir sagt at han har formert seg, og vi vil finne den siste av hans blodslinje og bringe dei tilbake til sin rettmessige heim.»</p>
+<p>Eg les mykje fantasy-romanar. Slikt kom lett til meg.</p>
+<p>«Vi fann ei kvinne som visste om desse etterkomarane. Ho fortalde oss at ein av dei budde på dette hotellet, og vi har kome for å finne han. Men vi har vorte spora hit av ein rivaliserande klan som vil hindre oss i å bringe heim prinsen vår, for å halde oss svake og lette å dominere. Difor er det avgjerande at vi held oss for oss sjølve. Vi snakkar ikkje med Det nye folket når vi kan unngå det. Å snakke med deg no skaper stort ubehag for meg.»</p>
+<p>Han såg skarpt på meg. Eg hadde tatt armane frå kross, noko som betydde at eg no var «synleg» for rivaliserande vampyrar, og ein av dei hadde langsamt sneke seg innpå oss. I siste augneblink snudde eg meg og såg ho, med armane utstrekte, kvesande mot oss, og spelte vampyr i høg stil.</p>
+<p>Eg kasta armane mine vidt ut og kveste tilbake mot ho, og fór så gjennom lobbyen, hoppa over ein skinnsofa og svinga rundt ei potteplante, slik at ho måtte jage meg. Eg hadde speida ut ei fluktrute ned gjennom trappehuset til treningssenteret i kjellaren, og eg tok den, og rista ho av meg.</p>
+<p>Eg såg han ikkje igjen den helga, men eg <em>fortalde</em> historia til nokre av mine med-laivarar, som broderte på forteljinga og fann mange høve til å fortelje den i løpet av helga.</p>
+<p>Det italienske magasinet hadde ein medarbeidar som hadde teke mastergraden sin på Amish anti-teknologi-samfunn på landsbygda i Pennsylvania, og ho synest vi høyrdest svært interessante ut. Basert på notata og lydopptaka til sjefen hennar frå turen til San Francisco, skreiv ho ein fascinerande, hjarteskjerande artikkel om desse rare, barnlege kultistane som kryssa Amerika på jakt etter «prinsen» sin. Herregud, folk trykkjer kva som helst no til dags.</p>
+<p>Men greia var at slike historier blir plukka opp og republiserte. Først var det italienske bloggarar, så nokre få amerikanske bloggarar. Folk over heile landet rapporterte «observasjonar» av Det gamle folket, sjølv om eg ikkje visste om dei fann det på, eller om andre spelte det same spelet.</p>
+<p>Det arbeidde seg oppover i mediekjeda heilt til <em>New York Times</em>, som diverre har ein usunn appetitt for faktasjekking. Reporteren dei sette på saka spora den til slutt tilbake til Monaco Hotel, som sette dei i kontakt med laiv-arrangørane, som leande fortalde heile historia.</p>
+<p>Vel, på det tidspunktet vart laiving mykje mindre kult. Vi vart kjende som nasjonens fremste svindlarar, som rare, patologiske løgnarar. Pressa som vi utilsikta hadde lurt til å dekkje historia om Det gamle folket, var no interessert i å redde æra si ved å rapportere om kor utruleg rare vi laivarar var, og det var då Charles lét alle på skulen få vite at Darryl og eg var dei største laivtullingane i byen.</p>
+<p>Det var ikkje ein god sesong. Nokre i gjengen brydde seg ikkje, men vi gjorde det. Ertinga var nådelaus, leia av Charles. Eg fann plast-tenner i veska mi, og ungar eg passerte i gangen sa «bleh, bleh» som ein teikneserievampyr, eller snakka med falske transilvanske aksentar når eg var i nærleiken.</p>
+<p>Vi bytte til ARG-ing ganske snart etterpå. Det var morosamare på nokre måtar, og det var mykje mindre rart. No og då sakna eg likevel kappa mi og dei helgene på hotellet.</p>
+<p>⁂</p>
+<p>Det motsette av <em>esprit d’escalier</em> er måten livets flausar kjem tilbake for å forfølgje oss sjølv lenge etter at dei er over. Eg kunne hugse kvar einaste dum ting eg nokon gong hadde sagt eller gjort, og hente dei fram med perfekt klarheit. Kvar gong eg følte meg nedfor, byrja eg naturleg nok å hugse andre gonger eg hadde følt det slik, ein hitparade av audmjukingar som kom den eine etter den andre i tankane mine.</p>
+<p>Medan eg prøvde å konsentrere meg om Masha og min føreståande undergang, kom hendinga med Det gamle folket stadig tilbake for å forfølgje meg. Det hadde vore ei liknande, sjuk, søkkande, fortapt kjensle då, etter kvart som fleire og fleire mediekanalar plukka opp historia, og sannsynet auka for at nokon skulle finne ut at det var eg som hadde servert historia til den dumme italienske redaktøren i designarjeans med skeive saumar, den stiva, kragelause skjorta og dei overdimensjonerte metallbrillene.</p>
+<p>Det finst eit alternativ til å dvele ved feila dine. Du kan lære av dei.</p>
+<p>Det er ein god teori, i alle fall. Kanskje grunnen til at underbevisstdomen din grev opp alle desse elendige spøkelsa er at dei treng å få ei avslutning før dei kan kvile i fred i audmjukingas etterliv. Underbevisstdomen min heldt fram med å besøkje meg med spøkelse i håp om at eg ville gjere noko for å la dei kvile i fred.</p>
+<p>Heile vegen heim grubla eg over dette minnet og tanken på kva eg skulle gjere med «Masha», i tilfelle ho spelte eit spel med meg. Eg trengde ei forsikring.</p>
+<p>Og innan eg nådde huset mitt – for å bli omfamna i melankolske klemmar frå mamma og pappa – hadde eg den.</p>
+<p>⁂</p>
+<p>Trikset var å time dette slik at det skjedde raskt nok til at DHS ikkje kunne førebu seg, men med lang nok førebuingstid til at Xnet fekk tid til å møte mannsterkt opp.</p>
+<p>Trikset var å iscenesetje dette slik at det var for mange til stades til å arrestere oss alle, men å plassere det ein stad der pressa og dei vaksne kunne sjå det, slik at DHS ikkje berre ville gasse oss igjen.</p>
+<p>Trikset var å kome på noko med medievennlegheita til levitasjonen av Pentagon. Trikset var å iscenesetje noko vi kunne samle oss rundt, som 3000 Berkeley-studentar som nekta å la ein av sine bli teken vekk i ein politibil.</p>
+<p>Trikset var å ha pressa der, klar til å fortelje kva politiet gjorde, slik dei hadde i 1968 i Chicago.</p>
+<p>Det kom til å bli litt av eit triks.</p>
+<p>Eg stakk frå skulen ein time tidlegare neste dag, ved hjelp av mine vanlege teknikkar for å kome meg ut, og brydde meg ikkje om det ville utløyse ein eller annan ny DHS-sjekkar som ville resultere i at foreldra mine fekk ei melding. På ein eller annan måte ville foreldra mine sitt siste problem etter i morgon vere om eg var i trøbbel på skulen.</p>
+<p>Eg møtte Ange heime hos ho. Ho hadde måtta stikke frå skulen endå tidlegare, men ho hadde berre laga eit stort nummer ut av menssmerter og lata som ho skulle svime av, og dei sende ho heim.</p>
+<p>Vi byrja å spreie ordet på Xnet. Vi sende det i e-post til pålitelege vener, og sende lynmeldingar til vennelistene våre. Vi vandra rundt på dekka og i byane i <em>Clockwork Plunder</em> og fortalde lagkameratane våre. Å gje alle nok informasjon til å få dei til å møte opp, men ikkje så mykje at vi avslørte oss for DHS, var vanskeleg, men eg trudde eg hadde akkurat den rette balansen:</p>
+<blockquote>
+<div><p>VAMPMOB I MORGON</p>
+<p>Viss du er ein gothar, kle deg for å imponere. Viss du ikkje er ein gothar, finn ein gothar og lån nokre klede. Tenk vampyr.</p>
+<p>Spelet startar klokka 08.00 presis. PRESIS. Ver der og klar til å bli delt inn i lag. Spelet varer i 30 minutt, så du vil ha god tid til å kome deg på skulen etterpå.</p>
+<p>Stad vil bli avslørt i morgon. Send din offentlege nøkkel på e-post til <a class="reference external" href="mailto:m1k3y&#37;&#52;&#48;littlebrother&#46;pirateparty&#46;org&#46;se">m1k3y<span>&#64;</span>littlebrother<span>&#46;</span>pirateparty<span>&#46;</span>org<span>&#46;</span>se</a> og sjekk meldingane dine klokka 7 for oppdateringa. Om det er for tidleg for deg, ver vaken heile natta. Det er det vi skal gjere.</p>
+<p>Dette er det mest morosame du deltek på heile året, garantert.</p>
+<p>Tru meg.</p>
+<p>M1k3y</p>
+</div></blockquote>
+<p>Så sende eg ei kort melding til Masha.</p>
+<blockquote>
+<div><p>I morgon</p>
+<p>M1k3y</p>
+</div></blockquote>
+<p>Eit minutt seinare sende ho ein e-post tilbake:</p>
+<blockquote>
+<div><p>Eg tenkte det. VampMob, ja? Du jobbar raskt. Bruk ein raud hatt. Reis lett.</p>
+</div></blockquote>
+<p>⁂</p>
+<p>Kva tek du med deg når du skal bli flyktning? Eg hadde bore nok tunge sekkar rundt på nok speidarleirar til å vite at kvart gram du legg til, skjer seg inn i skuldrene med heile den knusande tyngdekrafta for kvart steg du tek – det er ikkje berre eitt gram, det er eitt gram du ber i ein million steg. Det er eitt tonn.</p>
+<p>«Nettopp,» sa Ange. «Smart. Og ein tek aldri med seg meir enn tre dagars klede, heller. Ein kan skylje ting i vasken. Betre å ha ein flekk på t-skjorta enn ein koffert som er for stor og tung til å stue under eit flysete.»</p>
+<p>Ho hadde trekt fram ei kurérveske i ballistisk nylon som gjekk over brystet, mellom brysta – noko som fekk meg til å bli litt sveitt – og hang diagonalt over ryggen. Den var romsleg inni, og ho hadde lagt den ned på senga. No stabla ho klede ved sida av den.</p>
+<p>«Eg reknar med at tre t-skjorter, eit par bukser, eit par shorts, tre skift undertøy, tre par sokkar og ein genser vil gjere susen.»</p>
+<p>Ho tømde gymbagen sin og plukka ut toalettsakene. «Eg må hugse å putte tannbørsta min oppi i morgon tidleg før eg drar ned til Civic Center.»</p>
+<p>Å sjå ho pakke var imponerande. Ho var nådelaus med alt. Det var òg skremmande – det fekk meg til å innsjå at neste dag kom eg til å dra vekk. Kanskje for lenge. Kanskje for alltid.</p>
+<p>«Tek eg med Xbox-en min?» spurde ho. «Eg har tonnevis av ting på harddisken, notat og skisser og e-post. Eg vil ikkje at det skal hamne i feil hender.»</p>
+<p>«Alt er kryptert,» sa eg. «Det er standard med ParanoidXbox. Men la Xbox-en vere, det vil vere mange av dei i LA. Berre opprett ein piratparti-konto og send eit bilete av harddisken din på e-post til deg sjølv. Eg skal gjere det same når eg kjem heim.»</p>
+<p>Ho gjorde det, og sette e-posten i kø. Det kom til å ta eit par timar for all dataen å presse seg gjennom WiFi-nettverket til naboen og flyge sin veg til Sverige.</p>
+<p>Så lukka ho klaffen på sekken og stramma kompresjonsstroppane. Ho hadde no noko på storleik med ein fotball festa på ryggen, og eg stirde beundrande på det. Ho kunne gå nedover gata med den under skuldra, og ingen ville sett to gonger på ho – ho såg ut som ho var på veg til skulen.</p>
+<p>«Ein ting til,» sa ho, og gjekk til nattbordet og tok ut kondomane. Ho tok strimlane med gummi ut av eska, opna sekken og stappa dei inn, og gav meg så eit klaps på ræva.</p>
+<p>«Kva no?» sa eg.</p>
+<p>«No drar vi til deg og gjer dine ting. Det er på tide eg møter foreldra dine, ikkje sant?»</p>
+<p>Ho lét sekken liggje blant haugane med klede og rot over heile golvet. Ho var klar til å snu ryggen til alt, gå vekk, berre for å vere med meg. Berre for å støtte saka. Det fekk meg til å føle meg modig, eg òg.</p>
+<p>⁂</p>
+<p>Mamma var allereie heime då eg kom dit. Ho hadde laptopen sin open på kjøkkenbordet og svara på e-post medan ho snakka i eit hovudsett kopla til den, og hjelpte ein stakkars Yorkshire-mann og familien hans med å akklimatisere seg til å bu i Louisiana.</p>
+<p>Eg kom gjennom døra, og Ange følgde etter, glisande som berre det, men heldt handa mi så hardt at eg kunne kjenne beina gni mot kvarandre. Eg visste ikkje kva ho var så bekymra for. Det var ikkje som om ho kom til å tilbringe mykje tid saman med foreldra mine etter dette, sjølv om det gjekk dårleg.</p>
+<p>Mamma la på med Yorkshire-mannen då vi kom inn.</p>
+<p>«Hallo, Marcus,» sa ho, og gav meg eit kyss på kinnet. «Og kven er dette?»</p>
+<p>«Mamma, møt Ange. Ange, dette er mor mi, Lillian.» Mamma reiste seg og gav Ange ein klem.</p>
+<p>«Det er veldig hyggeleg å møte deg, kjære,» sa ho, og såg ho over frå topp til tå. Ange såg ganske akseptabel ut, trur eg. Ho kledde seg bra, og diskret, og ein kunne sjå kor smart ho var berre ved å sjå på ho.</p>
+<p>«Ei glede å møte deg, fru Yallow,» sa ho. Ho høyrdest veldig sjølvsikker og trygg ut. Mykje betre enn eg hadde vore då eg møtte mor hennar.</p>
+<p>«Det er Lillian, vennen,» sa ho. Ho tok inn kvar einaste detalj. «Blir du til middag?»</p>
+<p>«Det hadde vore flott,» sa ho.</p>
+<p>«Et du kjøt?» Mamma er ganske tilpassa livet i California.</p>
+<p>«Eg et alt som ikkje et meg først,» sa ho.</p>
+<p>«Ho er ein chili-junkie,» sa eg. «Du kunne servert ho gamle dekk, og ho ville ete dei om ho kunne dynke dei i salsa.»</p>
+<p>Ange dulta meg forsiktig i skuldra.</p>
+<p>«Eg tenkte å bestille thai,» sa mamma. «Eg legg til eit par av dei fem-chili-rettane deira i bestillinga.»</p>
+<p>Ange takka ho høfleg, og mamma styrte rundt på kjøkkenet, henta oss glas med jus og ein tallerken med kjeks og spurde tre gonger om vi ville ha te. Eg vrei meg litt.</p>
+<p>«Takk, mamma,» sa eg. «Vi skal gå opp ei lita stund.»</p>
+<p>Auga til mamma smalna eit sekund, så smilte ho igjen. «Sjølvsagt,» sa ho. «Far din kjem heim om ein time, vi et då.»</p>
+<p>Eg hadde vampyr-sakene mine bakerst i skapet. Eg lét Ange sortere gjennom det medan eg gjekk gjennom kleda mine. Eg skulle berre til LA. Dei hadde butikkar der, alle dei kleda eg kunne trenge. Eg trengde berre å samle tre eller fire favoritt-t-skjorter og eit par favoritt-jeans, ein deodorant, ein rull tanntråd.</p>
+<p>«Pengar!» sa eg.</p>
+<p>«Ja,» sa ho. «Eg tenkte å tømme bankkontoen min på veg heim i ein minibank. Eg har kanskje fem hundre spart opp.»</p>
+<p>«Verkeleg?»</p>
+<p>«Kva skal eg bruke dei på?» sa ho. «Sidan Xnet har eg ikkje eingong måtta betale noko servicegebyr.»</p>
+<p>«Eg trur eg har tre hundre eller så.»</p>
+<p>«Vel, der har du det. Ta dei ut på veg til Civic Center i morgon.»</p>
+<p>Eg hadde ein stor boksekk eg brukte når eg frakta mykje utstyr rundt i byen. Den var mindre påfallande enn campingsekken min. Ange gjekk gjennom haugane mine nådelaust og plukka ut favorittane sine.</p>
+<p>Då den var pakka og under senga mi, sette vi oss begge ned.</p>
+<p>«Vi må stå opp veldig tidleg i morgon,» sa ho.</p>
+<p>«Ja, stor dag.»</p>
+<p>Planen var å sende ut meldingar med ein haug falske VampMob-stader i morgon, og sende folk ut til avsidesliggjande stader innan få minutts gange frå Civic Center. Vi hadde skore ut ein spraymålingsjablong som berre sa VAMPMOB CIVIC CENTER -&gt; -&gt; som vi skulle spraymåle på dei stadene rundt klokka 5 om morgonen. Det ville hindre DHS i å låse ned Civic Center før vi kom dit. Eg hadde e-postroboten klar til å sende ut meldingane klokka 7 – eg ville berre la Xbox-en min stå på når eg gjekk ut.</p>
+<p>«Kor lenge …» Ho stoppa midt i setninga.</p>
+<p>«Det er det eg òg har lurt på,» sa eg. «Det kan bli lenge, antar eg. Men kven veit? Med artikkelen til Barbara som kjem ut–» eg hadde òg sett ein e-post til ho i kø for neste morgon – «og alt, kanskje vi blir heltar om to veker.»</p>
+<p>«Kanskje,» sa ho og sukka.</p>
+<p>Eg la armen rundt ho. Skuldrene hennar skalv.</p>
+<p>«Eg er livredd,» sa eg. «Eg trur det ville vore galskap å ikkje vere livredd.»</p>
+<p>«Ja,» sa ho. «Ja.»</p>
+<p>Mamma kalla oss til middag. Pappa handhelste på Ange. Han såg ubarbert og bekymra ut, slik han hadde gjort sidan vi drog for å sjå Barbara, men då han møtte Ange, kom litt av den gamle pappaen tilbake. Ho kyssa han på kinnet, og han insisterte på at ho skulle kalle han Drew.</p>
+<p>Middagen var faktisk veldig hyggeleg. Isen braut då Ange tok fram chilisprayen sin og behandla tallerkenen sin, og forklarte om Scoville-einingar. Pappa prøvde ein gaffel av maten hennar og vingla ut på kjøkkenet for å drikke ein gallon mjølk. Tru det eller ei, mamma prøvde det framleis etter det og gav alle inntrykk av å elske det. Mamma, viste det seg, var eit uoppdaga geni innan sterk mat, eit naturtalent.</p>
+<p>Før ho drog, gav Ange chilisprayen til mamma. «Eg har ein ekstra heime,» sa ho. Eg hadde sett ho pakke den i ryggsekken sin. «Du verkar som den typen kvinne som burde ha ein av desse.»</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02-boka"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="17-Kapittel17.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kapittel 17</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="19-Kapittel19.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kapittel 19</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

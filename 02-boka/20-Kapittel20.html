@@ -1,0 +1,544 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Kapittel 20 &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02-boka/20-Kapittel20';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Kapittel 21" href="21-Kapittel21.html" />
+    <link rel="prev" title="Kapittel 19" href="19-Kapittel19.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../01-intro/01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../01-intro/01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01-intro/02-intro.html">Forord</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09-Kapittel9.html">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13-Kapittel13.html">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18-Kapittel18.html">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Kapittel 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="21-Kapittel21.html">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/01-Etterord.html">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/02-boka/20-Kapittel20.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Kapittel 20</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="kapittel-20">
+<h1>Kapittel 20<a class="headerlink" href="#kapittel-20" title="Link to this heading">#</a></h1>
+<p><em>Dette kapittelet er dedikert til The Tattered Cover, Denvers legendariske uavhengige bokhandel. Eg snubla over The Tattered Cover heilt tilfeldig: Alice og eg hadde nettopp landa i Denver, komande frå London, og det var tidleg og kaldt, og vi trengde kaffi. Vi køyrde i formålslause leigebil-sirklar, og det var då eg såg det, skiltet til The Tattered Cover. Noko med det prikka i bakhovudet mitt – eg visste eg hadde høyrt om denne staden. Vi svinga inn (fekk ein kaffi) og gjekk inn i butikken – eit eventyrland av mørkt tre, heimekoselege lesekrokar og milevis med bokhyller. The Tattered Cover <a class="reference external" href="http://www.tatteredcover.com/NASApp/store/Product?s=showproduct&amp;amp;isbn=9780765319852">http://www.tatteredcover.com/NASApp/store/Product?s=showproduct&amp;isbn=9780765319852</a> 1628 16th St., Denver, CO USA 80202 +1 303 436 1070</em></p>
+<p>Sekken gjekk raskt over hovudet mitt og vart stramma så hardt i halsen at eg hosta og kasta opp gratispizzaen min. Medan eg spasma og hosta kvelande, batt harde hender handledda mine, så anklane. Eg vart rulla over på ei båre og heist opp, boren inn i eit køyretøy, opp eit par klangfulle metalltrinn. Dei slapp meg ned på eit polstra golv. Det var ingen lyd i det heile tatt bak i køyretøyet då dei lukka dørene. Polstringa dempa alt bortsett frå mi eiga kveling.</p>
+<p>«Vel, hallo igjen,» sa ho. Eg kjende varebilen gynge då ho kravla inn med meg. Eg hosta framleis kvelande, og prøvde å gispe etter luft. Oppkast fylte munnen min og rann ned i luftrøyret.</p>
+<p>«Vi vil ikkje la deg døy,» sa ho. «Om du sluttar å puste, skal vi sørgje for at du byrjar igjen. Så ikkje bekymre deg for det.»</p>
+<p>Eg hosta hardare. Eg sippa til meg luft. Litt kom gjennom. Ei djup skakande hostekule rista brystet og ryggen min, og løyste opp meir av spyet. Meir pust.</p>
+<p>«Ser du?» sa ho. «Ikkje så ille. Velkomen heim, M1k3y. Vi har ein heilt spesiell stad å ta deg med til.»</p>
+<p>Eg slappa av på ryggen, og kjende varebilen gynge. Lukta av brukt pizza var overveldande først, men som med alle sterke stimuli, vart hjernen min gradvis van med den, filtrerte den ut til den berre var ein svak aroma. Gynginga til varebilen var nesten trøystande.</p>
+<p>Det var då det skjedde. Ei utruleg, djup ro som sveipte over meg som om eg låg på stranda og havet hadde skylt inn og løfta meg så varsamt som ein forelder, halde meg oppe og sveipt meg ut på eit varmt hav under ei varm sol. Etter alt som hadde skjedd, var eg fanga, men det spelte inga rolle. Eg hadde fått informasjonen til Barbara. Eg hadde organisert Xnet. Eg hadde vunne. Og om eg ikkje hadde vunne, hadde eg gjort alt eg kunne ha gjort. Meir enn eg nokon gong trudde eg kunne gjere. Eg tok ein mental inventarliste medan eg køyrde, og tenkte på alt eg hadde oppnådd, som <em>vi</em> hadde oppnådd. Byen, landet, verda var full av folk som ikkje ville leve slik DHS ville vi skulle leve. Vi kom til å kjempe for alltid. Dei kunne ikkje fengsle oss alle.</p>
+<p>Eg sukka og smilte.</p>
+<p>Ho hadde snakka heile tida, innsåg eg. Eg hadde vore så langt inne i lykkestaden min at ho berre hadde forsvunne.</p>
+<p>«–smart gut som deg. Ein skulle tru du visste betre enn å rote med oss. Vi har hatt eit auge med deg sidan den dagen du gjekk ut. Vi ville ha fanga deg sjølv om du ikkje hadde gått gråtande til den lesbiske journalist-forrædaren din. Eg forstår det berre ikkje – vi hadde ein avtale, du og eg …»</p>
+<p>Vi rumla over ei metallplate, støtdemparane til varebilen gynga, og så endra gynginga seg. Vi var på vatn. På veg til Treasure Island. Hei, Ange var der. Darryl òg. Kanskje.</p>
+<p>⁂</p>
+<p>Hetta vart ikkje teken av før eg var i cella mi. Dei brydde seg ikkje med lenkene på handledda og anklane mine, rulla meg berre av båra og ned på golvet. Det var mørkt, men i måneskinnet frå det eine, vesle, høge vindauget kunne eg sjå at madrassen var teken av køya. Rommet inneheldt meg, eit toalett, ei sengeramme og ein vask, og ingenting anna.</p>
+<p>Eg lukka auga og lét havet løfte meg. Eg flaut vekk. Ein stad, langt under meg, var kroppen min. Eg kunne ane kva som kom til å skje vidare. Eg skulle bli etterlaten for å pisse på meg. Igjen. Eg visste korleis det var. Eg hadde pissa på meg før. Det lukta vondt. Det klødde. Det var audmjukande, som å vere ein baby.</p>
+<p>Men eg hadde overlevd det.</p>
+<p>Eg lo. Lyden var rar, og den drog meg tilbake inn i kroppen min, tilbake til notida. Eg lo og lo. Eg hadde fått det verste dei kunne kaste på meg, og eg hadde overlevd det, og eg hadde <em>slått dei</em>, slått dei i månadsvis, vist dei fram som toskar og despotar. Eg hadde <em>vunne</em>.</p>
+<p>Eg lét blæra sleppe laus. Den var sår og full uansett, så kvifor ikkje?</p>
+<p>Havet sveipte meg vekk.</p>
+<p>⁂</p>
+<p>Då morgonen kom, klipte to effektive, upersonlege vakter bindingane av handledda og anklane mine. Eg kunne framleis ikkje gå – når eg reiste meg, gav beina mine etter som på ei trådlaus marionettdokke. For mykje tid i éin posisjon. Vaktene trekte armane mine over skuldrene og halv-drog/halv-bar meg ned den kjende korridoren. Strekkodane på dørene krølla seg opp og hang no laust, angripne av den ramsalte lufta.</p>
+<p>Eg fekk ein idé. «Ange!» ropte eg. «Darryl!» ropte eg. Vaktene mine rykte meg raskare av garde, tydeleg forstyrra, men usikre på kva dei skulle gjere med det. «Folkens, det er meg, Marcus! Ver frie!»</p>
+<p>Bak ei av dørene høyrde eg hulking. Nokre andre ropte ut på det som høyrdest ut som arabisk. Så vart det kakofoni, tusen ulike ropande stemmer.</p>
+<p>Dei tok meg med til eit nytt rom. Det var eit gamalt dusjrom, med dusjhovuda framleis til stades i dei mugne flisene.</p>
+<p>«Hallo, M1k3y,» sa Sterng Frisyre. «Du ser ut til å ha hatt ein hendingsrik morgon.» Ho rynka på nasen med vilje.</p>
+<p>«Eg pissa på meg,» sa eg, muntert. «Du burde prøve det.»</p>
+<p>«Kanskje vi burde gje deg eit bad, då,» sa ho. Ho nikka, og vaktene mine bar meg til ei anna båre. Denne hadde festestropper langs heile lengda. Dei slapp meg ned på den, og den var iskald og gjennomvåt. Før eg visste ordet av det, hadde dei stroppene over skuldrene, hoftene og anklane mine. Eit minutt seinare var tre stropper til festa. Hendene til ein mann greip rekkverka ved hovudet mitt og løyste nokre låsar, og eit augneblink seinare vart eg vippa ned, med hovudet lågare enn føtene.</p>
+<p>«La oss starte med noko enkelt,» sa ho. Eg strekte hals for å sjå ho. Ho hadde snudd seg mot ein pult med ein Xbox på, kopla til ein dyrt utsjåande flatskjerm-TV. «Eg vil gjerne at du fortel meg innlogginga og passordet ditt for Piratparti-e-posten, er du snill?»</p>
+<p>Eg lukka auga og lét havet bere meg vekk frå stranda.</p>
+<p>«Veit du kva waterboarding er, M1k3y?» Stemma hennar drog meg inn. «Du blir spent fast slik, og vi heller vatn over hovudet ditt, opp i nasen og ned i munnen. Du kan ikkje undertrykkje brekningsrefleksen. Dei kallar det ein simulert avretting, og ut frå det eg kan sjå frå denne sida av rommet, er det ei rettferdig vurdering. Du vil ikkje klare å kjempe mot kjensla av at du døyr.»</p>
+<p>Eg prøvde å forsvinne. Eg hadde høyrt om waterboarding. Her var vi, ekte tortur. Og dette var berre byrjinga.</p>
+<p>Eg klarte ikkje å forsvinne. Havet sveipte ikkje inn og løfta meg. Det var ei stramheit i brystet, augelokka mine blafra. Eg kunne kjenne klamt piss på beina og klam sveitte i håret. Huda mi klødde av det tørka spyet.</p>
+<p>Ho symde inn i synsfeltet mitt over meg. «La oss starte med innlogginga,» sa ho.</p>
+<p>Eg lukka auga, klemte dei att.</p>
+<p>«Gje han ein drink,» sa ho.</p>
+<p>Eg høyrde folk bevege seg. Eg trekte pusten djupt og heldt den.</p>
+<p>Vatnet starta som ein sildrande straum, ei ause med vatn som forsiktig vart helt over haka mi, leppene mine. Opp i dei oppovervende nasebora mine. Det rann tilbake i halsen min, og byrja å kvele meg, men eg ville ikkje hoste, ville ikkje gispe og suge det inn i lungene. Eg heldt på pusten og klemte auga hardare att.</p>
+<p>Det var uro utanfor rommet, ein lyd av kaotiske støveltramp, sinte, harme rop. Ausa vart tømd i andletet mitt.</p>
+<p>Eg høyrde ho mumle noko til nokon i rommet, så sa ho til meg: «Berre innlogginga, Marcus. Det er eit enkelt spørsmål. Kva kunne eg gjort med innlogginga di, uansett?»</p>
+<p>Denne gongen var det ei bøtte med vatn, alt på ein gong, ein flaum som ikkje stoppa, den må ha vore gigantisk. Eg kunne ikkje la vere. Eg gispa og sugde vatnet ned i lungene, hosta og fekk meir vatn i meg. Eg visste dei ikkje kom til å drepe meg, men eg klarte ikkje å overtyde kroppen min om det. I kvar ein fiber i kroppen min visste eg at eg kom til å døy. Eg klarte ikkje eingong å gråte – vatnet fossa framleis over meg.</p>
+<p>Så stoppa det. Eg hosta og hosta og hosta, men i den vinkelen eg låg i, rann vatnet eg hosta opp tilbake i nasen og brann nedover biholene. Hosten var så djup at den gjorde vondt, vondt i ribbeina og hoftene då eg vrei meg mot den. Eg hata korleis kroppen min forrådde meg, korleis sinnet mitt ikkje kunne kontrollere kroppen, men det var ingenting å gjere.</p>
+<p>Til slutt hadde hosten lagt seg nok til at eg kunne ta inn det som skjedde rundt meg. Folk ropte, og det høyrdest ut som nokon slost, brytekamp. Eg opna auga og blinka i det skarpe lyset, strekte så halsen, medan eg framleis hosta litt.</p>
+<p>Rommet hadde mange fleire folk i seg enn det hadde hatt då vi starta. Dei fleste såg ut til å ha på seg skotsikre drakter, hjelmar og røykfarga plastvisir. Dei ropte til Treasure Island-vaktene, som ropte tilbake, med årer som bulte i nakken.</p>
+<p>«Legg dykk ned!» sa ein av dei i skotsikker drakt. «Legg dykk ned og ta hendene i vêret. De er arresterte!»</p>
+<p>Streng Frisyre snakka i telefonen sin. Ein av dei hjelmkledde la merke til ho, og han gjekk raskt bort til ho og slo telefonen vekk med ei hanskekledd hand. Alle vart stille då den segla gjennom lufta i ein boge som spente over det vesle rommet, og klirra i bakken i ein dusj av delar.</p>
+<p>Stilla vart broten, og dei pansra soldatane bevega seg inn i rommet. To greip tak i kvar av torturistane mine. Eg klarte nesten å smile av uttrykket i andletet til Streng Frisyre då to menn greip skuldrene hennar, snudde ho rundt, og slengde eit sett med plasthandjern rundt handledda hennar.</p>
+<p>Ein av dei pansra soldatane kom fram frå dørkarmen. Han hadde eit videokamera på skuldra, eit seriøst utstyr med blendande kvitt lys. Han filma heile rommet, sirkla rundt meg to gonger medan han filma meg. Eg fann meg sjølv sitjande heilt stille, som om eg sat for eit portrett.</p>
+<p>Det var latterleg.</p>
+<p>«Trur de at de kunne fått meg laus frå denne tingen?» klarte eg å få ut med berre litt hosting.</p>
+<p>To til av soldatane kom bort til meg, den eine ei kvinne, og byrja å løyse meg. Dei vippa opp visira og smilte til meg. Dei hadde raude krossar på skuldrene og hjelmane.</p>
+<p>Under dei raude krossane var det eit anna merke: CHP. California Highway Patrol. Dei var delstatspoliti.</p>
+<p>Eg byrja å spørje kva dei gjorde der, og det var då eg såg Barbara Stratford. Ho hadde tydelegvis vorte halden tilbake i korridoren, men no kom ho pressande og skubbande. «Der er du,» sa ho, knelte ved sida av meg og greip meg i den lengste, hardaste klemmen i mitt liv.</p>
+<p>Det var då eg visste det – Guantanamo-ved-bukta var tapt til fiendane sine. Eg var redda.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02-boka"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="19-Kapittel19.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Kapittel 19</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="21-Kapittel21.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kapittel 21</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

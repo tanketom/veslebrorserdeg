@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Forord &#8212; Veslebror</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '01-intro/02-intro';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Kapittel 1" href="../02-boka/01-Kapittel1.html" />
+    <link rel="prev" title="Les meg først" href="01-readme.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="01-readme.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Veslebror - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Veslebror - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="01-readme.html">
+                    Les meg først
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Forord</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/01-Kapittel1.html">Kapittel 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/02-Kapittel2.html">Kapittel 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/03-Kapittel3.html">Kapittel 3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/04-Kapittel4.html">Kapittel 4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/05-Kapittel5.html">Kapittel 5</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/06-Kapittel6.html">Kapittel 6</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/07-Kapittel7.html">Kapittel 7</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/08-Kapittel8.html">Kapittel 8</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/09-Kapittel9.html">Kapittel 9</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/10-Kapittel10.html">Kapittel 10</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/11-Kapittel11.html">Kapittel 11</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/12-Kapittel12.html">Kapittel 12</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/13-Kapittel13.html">Kapittel 13</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/14-Kapittel14.html">Kapittel 14</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/15-Kapittel15.html">Kapittel 15</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/16-Kapittel16.html">Kapittel 16</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/17-Kapittel17.html">Kapittel 17</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/18-Kapittel18.html">Kapittel 18</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/19-Kapittel19.html">Kapittel 19</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/20-Kapittel20.html">Kapittel 20</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/21-Kapittel21.html">Kapittel 21</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../02-boka/22-Epilog.html">Epilog</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/01-Etterord.html">Etterord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03-etterord/02-Bibliografi-takk.html">Bibliografi og takk</a></li>
+
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/01-Men-kvifor.html">Men, Andreas, kvifor?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04-tillegg/02-lenker-info.html">Nyttige lenker og læremateriell om boka</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">Creative Commons-lisens</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/tanketom/veslebrorserdeg" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/01-intro/02-intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Forord</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gjer-noko">Gjer noko</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storbritannia">Storbritannia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#andre-utgaver">Andre utgåver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opphavsrett-saka">Opphavsrett-saka</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donasjonar-og-eit-ord-til-laerarar-og-bibliotekarar">Donasjonar og eit ord til lærarar og bibliotekarar</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="forord">
+<h1>Forord<a class="headerlink" href="#forord" title="Link to this heading">#</a></h1>
+<p><em>Av Cory Doctorow</em></p>
+<p>Eg skreiv <em>Little Brother</em> i eit kvitglødande raseri mellom 7. mai 2007 og 2. juli 2007: nøyaktig åtte veker frå den dagen eg tenkte han ut til den dagen eg fullførte han (Alice, som denne boka er dedisert til, måtte tole at eg hamra ut det siste kapittelet klokka 5 om morgonen på hotellet vårt i Roma, der vi feira bryllaupsdagen vår). Eg hadde alltid drøymt om at ei bok berre skulle materialisere seg, fullt forma, og strøyme ut av fingertuppane mine, utan sveitte og strev – men det var slett ikkje så gøy som eg hadde trudd det ville vere. Det var dagar då eg skreiv 10 000 ord, bøygd over tastaturet på flyplassar, på T-banen, i drosjer – kvar som helst eg kunne skrive. Boka prøvde å kome seg ut av hovudet mitt, uansett kva, og eg gjekk glipp av så mykje søvn og så mange måltid at vener byrja å spørje om eg var sjuk.</p>
+<p>Då far min var ein ung universitetsstudent på 1960-talet, var han ein av dei få «motkultur»-folka som meinte at datamaskiner var noko bra. For dei fleste unge representerte datamaskiner avhumaniseringa av samfunnet. Universitetsstudentar vart reduserte til nummer på eit holkort, kvart med påskrifta «DO NOT BEND, SPINDLE, FOLD OR MUTILATE», noko som fekk nokre av studentane til å bere merke der det stod: «EG ER EIN STUDENT: IKKJE BØY, BRETT, STIKK HOL PÅ ELLER ØYDELEGG MEG.» Datamaskiner vart sett på som eit middel for å auke styresmaktene si evne til å regimentere folk og tvinge dei til å følgje viljen deira.</p>
+<p>Då eg var 17, verka det som om verda berre skulle bli friare. Berlinmuren var i ferd med å falle. Datamaskiner – som hadde vore nerdete og rare nokre år tidlegare – var overalt, og modemet eg hadde brukt for å kople meg til lokale BBS-ar, kopla meg no til heile verda gjennom internett og kommersielle onlinetenester som GEnie. Min livslange fascinasjon for aktivistsaker gjekk i høggir då eg såg korleis hovudvanskane i aktivisme – organisering – vart lettare i sprang (eg hugsar framleis første gongen eg gjekk frå å sende ut eit nyheitsbrev med handskrivne adresser til å bruke ein database med utskriftsfletting). I Sovjetunionen vart kommunikasjonsverktøy brukte til å bringe informasjon og revolusjon til dei fjernaste krokane av den største autoritære staten jorda nokon gong hadde sett.</p>
+<p>Men 17 år seinare er ting veldig annleis. Datamaskinene eg elskar blir kuppa, brukte til å spionere på oss, kontrollere oss, sladre på oss. National Security Agency har ulovleg avlytta heile USA og sloppe unna med det. Bilutleigefirma, kollektivtransport og trafikkstyresmakter overvaker kvar vi drar, sender oss automatiske bøter, og sladrar på oss til brysomme folk, politi og skurkar som får ulovleg tilgang til databasane deira. Transport Security Administration har ei «flyforbodsliste» over folk som aldri har vorte dømde for noko brotsverk, men som likevel blir rekna som for farlege til å flyge. Innhaldet i lista er hemmeleg. Regelen som gjer ho rettskraftig er hemmeleg. Kriteria for å bli lagt til på lista er hemmelege. Ho har fireåringar på seg. Og amerikanske senatorar. Og dekorerte veteranar – ekte krigsheltar.</p>
+<p>Dei 17-åringane eg kjenner forstår til punkt og prikke kor farleg ei datamaskin kan vere. Det autoritære marerittet frå 1960-talet har kome heim til dei. Dei forførariske små boksane på skriveborda og i lommene deira overvaker kvar einaste rørsle, stengjer dei inne, og frårøvar dei systematisk dei nye fridomane eg hadde nytt og gjort så god bruk av i mi unge vaksdomstid.</p>
+<p>Dessutan vart born tydelegvis brukte som prøvekaninar for ein ny type teknologisk stat som vi alle var på veg mot, ei verd der det å ta eit bilete enten var piratkopiering (på kino, museum eller til og med ein Starbucks), eller terrorisme (på ein offentleg stad), men der vi kunne bli fotograferte, spora og logga hundrevis av gonger om dagen av kvar einaste smådiktator, politimann, byråkrat og butikkeigar. Ei verd der kva som helst tiltak, inkludert tortur, kunne rettferdiggjerast berre ved å veive med hendene og rope «Terrorisme! 9/11! Terrorisme!» til all usemje stilna.</p>
+<p>Vi treng ikkje å gå den vegen. Viss du elskar fridom, viss du meiner den menneskelege tilstanden blir verdigare gjennom personvern, gjennom retten til å vere i fred, gjennom retten til å utforske dei rare ideane dine så lenge du ikkje skadar andre, då har du felles sak med ungane viss nettlesarar og mobiltelefonar blir brukte til å låse dei inne og følgje etter dei. Viss du trur at svaret på dårleg tale er meir tale – ikkje sensur – då har du ein hund i kampen. Viss du trur på eit lovstyrt samfunn, eit land der herskarane våre må fortelje oss reglane, og må følgje dei sjølve òg, då er du ein del av den same kampen som born kjempar når dei argumenterer for retten til å leve under den same rettsfråsegna som vaksne har.</p>
+<p>Denne boka er meint å vere ein del av samtalen om kva eit informasjonssamfunn betyr: betyr det total kontroll, eller uhøyrd fridom? Det er ikkje berre eit substantiv, det er eit verb, det er noko du <em>gjer</em>.</p>
+<section id="gjer-noko">
+<h2>Gjer noko<a class="headerlink" href="#gjer-noko" title="Link to this heading">#</a></h2>
+<p>Denne boka er meint å vere noko du <em>gjer</em>, ikkje berre noko du les. Teknologien i denne boka er enten ekte eller nesten ekte. Du kan byggje mykje av han. Du kan dele og remikse han (sjå OPPHAVSRETT-SAKA, nedanfor). Du kan bruke ideane til å starte viktige diskusjonar med vener og familie. Du kan bruke desse ideane til å overvinne sensur og kome deg på det frie internettet, sjølv om regjeringa, arbeidsgjevaren eller skulen din ikkje vil at du skal det.</p>
+<p><strong>Lage ting:</strong> Folka hos Instructables har lagt ut nokre knallgode rettleiingar for å byggje teknologien i denne boka. Det er enkelt og utruleg gøy. Det finst ikkje noko så givande i denne verda som å lage ting, spesielt ting som gjer deg friare: <a class="reference external" href="http://www.instructables.com/member/w1n5t0n/">http://www.instructables.com/member/w1n5t0n/</a></p>
+<p><strong>Diskusjonar:</strong> Det finst ei lærerveggleding til denne boka som forleggjaren min, Tor, har sett saman, med massevis av idear for diskusjonar i klasserommet, lesegrupper og heime om ideane i ho: <a class="reference external" href="http://www.tor-forge.com/static/Little_Brother_Readers_Guide.pdf">http://www.tor-forge.com/static/Little_Brother_Readers_Guide.pdf</a></p>
+<p><strong>Overvinn sensur:</strong> Etterordet i denne boka har mange ressursar for å auke fridomen din på nettet, blokkere snokarar og unngå sensurprogram-blokkeringar. Jo fleire som veit om dette, jo betre.</p>
+<p><strong>Dine historier:</strong> Eg samlar på historier frå folk som har brukt teknologi for å få overtaket når dei har stått overfor maktmisbruk. Eg kjem til å inkludere dei beste av desse i eit spesielt etterord til den britiske utgåva (sjå nedanfor) av boka, og eg vil også leggje dei ut på nettet. Send meg historiene dine på <a class="reference external" href="mailto:doctorow&#37;&#52;&#48;craphound&#46;com">doctorow<span>&#64;</span>craphound<span>&#46;</span>com</a>, med emnelinja «Abuses of Authority».</p>
+</section>
+<section id="storbritannia">
+<h2>Storbritannia<a class="headerlink" href="#storbritannia" title="Link to this heading">#</a></h2>
+<p>Eg er kanadiar, og eg har budd mange stader (inkludert San Francisco, settinga for <em>Little Brother</em>), og no bur eg i London, England, med kona mi Alice og den vesle dottera vår, Poesy. Eg har budd her (av og på) i fem år no, og sjølv om eg elskar staden i fillebitar, er det éin ting som alltid har plaga meg: bøkene mine er ikkje tilgjengelege her. Nokre butikkar hadde dei som spesialvarer, importerte frå USA, men dei vart ikkje gitt ut av ein britisk forleggjar.</p>
+<p>Det har endra seg! HarperCollins UK har kjøpt dei britiske rettane til denne boka (saman med mi neste ungdomsroman, <em>FOR THE WIN</em>), og dei gir ho ut berre nokre månader etter den amerikanske utgåva, 17. november 2008 (dagen etter at eg kjem tilbake frå bryllaupsreisa mi!). Oppdatering, 27. november 2008: Og no er ho i hyllene! HarperCollins-utgåva er knallbra, ho òg!</p>
+<p>Eg er så glad for dette at eg kunne sprekke, ærleg talt. Ikkje berre fordi dei endeleg sel bøkene mine i mitt adopterte heimland, men fordi eg oppdrar ei dotter her, for faen, og overvakings- og kontrollmanien i dette landet byrjar å skremme vatnet av meg. Det verkar som om heile politi- og styringssystemet i Storbritannia har forelska seg i å ta DNA-prøvar, fingeravtrykk og videoopptak av alle, i tilfelle du ein dag skulle gjere noko gale. Tidleg i 2008 foreslo sjefen for Scotland Yard seriøst å ta DNA frå femåringar som viser «krenkjande trekk» fordi dei sannsynlegvis vil vekse opp til å bli kriminelle. Veka etter sette London-politiet opp plakatar der dei bad oss alle om å melde frå om folk som ser ut til å ta bilete av dei allestadsnærverande CCTV-spionkameraa, fordi alle som er for opptekne av overvakingsmaskineriet truleg er ein terrorist.</p>
+<p>Amerika er ikkje det einaste landet som mista forstanden dette tiåret. Storbritannia er rett der i galehuset saman med dei, siklande nedover skjortebrystet og peikande fingeren mot usynlege busemenn og skrikande til dei får medisinane sine.</p>
+<p>Vi må ha denne samtalen over heile planeten. Vil du skaffe deg eit eksemplar i Storbritannia? Sjølvsagt! <a class="reference external" href="http://craphound.com/littlebrother/buy/#uk">http://craphound.com/littlebrother/buy/#uk</a></p>
+</section>
+<section id="andre-utgaver">
+<h2>Andre utgåver<a class="headerlink" href="#andre-utgaver" title="Link to this heading">#</a></h2>
+<p>Agenten min, Russell Galen (og underagenten hans Danny Baror), gjorde ein fantastisk jobb med å førehandsselje rettane til <em>Little Brother</em> på mange språk og format. Her er lista per i dag (4. mai 2008). Eg vil oppdatere ho etter kvart som fleire utgåver blir selde, så hent gjerne ein ny kopi av denne fila (<a class="reference external" href="http://craphound.com/littlebrother/download">http://craphound.com/littlebrother/download</a>) viss det er ei utgåve du håpar å sjå, eller sjå <a class="reference external" href="http://craphound.com/littlebrother/buy/">http://craphound.com/littlebrother/buy/</a> for lenker til å kjøpe alle utgåvene som er i sal no.</p>
+</section>
+<section id="opphavsrett-saka">
+<h2>Opphavsrett-saka<a class="headerlink" href="#opphavsrett-saka" title="Link to this heading">#</a></h2>
+<p>Creative Commons-lisensen øvst i denne fila har sannsynlegvis gitt deg eit hint om at eg har nokre ganske uortodokse syn på opphavsrett. Her er kva eg meiner om det, i eit nøtteskal: litt rekkjer langt, og meir enn det er for mykje.</p>
+<p>Eg likar at opphavsretten let meg selje rettar til forleggjarane mine, filmstudio og så vidare. Det er fint at dei ikkje berre kan ta tinga mine utan løyve og bli rike på det utan å gje meg ein del av kaka. Eg er i ein ganske god posisjon når det gjeld å forhandle med desse selskapa: Eg har ein flott agent og eit tiårs erfaring med opphavsrettslov og lisensiering (inkludert ein periode som delegat ved WIPO, FN-byrået som lagar verdas opphavsrettstraktatar). Dessutan er det berre ikkje så mange av desse forhandlingane – sjølv om eg sel femti eller hundre ulike utgåver av <em>Little Brother</em> (noko som ville plassere ho i den øvste milliondelen av ein prosent for skjønnlitteratur), er det framleis berre hundre forhandlingar, noko eg akkurat kunne klart.</p>
+<p>Eg hatar at fans som vil gjere det lesarar alltid har gjort, blir forventa å spele i det same systemet som alle desse stjerneagentane og advokatane. Det er berre dumt å seie at eit barneskuleklasserom må snakke med ein advokat hos ein gigantisk global forleggjar før dei set opp eit skodespel basert på ei av bøkene mine. Det er latterleg å seie at folk som vil «låne» den elektroniske kopien av boka mi til ein ven, treng ein lisens for å gjere det. Å låne ut bøker har eksistert lenger enn nokon forleggjar på jorda, og det er ein fin ting.</p>
+<p>For å gjere ei lang historie kort: Eg gir bort e-bøker fordi det gir meg kunstnarleg, moralsk og kommersiell tilfredsstilling. Det kommersielle spørsmålet er det som oftast dukkar opp: korleis kan du gje bort gratis e-bøker og framleis tene pengar? For meg – for så å seie alle forfattarar – er det store problemet ikkje piratkopiering, det er å vere ukjend (takk til Tim O’Reilly for denne flotte aforismen). Av alle som ikkje kjøpte denne boka i dag, gjorde fleirtalet det fordi dei aldri hadde høyrt om ho, ikkje fordi nokon gav dei ein gratis kopi.</p>
+<p>E-bøker er verb, ikkje substantiv. Du kopierer dei, det ligg i naturen deira. Og mange av dei kopiane har ein destinasjon, ein person dei er meinte for, ei handlaga overføring frå ein person til ein annan, som inneber ei personleg tilråding mellom to personar som stolar nok på kvarandre til å dele bits. Det er den typen ting forfattarar (bør) drøyme om, den ordspråklege avgjerda. Ved å gjere bøkene mine tilgjengelege for gratis vidaresending, gjer eg det enkelt for folk som elskar dei å hjelpe andre med å elske dei.</p>
+<p>Det er det kommersielle argumentet for å lage gratis e-bøker. No over til det kunstnarlege. Det er det tjueførste hundreåret. Å kopiere ting kjem aldri, aldri til å bli vanskelegare enn det er i dag (eller viss det blir det, vil det vere fordi sivilisasjonen har kollapsa, og då har vi andre problem). Harddiskar kjem ikkje til å bli større, dyrare eller mindre romslege. Nettverk kjem ikkje til å bli treigare eller vanskelegare å få tilgang til. Viss du ikkje lagar kunst med intensjon om å få han kopiert, lagar du eigentleg ikkje kunst for det tjueførste hundreåret. Det er noko sjarmerande med å lage verk du ikkje vil ha kopiert, på same måte som det er hyggeleg å dra til ein bygdetun og sjå den gamaldagse smeden sko ein hest ved si tradisjonelle smie. Men det er knapt, du veit, moderne. Eg er ein science fiction-forfattar. Det er jobben min å skrive om framtida (på ein god dag) eller i det minste notida. Kunst som ikkje er meint for å kopierast, høyrer fortida til.</p>
+<p>Til slutt, la oss sjå på det moralske argumentet. Å kopiere ting er naturleg. Det er slik vi lærer (ved å kopiere foreldra våre og folka rundt oss). Mi første historie, skriven då eg var seks, var ei ivrig attforteljing av Star Wars, som eg nettopp hadde sett på kino. No som internett – verdas mest effektive kopimaskin – er så å seie overalt, kjem kopieringsinstinktet vårt berre til å utspele seg meir og meir. Det finst ingen måte eg kan stoppe lesarane mine på, og viss eg prøvde, ville eg vore ein hyklar: då eg var 17, laga eg mixtapes, fotokopierte historier, og kopierte generelt på alle måtar eg kunne førestille meg. Viss internett hadde vore tilgjengeleg då, ville eg ha brukt det til å kopiere så mykje eg overhovudet kunne.</p>
+<p>Det finst ingen måte å stoppe det på, og dei som prøver endar opp med å gjere meir skade enn piratkopiering nokon gong gjorde. Platebransjens latterlege heilage krig mot fildelarar (meir enn 20 000 musikkfans saksøkte og teljande!) er eit døme på absurditeten i å prøve å få konditorfargen ut av symjebassenget. Viss valet står mellom å tillate kopiering eller å vere ein skummande bølle som langer ut mot alt han kan nå, vel eg det første.</p>
+</section>
+<section id="donasjonar-og-eit-ord-til-laerarar-og-bibliotekarar">
+<h2>Donasjonar og eit ord til lærarar og bibliotekarar<a class="headerlink" href="#donasjonar-og-eit-ord-til-laerarar-og-bibliotekarar" title="Link to this heading">#</a></h2>
+<p>Kvar gong eg legg ut ei bok gratis på nettet, får eg e-postar frå lesarar som vil sende meg donasjonar for boka. Eg set pris på den sjenerøse ånda deira, men eg er ikkje interessert i kontante donasjonar, fordi forleggjarane mine er veldig viktige for meg. Dei bidreg umåteleg til boka, forbetrar ho, introduserer ho for eit publikum eg aldri kunne nådd, og hjelper meg med å gjere meir med arbeidet mitt. Eg har ingen ønske om å kutte dei ut av loopen.</p>
+<p>Men det må finnast ein god måte å nytte den sjenerøsiteten på, og eg trur eg har funne han. Her er avtalen: det er mange lærarar og bibliotekarar som gjerne skulle fått papirutgåver av denne boka i hendene på borna sine, men som ikkje har budsjett til det (lærarar i USA brukar rundt 1200 dollar frå eiga lomme kvar på skulemateriell som budsjetta deira ikkje strekk til for, noko som er grunnen til at eg sponsar eit klasserom på Ivanhoe Elementary i mitt gamle nabolag i Los Angeles; du kan adoptere ein klasse sjølv her: <a class="reference external" href="http://www.adoptaclassroom.org/">http://www.adoptaclassroom.org/</a>).</p>
+<p>Det finst sjenerøse folk som vil sende litt pengar min veg for å takke meg for dei gratis e-bøkene. Eg føreslår at vi koplar dei saman.</p>
+<p>Viss du er lærar eller bibliotekar og vil ha ein gratis kopi av <em>Little Brother</em>, send ein e-post til <a class="reference external" href="mailto:freelittlebrother&#37;&#52;&#48;gmail&#46;com">freelittlebrother<span>&#64;</span>gmail<span>&#46;</span>com</a> med namnet ditt og namnet og adressa til skulen din. Det vil bli lagt ut på <a class="reference external" href="http://craphound.com/littlebrother/donate/">http://craphound.com/littlebrother/donate/</a> av den fantastiske hjelparen min, Olga Nunes, slik at potensielle donorar kan sjå det.</p>
+<p>Viss du likte den elektroniske utgåva av <em>Little Brother</em> og vil donere noko for å seie takk, gå til <a class="reference external" href="http://craphound.com/littlebrother/donate/">http://craphound.com/littlebrother/donate/</a> og finn ein lærar eller bibliotekar du vil støtte. Gå så til Amazon, <a class="reference external" href="http://BN.com">BN.com</a>, eller din favoritt-nettbokhandel og bestill ein kopi til klasserommet, og send så ein kopi av kvitteringa (fjern gjerne adressa di og anna personleg informasjon først!) til <a class="reference external" href="mailto:freelittlebrother&#37;&#52;&#48;gmail&#46;com">freelittlebrother<span>&#64;</span>gmail<span>&#46;</span>com</a> slik at Olga kan markere den kopien som sendt. Viss du ikkje vil bli offentleg anerkjend for sjenerøsiteten din, sei ifrå, så held vi deg anonym, elles vil vi takke deg på donasjonssida.</p>
+<p>Eg anar ikkje om dette vil ende opp med hundrevis, dusinvis eller berre nokre få kopiar som blir sende ut – men eg har store forhåpningar!</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./01-intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="01-readme.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Les meg først</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../02-boka/01-Kapittel1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Kapittel 1</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gjer-noko">Gjer noko</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#storbritannia">Storbritannia</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#andre-utgaver">Andre utgåver</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#opphavsrett-saka">Opphavsrett-saka</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#donasjonar-og-eit-ord-til-laerarar-og-bibliotekarar">Donasjonar og eit ord til lærarar og bibliotekarar</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Cory Doctorow
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Kvefsebol forlag v/Andreas H. Opsvik. Innhaldet er lisensiert under Creative Commons .
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
