@@ -1,6 +1,6 @@
 # Les meg først
 
-Boka **"Little Brother"** av Cory Doctorow kom ut i 2008. **"Veslebror"** er ei fanomsetjing til nynorsk frå 2025, maskinomsett, og så redigert av Kvefsebol forlag v/[Andreas Hadsel Opsvik](https://tutoteket.no/@tanketom). Som sitt opphav er omsetjinga utgitt på ein [Creative Commons BY-NC-SA-lisens](LICENSE.md).
+Boka **"Little Brother"** av Cory Doctorow kom ut i 2008. **"Veslebror"** er ei fanomsetjing til nynorsk frå 2025, maskinomsett, og så redigert av Forlaget Kvefsebol v/[Andreas Hadsel Opsvik](https://tutoteket.no/@tanketom). Som sitt opphav er omsetjinga utgitt på ein [Creative Commons BY-NC-SA-lisens](LICENSE.md).
 
 * Litt om kvifor her: [Men, Andreas, kvifor?](/04-tillegg/01-Men-kvifor.md) ([In English](/04-tillegg/02-But-why.md))
 
