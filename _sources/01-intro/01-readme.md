@@ -31,4 +31,4 @@ Bearbeida versjon av [Richard Grandmorin](https://www.flickr.com/photos/r_grandm
 
 ## Versjon
 
-* **29.09.2025**: Versjon 0.9 på nettsida, tester å lage PDF og Epub
+* **29.09.2025**: Versjon 0.9 på nettsida.
