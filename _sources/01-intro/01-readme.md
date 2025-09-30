@@ -14,7 +14,7 @@ Boka **"Little Brother"** av Cory Doctorow kom ut i 2008. **"Veslebror"** er ei 
 
 * Du kan lese den på denne sida, frå [Forord](/01-intro/02-intro.md) eller [Kapittel 1](/02-boka/01-Kapittel1.md).
 * PDF: [Versjon 0.9](https://github.com/tanketom/veslebrorserdeg/blob/0d2b4d9d9c666d5def66275068c7eeccdb0d4369/veslebror.pdf)
-* Epub: Kjem snart
+* Epub: [Versjon 0.9](https://github.com/tanketom/veslebrorserdeg/blob/d32190eda378e56661e2288b07156799a2302a09/Veslebror%20-%20Cory%20Doctorow.epub)
 * [Du kan laste ned "Little Brother" i originalspråket her](https://craphound.com/littlebrother/download/)
 
 ## Samandrag av "Veslebror"
