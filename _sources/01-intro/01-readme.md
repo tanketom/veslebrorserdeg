@@ -1,4 +1,4 @@
-# Les meg først
+# Veslebror, av Cory Doctorow – introduksjon
 
 Boka **"Little Brother"** av Cory Doctorow kom ut i 2008. **"Veslebror"** er ei fanomsetjing til nynorsk frå 2025, maskinomsett, og så redigert av Forlaget Kvefsebol v/[Andreas Hadsel Opsvik](https://tutoteket.no/@tanketom). Som sitt opphav er omsetjinga utgitt på ein [Creative Commons BY-NC-SA-lisens](LICENSE.md).
 
@@ -32,3 +32,4 @@ Bearbeida versjon av [Richard Grandmorin](https://www.flickr.com/photos/r_grandm
 ## Versjon
 
 * **29.09.2025**: Versjon 0.9 på nettsida, og enkel PDF
+* **30.09.2025**: Versjon 0.9 som epub

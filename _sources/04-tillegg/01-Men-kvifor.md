@@ -25,7 +25,7 @@ Forlaget Kvefsebol er noko eg har tenkt skulle vere eit namn til om eg publisert
 
 Sida er bygd opp av ei rekke markdown-filer som eg har forsøkt etter beste evne å finlese. Ved hjelp av systemet [JupyterBook](https://jupyterbook.org/en/stable/start/build.html) har eg så laga søkbare HTML-sider av filene, og publisert dei på [Github](https://github.com/tanketom/veslebrorserdeg).
 
-Når eg no oppdaterer ei markdown-file, så går eg til Terminal, opnar foreldremappa til prosjektet, og taster:
+Når eg no oppdaterer ei markdown-fil, så går eg til Terminal, opnar foreldremappa til prosjektet, og taster:
 
 ```
 jupyter-book build veslebrorserdeg/
@@ -42,6 +42,6 @@ Så tek Github seg av resten!
 
 Enn så lenge blir PDF-en til ved å sende ei samla markdown-fil av heile boka til ei Word-fil med denne kommandoen frå foreldremappa til prosjektet.
 
-´´´
+```
 find . -name '_build' -type d -prune -o -name "*.md" -print | sort | xargs pandoc -o combined-document.docx
-´´´
+```

@@ -40,6 +40,6 @@ Then Github hopefully handles the rest!
 
 For now, the PDF is made by sending a collected markdown file of the book to a Word file with this commando from the parent folder of the project.
 
-´´´
+```
 find . -name '_build' -type d -prune -o -name "*.md" -print | sort | xargs pandoc -o combined-document.docx
-´´´
+```
