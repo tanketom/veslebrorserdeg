@@ -1,6 +1,6 @@
 # But, Andreas, why?
 
-Author Cory Doctorow is a cultural sharing activist, and has released all his books since 2003 with open licenses – it is a political decision that gives him "artistic, moral and commercial satisfaction", but also something he believes leads to increased sales and distribution of his books.
+Author Cory Doctorow is a cultural sharing activist, and has released books with open licenses since 2003 – it is a political decision that gives him "artistic, moral and commercial satisfaction", but also something he believes leads to increased sales and distribution of his books.
 
 The book **"Little Brother"** was previously released in Nynorsk by the publisher Samlaget as **"Veslebror ser deg"** ("Little Brother is Watching You") in 2009. The book was well translated by **Øystein Vidnes**, which earned him the Ministry of Culture's Translator's Prize the same year.
 

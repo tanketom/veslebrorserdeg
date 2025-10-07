@@ -2,7 +2,7 @@
 
 ([In English](/04-tillegg/02-But-why.md))
 
-Forfattar Cory Doctorow er aktivist for kulturdeling, og gir alle bøkene sine ut med opne lisensar sidan 2003 – det er ei politisk avgjerd som også gjev han «kunstnarleg, moralsk og kommersiell tilfredsstilling», men også noko han meiner fører til auka salg og spreiing av bøkene sine.
+Forfattar Cory Doctorow er aktivist for kulturdeling, og har gitt ut bøker med opne lisensar sidan 2003 – det er ei politisk avgjerd som også gjev han «kunstnarleg, moralsk og kommersiell tilfredsstilling», men også noko han meiner fører til auka salg og spreiing av bøkene sine.
 
 Boka "Little Brother" tidlegare gitt ut på nynorsk frå Samlaget som "Veslebror ser deg" i 2009. Boka er vel omsett av Øystein Vidnes, som gav han Kulturdepartementets Oversetterprisen same året. 
 
